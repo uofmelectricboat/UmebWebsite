@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 
 interface SponsorCardProps {
     zone: string;
@@ -15,11 +16,25 @@ const SponsorCard: React.FC<SponsorCardProps> = ({ zone, name, learnMore, image,
     const containerClass = changeSides ? 'flex relative px-20' : 'flex relative flex-row-reverse px-20';
 
     return (
-        <div className="p-20">
+        <div className="p-20 border border-black">
             <div className={containerClass}>
-                {/* TODO: add inthe style for the image */}
-                <div className="w-1/3">
-                    <img src={image}> </img>
+                <div className="w-1/3 relative">
+                    <div className="absolute inset-0 flex justify-center items-center">
+                        <Image
+                            src="/images/SunlightZoneBg.png" // Bottom Image
+                            alt="Bottom Image"
+                            width={350}
+                            height={350}
+                        />
+                    </div>
+                    <div className="absolute inset-0 flex justify-center items-center">
+                        <Image
+                            src={image} // Top Image
+                            alt="image"
+                            width={350}
+                            height={350}
+                        />
+                    </div>
                 </div>
                 <div className="w-2/3 text-left">
                     <div>

@@ -3,7 +3,6 @@
 import  CustomCarousel  from "../Components/CustomCarousel";
 import LeaderShip from "../Components/Leadership";
 import TeamLeader from "../Components/TeamLeader";
-import teamleader from "../Components/TeamLeader"
 
 const officers = [{
   title: "CAPTAIN",
