@@ -121,6 +121,11 @@ export default function Home() {
       <p className="text-center max-w-prose text-2xl">These are only some of the prestigious firms that UMEB alumni have gone on to work for after graduation. UMEB members have pursued career opportunities across a diverse array of industries including naval architecture, automotive, aerospace, investment banking, consulting, and many more. UMEB has an extensive network and mentorship opportunities for students across all majors and passions.</p>
 
       </div>
+        <div className="bg-white text-6xl font-bold text-center py-20">
+          <h1>
+            TODO: company logos
+          </h1>
+        </div>
       </>
     )
   }

@@ -12,18 +12,18 @@ const Footer = () => {
             </h1>
         </div>
         <div className="flex items-center justify-center space-x-10 py-3">
-            <img src="/images/UmichEng.png" alt="Umich Engineering" className="max-w-md h-auto"></img>
+            <img src="/logos/UmichEng.png" alt="Umich Engineering" className="max-w-md h-auto"></img>
             <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center"></div>
-            <img src="/images/UmichNaval.png" alt="Umich Naval" className="max-w-md h-auto"></img>
+            <img src="/logos/UmichNaval.png" alt="Umich Naval" className="max-w-md h-auto"></img>
         </div>
         <div className="flex items-center justify-center space-x-12 py-3">
-            <img src="/images/Ford.png" alt="Umich Engineering" className="max-w-sm h-auto"></img>
+            <img src="/logos/Ford.png" alt="Umich Engineering" className="max-w-sm h-auto"></img>
             <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center"></div>
-            <img src="/images/Siemens.png" alt="Umich Engineering" className="max-w-sm h-auto"></img>
+            <img src="/logos/Siemens.png" alt="Umich Engineering" className="max-w-sm h-auto"></img>
             <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center"></div>
-            <img src="/images/cadence.png" alt="Umich Engineering" className="max-w-sm h-auto"></img>
+            <img src="/logos/cadence.png" alt="Umich Engineering" className="max-w-sm h-auto"></img>
             <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center"></div>
-            <img src="/images/Palm.png" alt="Umich Engineering" className="max-w-sm h-auto"></img>
+            <img src="/logos/Palm.png" alt="Umich Engineering" className="max-w-sm h-auto"></img>
         </div>
         <div className="w-90 h-[3px] bg-white"></div>
         <div className="flex items-center justify-center space-x-12">
