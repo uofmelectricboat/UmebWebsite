@@ -22,22 +22,22 @@ export default function Home() {
             </div>
             <div className="w-full">
                 <div className="relative w-full h-0" style={{ paddingBottom: '50%' }}>
-                    {/*<Image*/}
-                    {/*    src="/images/OurRacesRace.png"*/}
-                    {/*    alt="Image not found"*/}
-                    {/*    fill={true}*/}
-                    {/*/>*/}
+                    <Image
+                        src="/images/OurRacesRace.png"
+                        alt="Image not found"
+                        fill={true}
+                    />
                 </div>
             </div>
             <div className="flex">
                 <div className="w-1/2">
                     <div className="py-20 px-40">
                         <div className="relative w-full h-0" style={{ paddingBottom: '50%' }}>
-                            {/*<Image*/}
-                            {/*    src="/images/OurRacesGraphic.png"*/}
-                            {/*    alt="Image not found"*/}
-                            {/*    fill={true}*/}
-                            {/*/>*/}
+                            <Image
+                                src="/images/OurRacesGraphic.png"
+                                alt="Image not found"
+                                fill={true}
+                            />
                         </div>
                     </div>
                 </div>
@@ -70,11 +70,11 @@ export default function Home() {
                 <div className="w-screen flex items-center justify-center">
                     <div className="relative w-1/2">
                         <div className="relative w-full h-0" style={{ paddingBottom: '50%' }}>
-                            {/*<Image*/}
-                            {/*    src="/images/OurRacesMap.png"*/}
-                            {/*    alt="Image not found"*/}
-                            {/*    fill={true}*/}
-                            {/*/>*/}
+                            <Image
+                                src="/images/OurRacesMap.png"
+                                alt="Image not found"
+                                fill={true}
+                            />
                         </div>
                     </div>
                 </div>

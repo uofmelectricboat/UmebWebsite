@@ -1,6 +1,7 @@
 import SponsorCard from "@/app/Components/SponsorCard";
+import Image from "next/image";
 
-const sponsors = [{
+const sunlightSponsors = [{
     text: "The Michigan College of Engineering strives to anticipate the changes ahead and provide scientific and technological leadership - for the common good. Michigan Engineering is home to top-ranked departments that collaborate within the nation's number one public research institution - The University of Michigan.",
     name: "MICHIGAN COLLEGE OF ENGINEERING",
     zone: "SUNLIGHT ZONE",
@@ -68,6 +69,44 @@ const sponsors = [{
     learnMore: "31 hp",
 }]
 
+const twilightSponsors = [{
+    text: "Bristol Harbor Group, Inc. (BHGI) is a full-service naval architecture, marine engineering and consulting firm located on the harbor in Bristol, Rhode Island. They have been in business for over twenty-five years and have produced numerous designs, to which hundreds of vessels have been built. They specialize in commercial vessel design and consulting and have experience with tugs, barges, Articulated Tug/Barge Units (ATB), passenger vessels, workboats, dredges, and floating dry docks.",
+    name: "BRISTOL HARBOR GROUP",
+    zone: "TWILIGHT ZONE",
+    image: "/logos/BristolHarborGroup.png",
+    learnMore: "",
+}, {
+    text: "ASNE is the leading professional engineering society for engineers, scientists and allied professionals who conceive, design, develop, test, construct, outfit, operate and maintain complex naval and maritime ships, submarines and aircraft and their associated systems and subsystems.",
+    name: "AMERICAN SOCIETY OF NAVAL ENGINEERS (ASNE)",
+    zone: "TWILIGHT ZONE",
+    image: "/logos/AmericanSocietyOfNavalEng.png",
+    learnMore: "",
+}, {
+    text: "DHX Machines designs, builds, and tests state-of-the-art electric machines incorporating the patented, proprietary, micro-feature enhanced DwHX cooling technology.",
+    name: "DHX MACHINES",
+    zone: "TWILIGHT ZONE",
+    image: "/logos/DHXMachines.png",
+    learnMore: "",
+}, {
+    text: "Vector supports manufacturers and suppliers of the automotive industry and related industries with a professional platform of tools, software components and services for developing embedded systems.\",",
+    name: "VECTOR",
+    zone: "TWILIGHT ZONE",
+    image: "/logos/Vector.png",
+    learnMore: "",
+}, {
+    text: "Vector supports manufacturers and suppliers of the automotive industry and related industries with a professional platform of tools, software components and services for developing embedded systems.",
+    name: "MICHIGAN WHEEL",
+    zone: "TWILIGHT ZONE",
+    image: "/logos/MichiganWheel.png",
+    learnMore: "",
+}, {
+    text: "System & software architecture engineering consulting firm.",
+    name: "QUANTUM WHATEVER, LLC",
+    zone: "TWILIGHT ZONE",
+    image: "/logos/QuantumWhatever.png",
+    learnMore: "",
+}]
+
 export default function Home() {
     return (
         <>
@@ -80,23 +119,71 @@ export default function Home() {
                 {/*    TODO: Make this button the button that makes more sense*/}
                 </div>
             </div>
-            <div className="p-14">
-                <h1 className="text-6xl text-center font-bold">
-                    Thank you to our Sponsors!
-                </h1>
-            </div>
             <div>
-                {sponsors.map((sponsor: { text: any; name: any; zone: any; image: any; learnMore: any; }, index: any) => (
-                    <SponsorCard
-                        key={index}
-                        text={sponsor.text}
-                        name={sponsor.name}
-                        learnMore={sponsor.learnMore}
-                        image={sponsor.image}
-                        zone={sponsor.zone}
-                        index={index}
-                    />
-                ))}
+                {/*<Image src="/images/OurSponsorsBG.png" alt="bg" fill={true}/>*/}
+                <div className="p-14">
+                    <h1 className="text-6xl text-center font-bold">
+                        Thank you to our Sponsors!
+                    </h1>
+                </div>
+                <div className="text-center p-10">
+                    <h1 className="text-6xl font-bold">Sunlight Zone Sponsors</h1>
+                    <div>
+                        {sunlightSponsors.map((sponsor: { text: any; name: any; zone: any; image: any; learnMore: any; }, index: any) => (
+                            <SponsorCard
+                                key={index}
+                                text={sponsor.text}
+                                name={sponsor.name}
+                                learnMore={sponsor.learnMore}
+                                image={sponsor.image}
+                                zone={sponsor.zone}
+                                index={index}
+                            />
+                        ))}
+                    </div>
+                </div>
+                <div className="text-center p-10">
+                    <h1 className="text-6xl font-bold">Twilight Zone Sponsors</h1>
+                    <div>
+                        {twilightSponsors.map((sponsor: { text: any; name: any; zone: any; image: any; learnMore: any; }, index: any) => (
+                            <SponsorCard
+                                key={index}
+                                text={sponsor.text}
+                                name={sponsor.name}
+                                learnMore={sponsor.learnMore}
+                                image={sponsor.image}
+                                zone={sponsor.zone}
+                                index={index}
+                            />
+                        ))}
+                    </div>
+                </div>
+                <div className="text-center p-10">
+                    <h1 className="text-6xl font-bold"> Midnight Zone Sponsors </h1>
+                    <div>
+
+                    </div>
+                </div>
+
+
+                <div className="text-center p-10">
+                    <h1 className="text-6xl font-bold"> Hadal Zone Sponsors </h1>
+                    <div>
+
+                    </div>
+                </div>
+                <div className="flex p-20">
+                    <div className="w-1/3 px-40">
+                        <h1 className="text-6xl font-bold text-right">
+                            Become A Sponsor
+                        </h1>
+                    </div>
+                    <div className="w-2/3 px-40">
+                        <p className="text-2xl text-left">
+                            UM Electric Boat was founded with a commitment to testing alternative, cleaner forms of energy in the maritime industry. As such, we partner with organizations that believe in our mission and want to invest in new naval technologies.
+                        </p>
+                    </div>
+                </div>
             </div>
         </>
     );
