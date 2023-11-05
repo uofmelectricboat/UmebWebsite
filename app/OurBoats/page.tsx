@@ -31,6 +31,9 @@ export default function Home() {
           <div className='relative'>
             <img src="/images/OurBoats.png?v=2" className='w-full h-screen object-cover'></img>
             <div className="absolute inset-0 bg-blue-800 opacity-30"></div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                  <h1 className="text-white text-6xl font-bold">Our Boats</h1>
+              </div>
           </div>
             <div className="text-center text-6xl font-bold text-red-700 h-1/4 h-screen flex flex-col justify-center items-center">
                 <h1>
