@@ -1,5 +1,7 @@
 import Image from "next/image";
-import Boat from "@/app/Components/Boats";
+import TitlePhoto from "@/app/Components/TitlePhoto";
+import EmailForm from "@/app/Components/EmailForm";
+
 
 const HowToSponsor = [{
     image: "/Icons/CheckMark.png",
@@ -17,17 +19,12 @@ const HowToSponsor = [{
 
 const SponsorPackageImg = "/images/SponsorPackage.png"
 const titlePhoto = "/images/HowToSponsorUs.jpg"
+const titleText = "How to Become a Sponsor"
 
 export default function Home() {
     return (
     <>
-        <div className='relative'>
-            <img src={titlePhoto} className='w-full h-screen object-cover'></img>
-            <div className="absolute inset-0 bg-blue-800 opacity-30"></div>
-            <div className="absolute inset-0 flex flex-col items-center justify-center">
-                <h1 className="text-white text-6xl font-bold">How to Become a Sponsor</h1>
-            </div>
-        </div>
+        <TitlePhoto title={titleText} image={titlePhoto}/>
         <div className="flex py-10 relative w-full">
             <div className="w-1/2">
                 <img src="/images/HowToBecomeASponsorImg.png" alt="image" className="w-full"/>
@@ -78,10 +75,13 @@ export default function Home() {
                 </div>
             </div>
         </div>
-        <div className="relative w-full">
+        <div className="relative w-full pt-20">
             <h1 className="text-6xl font-bold text-center">
                 Become a Sponsor!
             </h1>
+            <div className="mx-auto w-1/2 py-10">
+                <EmailForm/>
+            </div>
         </div>
     </>
     )

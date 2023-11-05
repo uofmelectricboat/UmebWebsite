@@ -1,15 +1,12 @@
 import Button from "../Components/buttons"
+import React from "react";
 
 interface TitlePhotoProps {
     title: string;
-    buttonText: string;
-    buttonLink: string;
     image: string;
 }
 
-
-const TitlePhoto: React.FC<TitlePhotoProps> = ({ title, buttonText, image, buttonLink }) => {
-
+const TitlePhoto: React.FC<TitlePhotoProps> = ({ title, image}) => {
     return (
         <div className='relative'>
             <img src={image} className='w-full h-screen object-cover'></img>

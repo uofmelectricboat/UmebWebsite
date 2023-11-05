@@ -1,4 +1,5 @@
 import Boat from "../Components/Boats";
+import TitlePhoto from "@/app/Components/TitlePhoto";
 
 const boats = [{
     text: "Proteus was where it all began for UMEB. The 17-ft catamaran hull was repurposed from the 2016 Rio Olympics, and the 1970’s-era outboard motor was converted to run on electric power. Despite the COVID lockdown and limited workspace, the team persevered and decided to build Proteus outdoors, braving harsh weather conditions, including snow, rain, and summer heat. Piloted by the team’s Chief Engineer, Sean Hickey, Proteus finished second at the 2021 Promoting Electric Propulsion completion. This was an impressive feat given that it was UMEB’s first time participating in any competition. ",
@@ -25,22 +26,18 @@ const boats = [{
     image: "/images/OurBoatsBMBF.png",
     performance: "TBD"
 }]
+
+const titlePhoto = "/images/OurBoats.png?v=2"
+const titleText = "Our Boats"
 export default function Home() {
     return (
         <>
-          <div className='relative'>
-            <img src="/images/OurBoats.png?v=2" className='w-full h-screen object-cover'></img>
-            <div className="absolute inset-0 bg-blue-800 opacity-30"></div>
-              <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <h1 className="text-white text-6xl font-bold">Our Boats</h1>
-              </div>
-          </div>
+            <TitlePhoto title={titleText} image={titlePhoto}/>
             <div className="text-center text-6xl font-bold text-red-700 h-1/4 h-screen flex flex-col justify-center items-center">
                 <h1>
                     I NEED TO KNOW WHAT TO PUT HERE
                 </h1>
             </div>
-
             <div>
                 {boats.map((boat: { text: any; name: any; speed: any; image: any; performance: any; }, index: any) => (
                     <Boat
@@ -60,6 +57,5 @@ export default function Home() {
                 </h1>
             </div>
         </>
-
     );
-  }
+}

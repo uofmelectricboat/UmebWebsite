@@ -1,12 +1,13 @@
 import Image from "next/image";
+import TitlePhoto from "@/app/Components/TitlePhoto";
 
+
+const titlePhoto = "/images/OurRaces.jpg?v=2"
+const titleText = "Our Races"
 export default function Home() {
     return (
         <>
-            <div className='relative'>
-                <img src="/images/OurRaces.jpg?v=2" className='w-full h-screen object-cover'></img>
-                <div className="absolute inset-0 bg-blue-800 opacity-30"></div>
-            </div>
+            <TitlePhoto title={titleText} image={titlePhoto}/>
             <div className="bg-blue-950 pt-10 p-10">
                 <h1 className="text-yellow-500 text-6xl font-bold text-center p-20">
                     Promoting Electric Propulsion

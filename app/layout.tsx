@@ -1,6 +1,5 @@
 import './globals.css'
 import { Nunito } from 'next/font/google'
-import Image from 'next/image';
 import Navbar from './Components/Navbar/navbar'
 import Footer from './Components/Footer/footer'
 
@@ -23,10 +22,8 @@ export default function RootLayout({
           <Navbar />
         </div>
         {children}
-        
         <Footer></Footer>
         </body>
-        
     </html>
   )
 }

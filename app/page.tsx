@@ -1,8 +1,12 @@
-export default function Home() {
-  return (
-    <div className='relative'>
-          <img src="/images/Home.jpg?v=3" className='h-full w-full'></img>
-    </div>
+import TitlePhoto from "@/app/Components/TitlePhoto";
 
-  )
+const titleText = ""
+const titlePhoto = "/images/Home.jpg?v=3"
+
+export default function Home() {
+    return (
+    <>
+        <TitlePhoto title={titleText} image={titlePhoto}/>
+    </>
+    )
 }
