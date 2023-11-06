@@ -1,6 +1,6 @@
 "use client";
 
-import  CustomCarousel  from "../Components/CustomCarousel";
+import  CustomCarousel  from "../Components/TeamsCarousel";
 import LeaderShip from "../Components/Leadership";
 import TeamLeader from "../Components/TeamLeader";
 import TitlePhoto from "@/app/Components/TitlePhoto";
@@ -67,25 +67,6 @@ const consultants = [{
     info: "Associate Professor, Graduate Program Chair | Aerospace Engineering Department"
 }]
 
-const carouselItems = [
-  {
-    imageSrc: '/images/MechanicalPhoto.png', // Replace with the actual image paths
-    text: 'The UMEB Mechanical Team is responsible for the component-level design, manufacturing, testing, and validation of all structural, drivetrain, and safety systems on the boat. Additionally, the mechanical team works closely with electrical team leadership to make system-level decisions on the design of the boat and assures all systems on the boat operate cohesively. On top of working on and designing the boat, the mechanical team will focus extensively on the growth of the overall team\'s CAD and manufacturing capabilities.',
-  },
-  {
-    imageSrc: '/images/ElectricalPhoto.png',
-    text: '',
-  },
-  {
-    imageSrc: '/images/OperationsPhoto.png',
-    text: 'The Operations Subteam is responsible for managing the logistical demands of the Michigan Electric Boat Team, including the maintenance of the Wilson Center workspace(s), organization and design reviews, and communication with competition(s) and competition sponsors. Additionally, the subteam handles the standard operating procedures and safety procedures with the Manufacturing Coordinator to promote a productive and efficient working environment. Lastly, the Operations Subteam manages the general recruitment, logistics, and communications within the team.',
-  },
-  {
-    imageSrc: '/images/BusinesPhoto.png',
-    text: 'UMEB’s business team is responsible for supporting our engineers in all other tasks ranging from sponsor relations to marketing the team on various platforms. We strive to prevent our engineers from lacking any resources that would limit their innovation. Each year, we raise tens of thousands of dollars in order to build the fastest boat possible.',
-  },
-];
-
 const titlePhoto = "/images/OurTeams.png"
 const titleText = "Our Teams"
 
@@ -94,8 +75,8 @@ export default function Home() {
     return (
       <>
         <TitlePhoto title={titleText} image={titlePhoto}/>
-      <div className="p-10 w-full h-1/2">
-        <CustomCarousel items={carouselItems}/>
+      <div className="w-full h-full">
+        <CustomCarousel/>
       </div>
       <h1 className="font-bold text-5xl py-5 flex items-center justify-center"> Meet Our LeaderShip Team </h1>
       <div className="p-10">
