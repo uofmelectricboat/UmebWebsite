@@ -21,7 +21,7 @@ const UpTriangle = () => {
 
 interface DropDownProps {
     title: string;
-    options: [];
+    options: { name: string; url: string; }[];
 }
 
 const DropDown: React.FC<DropDownProps> = ({ title, options }) => {

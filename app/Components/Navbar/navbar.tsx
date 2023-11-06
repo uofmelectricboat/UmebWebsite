@@ -52,16 +52,13 @@ const Navbar = () => {
 
         <div className="space-x-6 items-center flex">
             <Link href="/" className="rounded text-white border-gray-300 px-2 py-1 hover:bg-gray-400 bg-gray-500"> Home </Link>
-            <DropDown title="About Us" options={About}>
-            </DropDown>
+            <DropDown title="About Us" options={About}></DropDown>
 
             <Link href="/Media" className="rounded text-white border-gray-300 px-2 py-1 hover:bg-gray-400 bg-gray-500"> Media </Link>
             
-            <DropDown title="Sponsors" options={Sponsors}>
-            </DropDown>
+            <DropDown title="Sponsors" options={Sponsors}></DropDown>
 
-            <DropDown title="Contact" options={Contact}>
-            </DropDown>
+            <DropDown title="Contact" options={Contact}></DropDown>
 
             <Button buttonText="Donate"/>  
         </div>
