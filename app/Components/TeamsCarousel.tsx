@@ -1,6 +1,7 @@
 "use client";
 import React, {useState, useEffect} from "react";
 import Image from 'next/image';
+import { Carousel } from 'flowbite-react';
 
 interface TeamCarouselProps {
 }
@@ -14,7 +15,7 @@ const carouselItems = [
     {
         imageSrc: '/images/ElectricalPhoto.png',
         text: 'The UMEB Mechanical Team is responsible for the component-level design, manufacturing, testing, and validation of all structural, drivetrain, and safety systems on the boat. Additionally, the mechanical team works closely with electrical team leadership to make system-level decisions on the design of the boat and assures all systems on the boat operate cohesively. On top of working on and designing the boat, the mechanical team will focus extensively on the growth of the overall team\'s CAD and manufacturing capabilities.',
-        team: "electrical",
+        team: "Electrical",
     },
     {
         imageSrc: '/images/OperationsPhoto.png',
@@ -29,46 +30,53 @@ const carouselItems = [
 ];
 
 const TeamCarousel: React.FC<TeamCarouselProps> = () => {
-    const [page, setPage] = useState<number>(1);
-    useEffect(() => {
-        let int = setInterval(() => {
-            setPage(prev => ((prev+1) >= 4 ? 1 : prev+1))
-        }, 5000)
-        return ()=>clearInterval(int);
-    }, []);
-
-    const handlePrevPage = ()=> {
-        setPage(prev => ((prev - 1) <= 0 ? 3 : prev - 1))
-    }
-
-    const handleNextPage = () => {
-        setPage(prev => ((prev + 1) >= 4 ? 1 : prev + 1))
-    }
-
     return (
-        <main className="relative flex h-full w-full flex-col justify-center items-center">
+        <Carousel>
             <div className="flex w-full h-full">
-                <Image src={carouselItems[page].imageSrc} alt="temp" width={1800} height={1000}/>
+                <Image src={carouselItems[0].imageSrc} alt="temp" width={1800} height={1000}/>
                 <div className="bg-blue-950">
                     <h1 className="text-yellow-500 text-6xl text-center py-10">
-                        {carouselItems[page].team}
+                        {carouselItems[0].team}
                     </h1>
                     <p className="text-white text-4xl px-10">
-                        {carouselItems[page].text}
+                        {carouselItems[0].text}
                     </p>
                 </div>
             </div>
-            <div className="z-10 fixed absolute bottom-1/2 left-4 text-2xl" onClick={handlePrevPage}>
-                <span className="text-white inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer hover:text-blue-200">
-                    &lt;-
-                </span>
+            <div className="flex w-full h-full">
+                <Image src={carouselItems[1].imageSrc} alt="temp" width={1800} height={1000}/>
+                <div className="bg-blue-950">
+                    <h1 className="text-yellow-500 text-6xl text-center py-10">
+                        {carouselItems[1].team}
+                    </h1>
+                    <p className="text-white text-4xl px-10">
+                        {carouselItems[1].text}
+                    </p>
+                </div>
             </div>
-            <div className="z-10 fixed absolute bottom-1/2 right-4 text-2xl" onClick={handleNextPage}>
-                <span className="text-white inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer hover:text-blue-200">
-                    -&#62;
-                </span>
+            <div className="flex w-full h-full">
+                <Image src={carouselItems[2].imageSrc} alt="temp" width={1800} height={1000}/>
+                <div className="bg-blue-950">
+                    <h1 className="text-yellow-500 text-6xl text-center py-10">
+                        {carouselItems[2].team}
+                    </h1>
+                    <p className="text-white text-4xl px-10">
+                        {carouselItems[2].text}
+                    </p>
+                </div>
             </div>
-        </main>
+            <div className="flex w-full h-full">
+                <Image src={carouselItems[3].imageSrc} alt="temp" width={1800} height={1000}/>
+                <div className="bg-blue-950">
+                    <h1 className="text-yellow-500 text-6xl text-center py-10">
+                        {carouselItems[3].team}
+                    </h1>
+                    <p className="text-white text-4xl px-10">
+                        {carouselItems[3].text}
+                    </p>
+                </div>
+            </div>
+        </Carousel>
     );
 }
 

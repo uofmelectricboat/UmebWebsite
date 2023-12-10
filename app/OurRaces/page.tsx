@@ -1,5 +1,6 @@
 import Image from "next/image";
 import TitlePhoto from "@/app/Components/TitlePhoto";
+import Video from "flowbite-react"
 
 
 const titlePhoto = "/images/OurRaces.jpg?v=2"

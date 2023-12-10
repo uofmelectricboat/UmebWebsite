@@ -3,8 +3,6 @@ import { Nunito } from 'next/font/google'
 import Navbar from './Components/Navbar/navbar'
 import Footer from './Components/Footer/footer'
 
-const inter = Nunito({ subsets: ['latin'] })
-
 export const metadata = {
   title: 'UMEB',
   description: 'New UMEB Website',

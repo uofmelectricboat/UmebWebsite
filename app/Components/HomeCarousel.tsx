@@ -1,6 +1,7 @@
 "use client";
-import React, {useState, useEffect} from "react";
+
 import Image from 'next/image';
+import { Carousel } from 'flowbite-react';
 
 interface CustomCarouselProps {
 }
@@ -33,45 +34,49 @@ const carouselInfo = [
 ];
 
 const HomeCarousel: React.FC<CustomCarouselProps> = () => {
-    const [page, setPage] = useState<number>(1);
-    useEffect(() => {
-        let int = setInterval(() => {
-            setPage(prev => ((prev+1) >= 4 ? 1 : prev+1))
-        }, 5000)
-        return ()=>clearInterval(int);
-    }, []);
-
-    const handlePrevPage = ()=> {
-        setPage(prev => ((prev - 1) <= 0 ? 3 : prev - 1))
-    }
-
-    const handleNextPage = () => {
-        setPage(prev => ((prev + 1) >= 4 ? 1 : prev + 1))
-    }
-
     return (
-        <main className="relative flex h-full w-full flex-col justify-center items-center">
-            <div className="w-full h-full">
-                <Image src={carouselInfo[page].image} alt="temp" fill={true}/>
-                <div className="absolute inset-0 bg-black opacity-40"></div>
-                <div className="absolute top-8 left-10 py-3">
-                    <h2 className="text-4xl font-bold text-white">{carouselInfo[page].title}</h2>
+            <Carousel slideInterval={5000}>
+                <div className="w-full h-full">
+                    <Image src={carouselInfo[0].image} alt="temp" fill={true}/>
+                    <div className="absolute inset-0 bg-black opacity-40"></div>
+                    <div className="absolute top-8 left-10 py-3">
+                        <h2 className="text-4xl font-bold text-white">{carouselInfo[0].title}</h2>
+                    </div>
+                    <div className="absolute inset-0 flex flex-col justify-center items-center px-80">
+                        <p className="text-center text-2xl text-white">{carouselInfo[0].text}</p>
+                    </div>
                 </div>
-                <div className="absolute inset-0 flex flex-col justify-center items-center px-80">
-                    <p className="text-center text-2xl text-white">{carouselInfo[page].text}</p>
+                <div className="w-full h-full">
+                    <Image src={carouselInfo[1].image} alt="temp" fill={true}/>
+                    <div className="absolute inset-0 bg-black opacity-40"></div>
+                    <div className="absolute top-8 left-10 py-3">
+                        <h2 className="text-4xl font-bold text-white">{carouselInfo[1].title}</h2>
+                    </div>
+                    <div className="absolute inset-0 flex flex-col justify-center items-center px-80">
+                        <p className="text-center text-2xl text-white">{carouselInfo[1].text}</p>
+                    </div>
                 </div>
-            </div>
-            <div className="z-10 fixed absolute bottom-1/2 left-4 text-2xl" onClick={handlePrevPage}>
-                <span className="text-white inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer hover:text-blue-200">
-                    &lt;-
-                </span>
-            </div>
-            <div className="z-10 fixed absolute bottom-1/2 right-4 text-2xl" onClick={handleNextPage}>
-                <span className="text-white inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer hover:text-blue-200">
-                    -&#62;
-                </span>
-            </div>
-        </main>
+                <div className="w-full h-full">
+                    <Image src={carouselInfo[2].image} alt="temp" fill={true}/>
+                    <div className="absolute inset-0 bg-black opacity-40"></div>
+                    <div className="absolute top-8 left-10 py-3">
+                        <h2 className="text-4xl font-bold text-white">{carouselInfo[2].title}</h2>
+                    </div>
+                    <div className="absolute inset-0 flex flex-col justify-center items-center px-80">
+                        <p className="text-center text-2xl text-white">{carouselInfo[2].text}</p>
+                    </div>
+                </div>
+                <div className="w-full h-full">
+                    <Image src={carouselInfo[3].image} alt="temp" fill={true}/>
+                    <div className="absolute inset-0 bg-black opacity-40"></div>
+                    <div className="absolute top-8 left-10 py-3">
+                        <h2 className="text-4xl font-bold text-white">{carouselInfo[3].title}</h2>
+                    </div>
+                    <div className="absolute inset-0 flex flex-col justify-center items-center px-80">
+                        <p className="text-center text-2xl text-white">{carouselInfo[3].text}</p>
+                    </div>
+                </div>
+            </Carousel>
     );
 }
 

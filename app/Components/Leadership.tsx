@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface LeadershipProps {
     title: string;
     name: string;
@@ -15,8 +17,9 @@ const LeaderShip: React.FC<LeadershipProps> = ({ title, name, bio, image, info }
             </div>
             <div className="w-1/3">
                 <h2 className="font-bold text-4xl">{title}</h2>
-                <div>
-                    <h3 className="font-bold text-xl">{name}</h3>
+                <div className="flex ">
+                    <h3 className="font-bold text-xl pr-2">{name}</h3>
+                    <Image src="/icons/LinkedIn.png" width={30} height={20} alt="image"></Image>
                 </div>
                 <h4 className="italic text-lg">{info}</h4>
                 <p>
