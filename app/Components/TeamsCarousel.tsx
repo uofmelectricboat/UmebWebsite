@@ -35,10 +35,10 @@ const TeamCarousel: React.FC<TeamCarouselProps> = () => {
             <div className="flex w-full h-full">
                 <Image src={carouselItems[0].imageSrc} alt="temp" width={1800} height={1000}/>
                 <div className="bg-blue-950">
-                    <h1 className="text-yellow-500 text-6xl text-center py-10">
+                    <h1 className="text-yellow-300 text-6xl text-center py-10">
                         {carouselItems[0].team}
                     </h1>
-                    <p className="text-white text-4xl px-10">
+                    <p className="text-white text-4xl px-10 tracking-wide leading-relaxed">
                         {carouselItems[0].text}
                     </p>
                 </div>
@@ -46,10 +46,10 @@ const TeamCarousel: React.FC<TeamCarouselProps> = () => {
             <div className="flex w-full h-full">
                 <Image src={carouselItems[1].imageSrc} alt="temp" width={1800} height={1000}/>
                 <div className="bg-blue-950">
-                    <h1 className="text-yellow-500 text-6xl text-center py-10">
+                    <h1 className="text-yellow-300 text-6xl text-center py-10">
                         {carouselItems[1].team}
                     </h1>
-                    <p className="text-white text-4xl px-10">
+                    <p className="text-white text-4xl px-10 tracking-wide">
                         {carouselItems[1].text}
                     </p>
                 </div>
@@ -57,10 +57,10 @@ const TeamCarousel: React.FC<TeamCarouselProps> = () => {
             <div className="flex w-full h-full">
                 <Image src={carouselItems[2].imageSrc} alt="temp" width={1800} height={1000}/>
                 <div className="bg-blue-950">
-                    <h1 className="text-yellow-500 text-6xl text-center py-10">
+                    <h1 className="text-yellow-300 text-6xl text-center py-10">
                         {carouselItems[2].team}
                     </h1>
-                    <p className="text-white text-4xl px-10">
+                    <p className="text-white text-4xl px-10 tracking-wide">
                         {carouselItems[2].text}
                     </p>
                 </div>
@@ -68,10 +68,10 @@ const TeamCarousel: React.FC<TeamCarouselProps> = () => {
             <div className="flex w-full h-full">
                 <Image src={carouselItems[3].imageSrc} alt="temp" width={1800} height={1000}/>
                 <div className="bg-blue-950">
-                    <h1 className="text-yellow-500 text-6xl text-center py-10">
+                    <h1 className="text-yellow-300 text-6xl text-center py-10">
                         {carouselItems[3].team}
                     </h1>
-                    <p className="text-white text-4xl px-10">
+                    <p className="text-white text-4xl px-10 tracking-wide leading-relaxed">
                         {carouselItems[3].text}
                     </p>
                 </div>

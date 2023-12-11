@@ -118,7 +118,7 @@ export default function Home() {
       </div>
       <h1 className="font-bold text-5xl pt-20 py-5 flex items-center justify-center"> Our Alumni </h1>
       <div className="flex flex-col justify-center items-center">
-      <p className="text-center max-w-prose text-2xl">These are only some of the prestigious firms that UMEB alumni have gone on to work for after graduation. UMEB members have pursued career opportunities across a diverse array of industries including naval architecture, automotive, aerospace, investment banking, consulting, and many more. UMEB has an extensive network and mentorship opportunities for students across all majors and passions.</p>
+      <p className="text-center max-w-prose text-2xl leading-relaxed tracking-wider">These are only some of the prestigious firms that UMEB alumni have gone on to work for after graduation. UMEB members have pursued career opportunities across a diverse array of industries including naval architecture, automotive, aerospace, investment banking, consulting, and many more. UMEB has an extensive network and mentorship opportunities for students across all majors and passions.</p>
 
       </div>
         <div className="bg-white text-6xl font-bold text-center py-20">

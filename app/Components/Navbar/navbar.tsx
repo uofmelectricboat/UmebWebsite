@@ -51,7 +51,9 @@ const Navbar = () => {
         </div>
 
         <div className="space-x-6 items-center flex">
-            <Link href="/" className="inline-block px-4 py-2 font-semibold leading-none text-white transition bg-blue-500 border-2 border-transparent rounded-full hover:border-blue-300 hover:bg-blue-400"> Home </Link>
+            <Link href="/" className="text-2xl font-bold transition-transform transform hover:scale-110 hover:underline"> Home
+                <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+            </Link>
             <DropDown title="About Us" options={About}></DropDown>
 
 

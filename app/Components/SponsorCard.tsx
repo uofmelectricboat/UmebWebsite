@@ -13,7 +13,7 @@ interface SponsorCardProps {
 const SponsorCard: React.FC<SponsorCardProps> = ({ zone, name, learnMore, image, text, index }) => {
     const changeSides = index % 2 === 0;
 
-    const containerClass = changeSides ? 'flex relative' : 'flex relative flex-row-reverse';
+    const containerClass = changeSides ? 'flex relative relative border-2 border-gray-300 bg-slate-100 p-4 transition-transform transform hover:scale-105 rounded-lg' : 'flex relative flex-row-reverse relative border-2 border-gray-300 bg-slate-100 p-4 transition-transform transform hover:scale-105 rounded-lg';
     const buttonClass = changeSides ? 'flex relative flex-row-reverse' : 'flex relative';
     var imageBackground;
     if(zone == "SUNLIGHT ZONE") {
@@ -25,25 +25,25 @@ const SponsorCard: React.FC<SponsorCardProps> = ({ zone, name, learnMore, image,
     return (
         <div className="p-20">
             <div className={containerClass}>
-                <div className="w-1/3 relative px-20">
+                <div className="w-1/6 relative px-20">
                     <div className="absolute inset-0 flex justify-center items-center">
                         <Image
                             src={imageBackground} // Bottom Image
                             alt="Bottom Image"
-                            width={350}
-                            height={350}
+                            fill={true}
+                            className="rounded-lg"
                         />
                     </div>
                     <div className="absolute inset-0 flex justify-center items-center">
                         <Image
                             src={image} // Top Image
                             alt="image"
-                            width={350}
-                            height={350}
+                            fill={true}
+                            className="rounded-lg"
                         />
                     </div>
                 </div>
-                <div className="w-2/3 text-left px-20">
+                <div className="w-5/6 text-left px-20">
                     <div>
                         <h2 className="text-4xl italic ">
                             {zone}
