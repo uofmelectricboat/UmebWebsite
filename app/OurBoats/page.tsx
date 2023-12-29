@@ -1,4 +1,3 @@
-import Boat from "../Components/Boats";
 import TitlePhoto from "@/app/Components/TitlePhoto";
 
 const boats = [{
@@ -27,34 +26,29 @@ const boats = [{
     performance: "TBD"
 }]
 
+const timelineItems = [
+    { date: "2023-01-01", title: "Event 1", description: "Description of event 1" },
+    { date: "2023-02-01", title: "Event 2", description: "Description of event 2" },
+    { date: "2023-02-01", title: "Event 2", description: "Description of event 2" },
+    { date: "2023-02-01", title: "Event 2", description: "Description of event 2" },
+]
+
 const titlePhoto = "/images/OurBoats.png?v=2"
 const titleText = "Our Boats"
 export default function Home() {
     return (
         <>
             <TitlePhoto title={titleText} image={titlePhoto}/>
-            <div className="text-center text-6xl font-bold text-red-700 h-1/4 h-screen flex flex-col justify-center items-center">
-                <h1>
-                    I NEED TO KNOW WHAT TO PUT HERE
-                </h1>
-            </div>
             <div>
                 {boats.map((boat: { text: any; name: any; speed: any; image: any; performance: any; }, index: any) => (
-                    <Boat
-                        key={index}
-                        text={boat.text}
-                        name={boat.name}
-                        speed={boat.speed}
-                        image={boat.image}
-                        performance={boat.performance}
-                        index={index}
-                    />
+                    <div key={index} className="flex bg-blue-950">
+                        <div className="w-1/2 p-10">
+                            {/*<BoatsTimeline date={timelineItems[index].date} title={timelineItems[index].title} description={timelineItems[index].description} boat={boat}></BoatsTimeline>*/}
+                        </div>
+                        <div className="w-1/2">
+                        </div>
+                    </div>
                 ))}
-            </div>
-            <div className="text-center text-6xl font-bold text-red-700 h-1/4 h-screen flex flex-col justify-center items-center">
-                <h1>
-                    I NEED TO KNOW WHAT TO PUT HERE
-                </h1>
             </div>
         </>
     );

@@ -7,3 +7,103 @@ body,
 :root {
   height: 100%;
 }
+
+.animated-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.animated-underline::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #FFFF; /* Set your desired underline color */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.animated-underline:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.multicolored-border {
+  position: relative;
+  overflow: hidden;
+}
+
+.multicolored-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Choose your colors */
+  z-index: -1;
+  transition: transform 0.5s ease-in-out; /* Adjust the duration */
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.multicolored-border:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.button-pop {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.button-pop:hover {
+  transform: scale(1.05); /* Adjust the scaling factor for the pop effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust box-shadow as needed */
+}
+
+
+
+.perspective-container {
+  perspective: 1500px; /* Increased perspective for a more dramatic effect */
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.7s;
+}
+
+.card:hover {
+  transform: rotateY(-180deg); /* Adjust if you want the card to flip in the other direction */
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.rotated-180 {
+  transform: rotateY(180deg);
+}
+
+.container-timeline{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  counter-reset: contador;
+  padding-Left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: 8rem;
+}

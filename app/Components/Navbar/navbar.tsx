@@ -1,12 +1,9 @@
 "use client";
 import Link from 'next/link'
 import Button from '../buttons';
-import { useRouter } from 'next/router'; // Import the useRouter hook
-import Container from "../container";
 import Logo from "./logo";
-import NavLinks from "./navlinks";
-import { useState } from 'react';
 import DropDown from "../dropdown"
+import  '../../globals.css'
 
 const Navbar = () => {
     const About = [
@@ -51,13 +48,11 @@ const Navbar = () => {
         </div>
 
         <div className="space-x-6 items-center flex">
-            <Link href="/" className="text-2xl font-bold transition-transform transform hover:scale-110 hover:underline"> Home
-                <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+            <Link href="/" className="text-2xl font-bold relative animated-underline">
+                    Home
             </Link>
             <DropDown title="About Us" options={About}></DropDown>
-
-
-            <Link href="/Media" className="inline-block px-4 py-2 font-semibold leading-none text-white transition bg-blue-500 border-2 border-transparent rounded-full hover:border-blue-300 hover:bg-blue-400">
+            <Link href="/Media" className="text-2xl font-bold relative animated-underline">
                 Media
             </Link>
             <DropDown title="Sponsors" options={Sponsors}></DropDown>

@@ -28,10 +28,10 @@ const DropDown: React.FC<DropDownProps> = ({ title, options }) => {
     return (
         <div>
             <div className="group relative cursor-pointer py-2">
-                <div className="inline-block px-4 py-2 font-semibold leading-none text-white transition bg-blue-500 border-2 border-transparent rounded-full hover:border-blue-300 hover:bg-blue-400">
+                <div className="text-2xl font-bold relative animated-underline">
                     <div className="flex">
                         <a> {title} </a>
-                        <CaretRight size={16}></CaretRight>
+                        <CaretDown size={16} className="items-center"></CaretDown>
                     </div>
                 </div>
                 <div className="invisible absolute bg-white rounded boarder py-2 w-40 mt-2 group-hover:visible" >
