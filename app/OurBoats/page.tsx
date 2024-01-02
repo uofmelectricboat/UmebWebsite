@@ -1,4 +1,5 @@
 import TitlePhoto from "@/app/Components/TitlePhoto";
+import Timeline from "../Components/Timeline"
 
 const boats = [{
     text: "Proteus was where it all began for UMEB. The 17-ft catamaran hull was repurposed from the 2016 Rio Olympics, and the 1970’s-era outboard motor was converted to run on electric power. Despite the COVID lockdown and limited workspace, the team persevered and decided to build Proteus outdoors, braving harsh weather conditions, including snow, rain, and summer heat. Piloted by the team’s Chief Engineer, Sean Hickey, Proteus finished second at the 2021 Promoting Electric Propulsion completion. This was an impressive feat given that it was UMEB’s first time participating in any competition. ",
@@ -39,16 +40,8 @@ export default function Home() {
     return (
         <>
             <TitlePhoto title={titleText} image={titlePhoto}/>
-            <div>
-                {boats.map((boat: { text: any; name: any; speed: any; image: any; performance: any; }, index: any) => (
-                    <div key={index} className="flex bg-blue-950">
-                        <div className="w-1/2 p-10">
-                            {/*<BoatsTimeline date={timelineItems[index].date} title={timelineItems[index].title} description={timelineItems[index].description} boat={boat}></BoatsTimeline>*/}
-                        </div>
-                        <div className="w-1/2">
-                        </div>
-                    </div>
-                ))}
+            <div className="bg-blue-950">
+                <Timeline boats={boats}></Timeline>
             </div>
         </>
     );
