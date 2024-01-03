@@ -1,36 +1,35 @@
-"use client";
-import Image from 'next/image';
-import { Circle } from 'phosphor-react';
-import Logo from '../Navbar/logo';
+// components/Footer.tsx
+import React from 'react';
+import Button from '../buttons';
 
-const Footer = () => {
+const Footer: React.FC = () => {
     return (
-    <div className="bg-blue-950 w-full">
-        <div className="text-center pt-3 pb-8">
-            <h1 className="text-white font-bold text-5xl">
-                Join us on our Voyage!
-            </h1>
-        </div>
-        <div className="flex items-center justify-center space-x-10 py-3">
-            <img src="/logos/UmichEng.png" alt="Umich Engineering" className="max-w-md h-auto"></img>
-            <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center"></div>
-            <img src="/logos/UmichNaval.png" alt="Umich Naval" className="max-w-md h-auto"></img>
-        </div>
-        <div className="flex items-center justify-center space-x-12 py-3">
-            <img src="/logos/Ford.png" alt="Umich Engineering" className="max-w-sm h-auto"></img>
-            <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center"></div>
-            <img src="/logos/Siemens.png" alt="Umich Engineering" className="max-w-sm h-auto"></img>
-            <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center"></div>
-            <img src="/logos/cadence.png" alt="Umich Engineering" className="max-w-sm h-auto"></img>
-            <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center"></div>
-            <img src="/logos/Palm.png" alt="Umich Engineering" className="max-w-sm h-auto"></img>
-        </div>
-        <div className="w-90 h-[3px] bg-white"></div>
-        <div className="flex items-center justify-center space-x-12">
-            <Logo></Logo>
-        </div>
-    </div>
+        <footer className="bg-white text-gray-800 text-center p-4 pt-20">
+            <div className="flex">
+                <div className="w-1/3">
+                    <p className="font-bold text-2xl items-center text-center justify-center"> Join us towards the Electric Future! </p>
+                </div>
+                <div className="w-2/3 flex justify-center mt-2">
+                    <div className="px-5">
+                        <Button buttonText="Donate" Ref="/Donate"></Button>
+                    </div>
+                    <div className="px-5">
+                        <Button buttonText="Sponsor Us" Ref="/Donate"></Button>
+                    </div>
+                    <div className="px-5">
+                        <Button buttonText="Join Us" Ref="/Donate"></Button>
+                    </div>
+                </div>
+                <div className="container mx-auto">
+                    <p>
+                        Hello World!
+                    </p>
+                </div>
+            </div>
+
+
+        </footer>
     );
-}
+};
 
 export default Footer;

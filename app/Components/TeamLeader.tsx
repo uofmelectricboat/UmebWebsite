@@ -11,9 +11,9 @@ interface LeadershipProps {
 
 
 const TeamLeader: React.FC<LeadershipProps> = ({ title, name, team, image, info }) => {return (
-    <div className="w-1/5 flex-col items-center justify-center">
+    <div className="container items-center justify-center py-10">
         <div className="flex items-center justify-center">
-            <img src={image} className="rounded-full h-3/4 w-3/4"></img>
+            <Image src={image} alt={"Image"} width={300} height={300} className="rounded-full"></Image>
         </div>
         <div className="text-center">
             <h2 className="font-bold text-xl">{title}</h2>
@@ -22,7 +22,6 @@ const TeamLeader: React.FC<LeadershipProps> = ({ title, name, team, image, info 
                 <Link href={"temp"}>
                     <Image src="/icons/LinkedIn.png" alt="LinkedIn" width={30} height={20}></Image>
                 </Link>
-
             </div>
             <h4 className="italic"> {info} </h4>
         </div>

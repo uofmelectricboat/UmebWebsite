@@ -9,25 +9,30 @@ interface LeadershipProps {
 }
 
 
-const LeaderShip: React.FC<LeadershipProps> = ({ title, name, bio, image, info }) => {return (
-    <div className="flex justify-center items-center p-5">
-        <div className="flex justify-center items-center">
-            <div className="w-1/3">
-                <img src={image} className="rounded-full h-3/4 w-3/4"></img>
+const LeaderShip: React.FC<LeadershipProps> = ({ title, name, bio, image, info }) => {
+    return (
+        <div className="container md:flex items-center justify-center py-10">
+            <div className="px-10 flex justify-center">
+                <Image src={image} alt={"Image"} width={300} height={300} className="rounded-full"></Image>
             </div>
-            <div className="w-1/3">
-                <h2 className="font-bold text-4xl">{title}</h2>
-                <div className="flex ">
-                    <h3 className="font-bold text-xl pr-2">{name}</h3>
+            <div className="basis-1/2 text-center">
+                <h2 className="font-bold text-4xl">
+                    {title}
+                </h2>
+                <div className="flex justify-center">
+                    <h3 className="font-bold text-xl pr-2">
+                        {name}
+                    </h3>
                     <Image src="/icons/LinkedIn.png" width={30} height={20} alt="image"></Image>
                 </div>
-                <h4 className="italic text-lg">{info}</h4>
-                <p>
+                <h4 className="italic text-lg">
+                    {info}
+                </h4>
+                <p className={"md:block hidden"}>
                     {bio}
                 </p>
             </div>
         </div>
-    </div>
     );
 }
 

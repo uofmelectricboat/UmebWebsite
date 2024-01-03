@@ -4,6 +4,7 @@ import  CustomCarousel  from "../Components/TeamsCarousel";
 import LeaderShip from "../Components/Leadership";
 import TeamLeader from "../Components/TeamLeader";
 import TitlePhoto from "@/app/Components/TitlePhoto";
+import Image from "next/image"
 
 const officers = [{
   title: "CAPTAIN",
@@ -91,7 +92,7 @@ export default function Home() {
           />
         ))}
       </div>
-      <div className="flex justify-center items-center p-2 text-center pt-10">
+      <div className="columns-xs sm:columns-1 md:columns-2 lg:columns-2 gap-5">
         {teamleaders.map((leader: any, index: any) => (
           <TeamLeader
             key={index}
@@ -104,7 +105,7 @@ export default function Home() {
         ))}
       </div>
       <h1 className="font-bold text-5xl py-5 flex items-center justify-center pt-10"> Meet Our Consultants </h1>
-      <div className="flex flex-wrap justify-center items-start p-2 text-center pt-10">
+      <div className="columns-xs lg:columns-3 sm:columns-1 gap-5">
         {consultants.map((leader: any, index: any) => (
           <TeamLeader
             key={index}
@@ -121,11 +122,55 @@ export default function Home() {
       <p className="text-center max-w-prose text-2xl leading-relaxed tracking-wider">These are only some of the prestigious firms that UMEB alumni have gone on to work for after graduation. UMEB members have pursued career opportunities across a diverse array of industries including naval architecture, automotive, aerospace, investment banking, consulting, and many more. UMEB has an extensive network and mentorship opportunities for students across all majors and passions.</p>
 
       </div>
-        <div className="bg-white text-6xl font-bold text-center py-20">
-          <h1>
-            TODO: company logos
-          </h1>
+      <div className={"hidden lg:block py-20"}>
+        <div className="gap-8 columns-3 mx-10">
+          <div className={"flex justify-center py-5"}>
+            <Image src={"/logos/BMO.png"} alt={"image"} width={300} height={300}></Image>
+          </div>
+          <div className={"flex justify-center py-5"}>
+            <Image src={"/logos/FordTeams.png"} alt={"image"} width={300} height={300}></Image>
+          </div>
+          <div className={"flex justify-center py-5"}>
+            <Image src={"/logos/AirProducts.png"} alt={"image"} width={300} height={300}></Image>
+          </div>
+          <div className={"flex justify-center py-5"}>
+            <Image src={"/logos/Chevron.png"} alt={"image"} width={300} height={300}></Image>
+          </div>
+          <div className={"flex justify-center py-5"}>
+            <Image src={"/logos/Regent.png"} alt={"image"} width={300} height={300}></Image>
+          </div>
+          <div className={"flex justify-center py-5"}>
+            <Image src={"/logos/F1.png"} alt={"image"} width={300} height={300}></Image>
+          </div>
+          <div className={"flex justify-center py-5"}>
+            <Image src={"/logos/Ingals.png"} alt={"image"} width={300} height={300}></Image>
+          </div>
+          <div className={"flex justify-center py-5"}>
+            <Image src={"/logos/SpaceX.png"} alt={"image"} width={300} height={300}></Image>
+          </div>
+          <div className={"flex justify-center py-5"}>
+            <Image src={"/logos/T&C.png"} alt={"image"} width={300} height={300}></Image>
+          </div>
+          <div className={"flex justify-center py-5"}>
+            <Image src={"/logos/Arc.png"} alt={"image"} width={300} height={300}></Image>
+          </div>
+          <div className={"flex justify-center py-5"}>
+            <Image src={"/logos/Rivian.png"} alt={"image"} width={300} height={300}></Image>
+          </div>
+          <div className={"flex justify-center py-5"}>
+            <Image src={"/logos/Hec.png"} alt={"image"} width={300} height={300}></Image>
+          </div>
+          <div className={"flex justify-center py-5"}>
+            <Image src={"/logos/GMTeams.png"} alt={"image"} width={300} height={300}></Image>
+          </div>
+          <div className={"flex justify-center py-5"}>
+            <Image src={"/logos/Dolphins.png"} alt={"image"} width={300} height={300}></Image>
+          </div>
+          <div className={"flex justify-center py-5"}>
+            <Image src={"/logos/SafeWay.png"} alt={"image"} width={300} height={300}></Image>
+          </div>
         </div>
+      </div>
       </>
     )
   }
