@@ -1,6 +1,7 @@
 import './globals.css'
 import { Nunito } from 'next/font/google'
 import Navbar from './Components/Navbar/navbar'
+import Header from './Components/Header'
 import Footer from './Components/Footer/footer'
 
 export const metadata = {
@@ -16,9 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="bg-opacity-70 text-white py-2 px-4 absolute w-full top-0 z-10">
-          <Navbar />
-        </div>
+        <Header></Header>
         {children}
         <Footer></Footer>
         </body>
