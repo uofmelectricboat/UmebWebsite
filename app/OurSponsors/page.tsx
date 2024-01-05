@@ -126,7 +126,7 @@ export default function Home() {
                         Thank you to our Sponsors!
                     </h1>
                 </div>
-                <div className="text-center p-10">
+                <div className="text-center p-10 bg-[url('/images/OurSponsorsBG.png')] bg-repeat">
                     <h1 className="text-6xl font-bold">Sunlight Zone Sponsors</h1>
                     <div>
                         {sunlightSponsors.map((sponsor: { text: any; name: any; zone: any; image: any; learnMore: any; }, index: any) => (

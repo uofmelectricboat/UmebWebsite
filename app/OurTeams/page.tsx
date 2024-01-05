@@ -1,10 +1,11 @@
 "use client";
 
-import  CustomCarousel  from "../Components/TeamsCarousel";
 import LeaderShip from "../Components/Leadership";
 import TeamLeader from "../Components/TeamLeader";
 import TitlePhoto from "@/app/Components/TitlePhoto";
 import Image from "next/image"
+import { Button } from "flowbite-react"
+
 
 const officers = [{
   title: "CAPTAIN",
@@ -75,11 +76,80 @@ export default function Home() {
   var images = ["/images/cadence.png", "/images/Ford.png", "/images/OurBoats.png"]
     return (
       <>
-        <TitlePhoto title={titleText} image={titlePhoto}/>
-      <div className="w-full h-full">
-        <CustomCarousel/>
+      <TitlePhoto title={titleText} image={titlePhoto}/>
+      <div className="w-full bg-gray-400">
+        <div className={"w-full flex sm:flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
+          <div className={"w-1/4 relative sm:order-last md:order-first"}>
+            <img src={"/images/OurRacesGraphic.png"} alt={"Image Not Found"} className={"object-scale-down"}></img>
+          </div>
+          <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
+            <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
+              Mechanical
+            </h1>
+            <p className={"text-xs lg:text-lg text-white md:text-base sm:text-xs tracking-tight leading-tight"}>
+              The UMEB Mechanical Team is responsible for the component-level design, manufacturing, testing, and validation of all structural, drivetrain, and safety systems on the boat. Additionally, the mechanical team works closely with electrical team leadership to make system-level decisions on the design of the boat and assures all systems on the boat operate cohesively. On top of working on and designing the boat, the mechanical team will focus extensively on the growth of the overall team's CAD and manufacturing capabilities.
+            </p>
+            <div className={"py-2"}>
+              <Button gradientDuoTone={"purpleToPink"} outline >Join the Mechanical Team!</Button>
+            </div>
+          </div>
+        </div>
       </div>
-      <h1 className="font-bold text-5xl py-5 flex items-center justify-center"> Meet Our LeaderShip Team </h1>
+      <div className="w-full bg-slate-500">
+        <div className={"w-full flex sm:flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
+          <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
+            <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
+              Electrical
+            </h1>
+            <p className={"text-xs lg:text-lg text-white md:text-base sm:text-xs tracking-tight leading-tight"}>
+              The UMEB Mechanical Team is responsible for the component-level design, manufacturing, testing, and validation of all structural, drivetrain, and safety systems on the boat. Additionally, the mechanical team works closely with electrical team leadership to make system-level decisions on the design of the boat and assures all systems on the boat operate cohesively. On top of working on and designing the boat, the mechanical team will focus extensively on the growth of the overall team's CAD and manufacturing capabilities.
+            </p>
+            <div className={"py-2"}>
+              <Button gradientDuoTone={"purpleToPink"} outline >Join the Electrical Team!</Button>
+            </div>
+          </div>
+          <div className={"w-1/4 relative"}>
+            <img src={"/images/OurRacesGraphic.png"} alt={"Image Not Found"} className={"object-scale-down"}></img>
+          </div>
+        </div>
+      </div>
+      <div className="w-full bg-gray-400">
+        <div className={"w-full flex sm:flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
+          <div className={"w-1/4 relative sm:order-last md:order-first"}>
+            <img src={"/images/OurRacesGraphic.png"} alt={"Image Not Found"} className={"object-scale-down"}></img>
+          </div>
+          <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
+            <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
+              Operations
+            </h1>
+            <p className={"text-xs lg:text-lg text-white md:text-base sm:text-xs tracking-tight leading-tight"}>
+              The Operations Subteam is responsible for managing the logistical demands of the Michigan Electric Boat Team, including the maintenance of the Wilson Center workspace(s), organization and design reviews, and communication with competition(s) and competition sponsors. Additionally, the subteam handles the standard operating procedures and safety procedures with the Manufacturing Coordinator to promote a productive and efficient working environment. Lastly, the Operations Subteam manages the general recruitment, logistics, and communications within the team.
+            </p>
+            <div className={"py-2"}>
+              <Button gradientDuoTone={"purpleToPink"} outline >Join the Operations Team!</Button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-full bg-slate-500">
+        <div className={"w-full flex sm:flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
+          <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
+            <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
+              Business
+            </h1>
+            <p className={"text-xs lg:text-lg text-white md:text-base sm:text-xs tracking-tight leading-tight"}>
+              UMEB’s business team is responsible for supporting our engineers in all other tasks ranging from sponsor relations to marketing the team on various platforms. We strive to prevent our engineers from lacking any resources that would limit their innovation. Each year, we raise tens of thousands of dollars in order to build the fastest boat possible.
+            </p>
+            <div className={"py-2"}>
+              <Button gradientDuoTone={"purpleToPink"} outline >Join the Electrical Team!</Button>
+            </div>
+          </div>
+          <div className={"w-1/4 relative"}>
+            <img src={"/images/OurRacesGraphic.png"} alt={"Image Not Found"} className={"object-scale-down"}></img>
+          </div>
+        </div>
+      </div>
+      <h1 className="font-bold lg:text-5xl md:text-2xl sm:text-xl py-5 flex items-center justify-center"> Meet Our LeaderShip Team </h1>
       <div className="p-10">
         {officers.map((leader: { title: any; name: any; bio: any; image: any; info: any; }, index: any) => (
           <LeaderShip

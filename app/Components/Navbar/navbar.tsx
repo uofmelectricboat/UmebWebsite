@@ -59,7 +59,7 @@ const Navbar = () => {
                         <Link href={"/Media"} className="text-2xl font-bold relative animated-underline"> Media </Link>
                         <DropDown title={"Sponsors"} options={Sponsors}/>
                         <DropDown title={"Contact"} options={Contact}/>
-                        <Button gradientDuoTone={"purpleToPink"}>Donate</Button>
+                        <Button outline gradientDuoTone={"purpleToPink"}>Donate</Button>
                     </div>
                 </div>
                 <div className={"md:hidden flex justify-center px-5 items-center"}>
