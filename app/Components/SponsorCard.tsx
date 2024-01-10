@@ -14,8 +14,8 @@ interface SponsorCardProps {
 const SponsorCard: React.FC<SponsorCardProps> = ({ zone, name, learnMore, image, text, index }) => {
     const changeSides = index % 2 === 0;
 
-    const containerClass = changeSides ? 'flex lg:flex-row sm:flex-col relative relative border-2 border-gray-300 bg-slate-100 p-4 transition-transform transform hover:scale-105 rounded-lg' : 'flex lg:flex-row sm:flex-col relative flex-row-reverse relative border-2 border-gray-300 bg-slate-100 p-4 transition-transform transform hover:scale-105 rounded-lg';
-    const buttonClass = changeSides ? 'flex relative flex-row-reverse' : 'flex relative';
+    const containerClass = changeSides ? 'flex lg:flex-row sm:flex-col relative relative shadow-lg bg-white p-4 transition-transform transform hover:scale-105 rounded-lg' : 'flex lg:flex-row sm:flex-col relative flex-row-reverse relative shadow-lg bg-white p-4 transition-transform transform hover:scale-105 rounded-lg';
+    const buttonClass = 'flex relative justify-end';
     var imageBackground;
     if(zone == "SUNLIGHT ZONE") {
         imageBackground = "/images/SunlightZoneBg.png"
@@ -25,7 +25,7 @@ const SponsorCard: React.FC<SponsorCardProps> = ({ zone, name, learnMore, image,
 
     return (
         <>
-            <div className="lg:px-20 md:px-10 sm:px-5 p-2">
+            <div className="lg:px-20 md:px-10 sm:px-5 py-5">
                 <div className={containerClass}>
                     <div className="lg:w-1/6 hidden lg:block relative">
                         <div className="absolute inset-0 flex justify-center items-center">
@@ -45,7 +45,7 @@ const SponsorCard: React.FC<SponsorCardProps> = ({ zone, name, learnMore, image,
                     </div>
                     <div className="lg:w-5/6 w-full text-left lg:px-20 md:px-10 sm:px-5 px-2">
                         <div>
-                            <h2 className="text-4xl font-bold">
+                            <h2 className="lg:text-4xl text-2xl font-bold">
                                 {name}
                             </h2>
                         </div>

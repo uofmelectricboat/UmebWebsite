@@ -77,80 +77,80 @@ export default function Home() {
     return (
       <>
       <TitlePhoto title={titleText} image={titlePhoto}/>
-      <div className="w-full bg-gray-400">
-        <div className={"w-full flex sm:flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
-          <div className={"w-1/4 relative sm:order-last md:order-first"}>
+      <div className="w-full bg-stone-100">
+        <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
+          <div className={"w-1/4 relative order-last md:order-first"}>
             <img src={"/images/OurRacesGraphic.png"} alt={"Image Not Found"} className={"object-scale-down"}></img>
           </div>
           <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
             <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
               Mechanical
             </h1>
-            <p className={"text-xs lg:text-lg text-white md:text-base sm:text-xs tracking-tight leading-tight"}>
+            <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight"}>
               The UMEB Mechanical Team is responsible for the component-level design, manufacturing, testing, and validation of all structural, drivetrain, and safety systems on the boat. Additionally, the mechanical team works closely with electrical team leadership to make system-level decisions on the design of the boat and assures all systems on the boat operate cohesively. On top of working on and designing the boat, the mechanical team will focus extensively on the growth of the overall team's CAD and manufacturing capabilities.
             </p>
-            <div className={"py-2"}>
-              <Button gradientDuoTone={"purpleToPink"} outline >Join the Mechanical Team!</Button>
+            <div className={"py-2 flex md:justify-end justify-center"}>
+              <Button gradientDuoTone={"purpleToPink"} outline className={""}>Join the Mechanical Team!</Button>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full bg-slate-500">
-        <div className={"w-full flex sm:flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
+      <div className="w-full bg-white">
+        <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
           <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
             <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
               Electrical
             </h1>
-            <p className={"text-xs lg:text-lg text-white md:text-base sm:text-xs tracking-tight leading-tight"}>
+            <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight"}>
               The UMEB Mechanical Team is responsible for the component-level design, manufacturing, testing, and validation of all structural, drivetrain, and safety systems on the boat. Additionally, the mechanical team works closely with electrical team leadership to make system-level decisions on the design of the boat and assures all systems on the boat operate cohesively. On top of working on and designing the boat, the mechanical team will focus extensively on the growth of the overall team's CAD and manufacturing capabilities.
             </p>
             <div className={"py-2"}>
               <Button gradientDuoTone={"purpleToPink"} outline >Join the Electrical Team!</Button>
             </div>
           </div>
-          <div className={"w-1/4 relative"}>
+          <div className={"w-1/4 relative flex md:justify-end justify-center"}>
             <img src={"/images/OurRacesGraphic.png"} alt={"Image Not Found"} className={"object-scale-down"}></img>
           </div>
         </div>
       </div>
-      <div className="w-full bg-gray-400">
-        <div className={"w-full flex sm:flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
-          <div className={"w-1/4 relative sm:order-last md:order-first"}>
+      <div className="w-full bg-stone-100">
+        <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
+          <div className={"w-1/4 relative order-last md:order-first"}>
             <img src={"/images/OurRacesGraphic.png"} alt={"Image Not Found"} className={"object-scale-down"}></img>
           </div>
           <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
             <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
               Operations
             </h1>
-            <p className={"text-xs lg:text-lg text-white md:text-base sm:text-xs tracking-tight leading-tight"}>
+            <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight"}>
               The Operations Subteam is responsible for managing the logistical demands of the Michigan Electric Boat Team, including the maintenance of the Wilson Center workspace(s), organization and design reviews, and communication with competition(s) and competition sponsors. Additionally, the subteam handles the standard operating procedures and safety procedures with the Manufacturing Coordinator to promote a productive and efficient working environment. Lastly, the Operations Subteam manages the general recruitment, logistics, and communications within the team.
             </p>
-            <div className={"py-2"}>
-              <Button gradientDuoTone={"purpleToPink"} outline >Join the Operations Team!</Button>
+            <div className={"py-2 flex md:justify-end justify-center"}>
+              <Button gradientDuoTone={"purpleToPink"} outline>Join the Operations Team!</Button>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full bg-slate-500">
-        <div className={"w-full flex sm:flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
+      <div className="w-full bg-white">
+        <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
           <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
             <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
               Business
             </h1>
-            <p className={"text-xs lg:text-lg text-white md:text-base sm:text-xs tracking-tight leading-tight"}>
+            <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight"}>
               UMEB’s business team is responsible for supporting our engineers in all other tasks ranging from sponsor relations to marketing the team on various platforms. We strive to prevent our engineers from lacking any resources that would limit their innovation. Each year, we raise tens of thousands of dollars in order to build the fastest boat possible.
             </p>
             <div className={"py-2"}>
               <Button gradientDuoTone={"purpleToPink"} outline >Join the Electrical Team!</Button>
             </div>
           </div>
-          <div className={"w-1/4 relative"}>
+          <div className={"w-1/4 relative flex md:justify-end justify-center"}>
             <img src={"/images/OurRacesGraphic.png"} alt={"Image Not Found"} className={"object-scale-down"}></img>
           </div>
         </div>
       </div>
-      <h1 className="font-bold lg:text-5xl md:text-2xl sm:text-xl py-5 flex items-center justify-center"> Meet Our LeaderShip Team </h1>
-      <div className="p-10">
+      <h1 className="font-bold lg:text-5xl md:text-2xl sm:text-xl py-5 flex items-center justify-center bg-stone-100"> Meet Our LeaderShip Team </h1>
+      <div className="p-10 bg-stone-100">
         {officers.map((leader: { title: any; name: any; bio: any; image: any; info: any; }, index: any) => (
           <LeaderShip
             key={index}
@@ -162,7 +162,7 @@ export default function Home() {
           />
         ))}
       </div>
-      <div className="columns-xs sm:columns-1 md:columns-2 lg:columns-2 gap-5">
+      <div className="columns-xs sm:columns-1 md:columns-2 lg:columns-2 gap-5 bg-stone-100">
         {teamleaders.map((leader: any, index: any) => (
           <TeamLeader
             key={index}
@@ -174,8 +174,8 @@ export default function Home() {
           />
         ))}
       </div>
-      <h1 className="font-bold text-5xl py-5 flex items-center justify-center pt-10"> Meet Our Consultants </h1>
-      <div className="columns-xs lg:columns-3 sm:columns-1 gap-5">
+      <h1 className="font-bold text-5xl py-5 flex items-center justify-center pt-10 bg-stone-100"> Meet Our Consultants </h1>
+      <div className="columns-xs lg:columns-3 sm:columns-1 gap-5 bg-stone-100 text-blue-950">
         {consultants.map((leader: any, index: any) => (
           <TeamLeader
             key={index}
@@ -187,12 +187,12 @@ export default function Home() {
           />
         ))}
       </div>
-      <h1 className="font-bold text-5xl pt-20 py-5 flex items-center justify-center"> Our Alumni </h1>
-      <div className="flex flex-col justify-center items-center">
-      <p className="text-center max-w-prose text-2xl leading-relaxed tracking-wider">These are only some of the prestigious firms that UMEB alumni have gone on to work for after graduation. UMEB members have pursued career opportunities across a diverse array of industries including naval architecture, automotive, aerospace, investment banking, consulting, and many more. UMEB has an extensive network and mentorship opportunities for students across all majors and passions.</p>
+      <h1 className="font-bold text-5xl pt-20 py-5 flex items-center justify-center bg-stone-100"> Our Alumni </h1>
+      <div className="flex flex-col justify-center items-center bg-stone-100">
+        <p className="text-center max-w-prose text-2xl leading-relaxed tracking-wider">These are only some of the prestigious firms that UMEB alumni have gone on to work for after graduation. UMEB members have pursued career opportunities across a diverse array of industries including naval architecture, automotive, aerospace, investment banking, consulting, and many more. UMEB has an extensive network and mentorship opportunities for students across all majors and passions.</p>
 
       </div>
-      <div className={"hidden lg:block py-20"}>
+      <div className={"hidden lg:block py-20 bg-stone-100"}>
         <div className="gap-8 columns-3 mx-10">
           <div className={"flex justify-center py-5"}>
             <Image src={"/logos/BMO.png"} alt={"image"} width={300} height={300}></Image>

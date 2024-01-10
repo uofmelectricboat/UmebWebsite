@@ -1,5 +1,7 @@
+"use client";
 import SponsorCard from "@/app/Components/SponsorCard";
-import Image from "next/image";
+import { Button } from "flowbite-react";
+
 
 const sunlightSponsors = [{
     text: "The Michigan College of Engineering strives to anticipate the changes ahead and provide scientific and technological leadership - for the common good. Michigan Engineering is home to top-ranked departments that collaborate within the nation's number one public research institution - The University of Michigan.",
@@ -113,21 +115,31 @@ export default function Home() {
             <div className="relative">
                 <img src="/images/OurSponsors.png" className="w-full h-screen object-cover" alt="Sponsors" />
                 <div className="absolute inset-0 flex items-center justify-center bg-blue-800 opacity-30" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                    <h1 className="text-white text-6xl font-bold">Our Sponsors</h1>
-                    <button className="mt-4 px-6 py-3 bg-blue-500 text-white rounded-lg">Sponsor Us</button>
-                {/*    TODO: Make this button the button that makes more sense*/}
+                <div className="absolute inset-0 flex flex-col items-center justify-center space-y-2">
+                    <h1 className="text-white lg:text-6xl text-4xl font-bold">Our Sponsors</h1>
+                    <Button gradientDuoTone={"purpleToPink"} outline>Sponsor Us</Button>
                 </div>
             </div>
+            <div className={"bg-[url('/images/OurSponsorsBG.png')] bg-repeat tracking-wide"}>
             <div>
                 {/*<Image src="/images/OurSponsorsBG.png" alt="bg" fill={true}/>*/}
-                <div className="p-14">
-                    <h1 className="text-6xl text-center font-bold">
+                <div className="flex flex-col py-5">
+                    <h1 className="lg:text-6xl text-4xl text-center font-bold">
                         Thank you to our Sponsors!
                     </h1>
+                    <div className={"flex flex-col lg:flex-row py-10"}>
+                        <div className={"lg:w-1/2 w-full px-10 pb-10 lg:pb-0"}>
+                            <img src={"/images/SponsorThankYou.png"} alt={"something"} className={""}></img>
+                        </div>
+                        <div className={"lg:w-1/2 w-full px-10"}>
+                            <p className={"text-normal lg:text-xl"}>
+                                The University of Michigan Electric Boat team was founded in 2020, yet we have already placed 2nd in the national PEP competition. Such a feat was only possible due to the hard work of our members as well as the generous contributions of current sponsors. We have only just begun our journey and are looking for corporate and private partners to help build our organization together.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div className="text-center p-10 bg-[url('/images/OurSponsorsBG.png')] bg-repeat">
-                    <h1 className="text-6xl font-bold">Sunlight Zone Sponsors</h1>
+                <div className="text-center p-10">
+                    <h1 className="lg:text-6xl text-4xl  font-bold">Sunlight Zone Sponsors</h1>
                     <div>
                         {sunlightSponsors.map((sponsor: { text: any; name: any; zone: any; image: any; learnMore: any; }, index: any) => (
                             <SponsorCard
@@ -143,7 +155,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="text-center p-10">
-                    <h1 className="text-6xl font-bold">Twilight Zone Sponsors</h1>
+                    <h1 className="lg:text-6xl text-4xl  font-bold">Twilight Zone Sponsors</h1>
                     <div>
                         {twilightSponsors.map((sponsor: { text: any; name: any; zone: any; image: any; learnMore: any; }, index: any) => (
                             <SponsorCard
@@ -159,7 +171,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="text-center p-10">
-                    <h1 className="text-6xl font-bold"> Midnight Zone Sponsors </h1>
+                    <h1 className="lg:text-6xl text-4xl  font-bold"> Midnight Zone Sponsors </h1>
                     <div>
 
                     </div>
@@ -167,24 +179,25 @@ export default function Home() {
 
 
                 <div className="text-center p-10">
-                    <h1 className="text-6xl font-bold"> Hadal Zone Sponsors </h1>
+                    <h1 className="lg:text-6xl text-4xl  font-bold"> Hadal Zone Sponsors </h1>
                     <div>
 
                     </div>
                 </div>
-                <div className="flex p-20">
-                    <div className="w-1/3 px-40">
-                        <h1 className="text-6xl font-bold text-right">
+                <div className="flex lg:flex-row flex-col">
+                    <div className="lg:w-1/3 w-full p-2">
+                        <h1 className="lg:text-4xl text-2xl font-bold lg:text-right text-center">
                             Become A Sponsor
                         </h1>
                     </div>
-                    <div className="w-2/3 px-40">
-                        <p className="text-2xl text-left">
+                    <div className="lg:w-2/3 w-full lg:px-40 py-2 px-5">
+                        <p className="lg:text-xl lg:text-left text-center">
                             UM Electric Boat was founded with a commitment to testing alternative, cleaner forms of energy in the maritime industry. As such, we partner with organizations that believe in our mission and want to invest in new naval technologies.
                         </p>
                     </div>
                 </div>
             </div>
+        </div>
         </>
     );
   }
