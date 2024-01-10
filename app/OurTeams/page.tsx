@@ -87,7 +87,7 @@ export default function Home() {
               Mechanical
             </h1>
             <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight"}>
-              The UMEB Mechanical Team is responsible for the component-level design, manufacturing, testing, and validation of all structural, drivetrain, and safety systems on the boat. Additionally, the mechanical team works closely with electrical team leadership to make system-level decisions on the design of the boat and assures all systems on the boat operate cohesively. On top of working on and designing the boat, the mechanical team will focus extensively on the growth of the overall team's CAD and manufacturing capabilities.
+              The UMEB Mechanical Team is responsible for the component-level design, manufacturing, testing, and validation of all structural, drivetrain, and safety systems on the boat. Additionally, the mechanical team works closely with electrical team leadership to make system-level decisions on the design of the boat and assures all systems on the boat operate cohesively. On top of working on and designing the boat, the mechanical team will focus extensively on the growth of the overall team`&lsquo;`s CAD and manufacturing capabilities.
             </p>
             <div className={"py-2 flex md:justify-end justify-center"}>
               <Button gradientDuoTone={"purpleToPink"} outline className={""}>Join the Mechanical Team!</Button>
@@ -102,7 +102,7 @@ export default function Home() {
               Electrical
             </h1>
             <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight"}>
-              The UMEB Mechanical Team is responsible for the component-level design, manufacturing, testing, and validation of all structural, drivetrain, and safety systems on the boat. Additionally, the mechanical team works closely with electrical team leadership to make system-level decisions on the design of the boat and assures all systems on the boat operate cohesively. On top of working on and designing the boat, the mechanical team will focus extensively on the growth of the overall team's CAD and manufacturing capabilities.
+              The UMEB Mechanical Team is responsible for the component-level design, manufacturing, testing, and validation of all structural, drivetrain, and safety systems on the boat. Additionally, the mechanical team works closely with electrical team leadership to make system-level decisions on the design of the boat and assures all systems on the boat operate cohesively. On top of working on and designing the boat, the mechanical team will focus extensively on the growth of the overall team`&lsquo;`s CAD and manufacturing capabilities.
             </p>
             <div className={"py-2"}>
               <Button gradientDuoTone={"purpleToPink"} outline >Join the Electrical Team!</Button>

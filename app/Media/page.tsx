@@ -8,4 +8,4 @@ export default function Home() {
             <TitlePhoto title={titleText} image={titlePhoto}/>
         </>
     )
-  }
+}
