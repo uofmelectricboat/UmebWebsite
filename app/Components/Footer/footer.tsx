@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
                         Help turn our future Electric!
                     </h1>
                 </div>
-                <div className={"w-full md:w-2/3 flex lg:justify-end justify-center space-x-2 items-center"}>
+                <div className={"w-full lg:w-2/3 flex lg:justify-end justify-center space-x-2 items-center"}>
                     <Button gradientDuoTone={"purpleToPink"} outline pill> Donate </Button>
                     <Button gradientDuoTone={"purpleToPink"} outline pill> Sponsor Us </Button>
                     <Button gradientDuoTone={"purpleToPink"} outline pill> Join Us </Button>
