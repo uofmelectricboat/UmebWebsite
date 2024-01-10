@@ -37,43 +37,43 @@ const HomeCarousel: React.FC<CustomCarouselProps> = () => {
     return (
             <Carousel slideInterval={5000}>
                 <div className="w-full h-full">
-                    <Image src={carouselInfo[0].image} alt="temp" fill={true}/>
+                    <Image src={carouselInfo[0].image} alt="temp" fill={true} className={"object-cover"}/>
                     <div className="absolute inset-0 bg-black opacity-40"></div>
                     <div className="absolute top-8 left-10 py-3">
-                        <h2 className="text-4xl font-bold text-white">{carouselInfo[0].title}</h2>
+                        <h2 className="md:text-4xl text-2xl lg:text-left text-center font-bold text-white">{carouselInfo[0].title}</h2>
                     </div>
-                    <div className="absolute inset-0 flex flex-col justify-center items-center px-80">
-                        <p className="text-center text-2xl text-white">{carouselInfo[0].text}</p>
+                    <div className="absolute inset-0 flex flex-col justify-center items-center lg:px-80 md:px-20 px-2">
+                        <p className="text-center md:text-2xl text-xl text-white">{carouselInfo[0].text}</p>
                     </div>
                 </div>
                 <div className="w-full h-full">
-                    <Image src={carouselInfo[1].image} alt="temp" fill={true}/>
+                    <Image src={carouselInfo[1].image} alt="temp" fill={true} className={"object-cover"}/>
                     <div className="absolute inset-0 bg-black opacity-40"></div>
                     <div className="absolute top-8 left-10 py-3">
-                        <h2 className="text-4xl font-bold text-white">{carouselInfo[1].title}</h2>
+                        <h2 className="md:text-4xl text-2xl font-bold lg:text-left text-center text-white">{carouselInfo[1].title}</h2>
                     </div>
-                    <div className="absolute inset-0 flex flex-col justify-center items-center px-80">
-                        <p className="text-center text-2xl text-white">{carouselInfo[1].text}</p>
+                    <div className="absolute inset-0 flex flex-col justify-center items-center lg:px-80 md:px-20 px-2">
+                        <p className="text-center md:text-2xl text-xl text-white">{carouselInfo[1].text}</p>
                     </div>
                 </div>
                 <div className="w-full h-full">
-                    <Image src={carouselInfo[2].image} alt="temp" fill={true}/>
+                    <Image src={carouselInfo[2].image} alt="temp" fill={true} className={"object-cover"}/>
                     <div className="absolute inset-0 bg-black opacity-40"></div>
                     <div className="absolute top-8 left-10 py-3">
-                        <h2 className="text-4xl font-bold text-white">{carouselInfo[2].title}</h2>
+                        <h2 className="md:text-4xl text-2xl lg:text-left text-center font-bold text-white">{carouselInfo[2].title}</h2>
                     </div>
-                    <div className="absolute inset-0 flex flex-col justify-center items-center px-80">
-                        <p className="text-center text-2xl text-white">{carouselInfo[2].text}</p>
+                    <div className="absolute inset-0 flex flex-col justify-center items-center lg:px-80 md:px-20 px-2">
+                        <p className="text-center md:text-2xl text-xl text-white">{carouselInfo[2].text}</p>
                     </div>
                 </div>
                 <div className="w-full h-full">
-                    <Image src={carouselInfo[3].image} alt="temp" fill={true}/>
+                    <Image src={carouselInfo[3].image} alt="temp" fill={true} className={"object-cover"}/>
                     <div className="absolute inset-0 bg-black opacity-40"></div>
                     <div className="absolute top-8 left-10 py-3">
-                        <h2 className="text-4xl font-bold text-white">{carouselInfo[3].title}</h2>
+                        <h2 className="md:text-4xl text-2xl lg:text-left text-center font-bold text-white">{carouselInfo[3].title}</h2>
                     </div>
-                    <div className="absolute inset-0 flex flex-col justify-center items-center px-80">
-                        <p className="text-center text-2xl text-white">{carouselInfo[3].text}</p>
+                    <div className="absolute inset-0 flex flex-col justify-center items-center lg:px-80 md:px-20 px-2">
+                        <p className="text-center md:text-2xl text-xl text-white">{carouselInfo[3].text}</p>
                     </div>
                 </div>
             </Carousel>
