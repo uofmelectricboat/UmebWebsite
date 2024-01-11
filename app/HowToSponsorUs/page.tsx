@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import TitlePhoto from "@/app/Components/TitlePhoto";
 import EmailForm from "@/app/Components/EmailForm";
+import {Button} from "flowbite-react"
 
 
 const HowToSponsor = [{
@@ -9,7 +11,7 @@ const HowToSponsor = [{
     text: "Read Sponsor Packet and complete our contact form (or email electricboat@umich.edu)"
 }, {
     image: "/Icons/Clock.png",
-    title: "First Steps",
+    title: "Wait For Response",
     text: "Our leadership team will reach out in 48-72 hours"
 }, {
     image: "/Icons/Handshake.png",
@@ -25,61 +27,63 @@ export default function Home() {
     return (
     <>
         <TitlePhoto title={titleText} image={titlePhoto}/>
-        <div className="flex py-10 relative w-full">
-            <div className="w-1/2">
+        <div className="flex relative w-full">
+            <div className="w-1/2 lg:block hidden">
                 <img src="/images/HowToBecomeASponsorImg.png" alt="image" className="w-full"/>
             </div>
-            <div className="w-1/2 px-10">
-                <h1 className="font-bold text-6xl">
+            <div className="lg:w-1/2 w-full px-10">
+                <h1 className="font-bold lg:text-4xl md:text-2xl text-xl lg:text-left text-center pt-10">
                     Welcome Prospective Sponsor!
                 </h1>
-                <p className="text-4xl py-10">
-                    Over the course of our short history, our team has had dozens of corporate, public, and private sponsors. Our partnerships have ranged from Fortune 500 companies to small, Michigan-based corporations. We welcome any cash or in-kind donations.
-                </p>
-                <p className="text-4xl py-10">
-                    In-kind donations have included machining/assembly assistance, non-engineering donations (apparel, sport drinks, water bottles, etc.), material donations (metal, parts, etc.), and much more!
-                </p>
-                <p className="text-4xl py-10">
-                    If you think you or your company could help us grow and continue to make new waves in the field of naval engineering, please reach out! We would love to hear from you and will respond within 24 hours.
-                </p>
-                <p className="text-4xl py-10">
-                    We would love to have you aboard!
-                </p>
+                <div className="lg:text-2xl md:text-lg py-10 leading-loose tracking-widest space-y-8">
+                    <p>
+                        Over the course of our short history, our team has had dozens of corporate, public, and private sponsors. Our partnerships have ranged from Fortune 500 companies to small, Michigan-based corporations. We welcome any cash or in-kind donations.
+                    </p>
+                    <p>
+                        In-kind donations have included machining/assembly assistance, non-engineering donations (apparel, sport drinks, water bottles, etc.), material donations (metal, parts, etc.), and much more!
+                    </p>
+                    <p>
+                        If you think you or your company could help us grow and continue to make new waves in the field of naval engineering, please reach out! We would love to hear from you and will respond within 24 hours.
+                    </p>
+                    <p>
+                        We would love to have you aboard!
+                    </p>
+                </div>
             </div>
         </div>
-        <div className="bg-blue-950 relative flex w-full">
+        <div className="bg-blue-950 relative flex lg:flex-row flex-col w-full">
             {HowToSponsor.map((info: { text: any; title: any; image: any; }, index: number) => (
-                <div key={index} className="w-1/3 text-center px-20 py-20">
+                <div key={index} className="lg:w-1/3 w-full text-center lg:px-20 md:px-10 px-6 lg:py-20 md:py-10 py-5">
                     <Image src={info.image} alt="img" width={125} height={125} className="mx-auto" />
-                    <h1 className="text-4xl text-yellow-500 font-bold py-10">
+                    <h1 className="lg:text-4xl md:text-2xl text-xl text-yellow-500 font-bold lg:py-10 md:py-4 py-2">
                         {info.title}
                     </h1>
-                    <p className="text-2xl text-white py-10">
+                    <p className="lg:text-2xl md:text-lg text-white lg:py-10 md:py-4 py-2">
                         {info.text}
                     </p>
                 </div>
             ))}
         </div>
         <div className="relative w-full">
-            <Image src={SponsorPackageImg} alt="image" className="p-10" height={800} width={2000}></Image>
-            <div className="flex pb-10 justify-center">
-                <div className="w-1/2 flex justify-center items-center">
-                    <button className="bg-gray-300 text-black py-2 px-4 rounded font-bold text-2xl w-400">
+            <Image src={SponsorPackageImg} alt="image" className="md:p-10" height={800} width={2000}></Image>
+            <div className="flex md:flex-row flex-col md:py-10 py-5 justify-center space-y-5">
+                <div className="md:w-1/2 w-full flex justify-center items-center">
+                    <Button gradientDuoTone={"purpleToPink"} outline>
                         Download our Sponsorship Packet
-                    </button>
+                    </Button>
                 </div>
-                <div className="w-1/2 flex justify-center items-center">
-                    <button className="bg-gray-300 text-black py-2 px-4 rounded font-bold text-2xl w-400">
+                <div className="md:w-1/2 w-full flex justify-center items-center">
+                    <Button gradientDuoTone={"purpleToPink"} outline>
                         Contact Us!
-                    </button>
+                    </Button>
                 </div>
             </div>
         </div>
-        <div className="relative w-full pt-20">
-            <h1 className="text-6xl font-bold text-center">
+        <div className="relative w-full lg:py-20 py-10 space-y-10">
+            <h1 className="lg:text-6xl md:text-4xl text-2xl font-bold text-center">
                 Become a Sponsor!
             </h1>
-            <div className="mx-auto w-1/2 py-10">
+            <div className="mx-auto w-full lg:w-1/2 px-10">
                 <EmailForm/>
             </div>
         </div>
