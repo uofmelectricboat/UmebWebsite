@@ -13,7 +13,7 @@ const TitlePhoto: React.FC<TitlePhotoProps> = ({ title, image}) => {
             <Image src={image} alt={"title photo"} fill={true} className={"object-cover"}></Image>
             <div className="absolute inset-0 bg-blue-800 opacity-40"></div>
             <div className="absolute inset-0 flex flex-col items-center justify-center">
-                <h1 className="text-white text-6xl font-bold">{title}</h1>
+                <h1 className="text-white lg:text-6xl md:text-4xl text-2xl font-bold">{title}</h1>
             </div>
         </div>
     );

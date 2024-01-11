@@ -1,6 +1,7 @@
 "use client";
 import SponsorCard from "@/app/Components/SponsorCard";
 import { Button } from "flowbite-react";
+import Image from "next/image";
 
 
 const sunlightSponsors = [{
@@ -109,6 +110,43 @@ const twilightSponsors = [{
     learnMore: "",
 }]
 
+const midnightZone = [{
+    url: "/sponsors/UmichMechE.png",
+},{
+    url: "/sponsors/UmichECSG.png",
+},{
+    url: "/sponsors/UmichCE.png",
+},{
+    url: "/sponsors/GM.png",
+},{
+    url: "/sponsors/Tekton.png",
+},{
+    url: "/sponsors/UltraMotion.png",
+},{
+    url: "/sponsors/Phase3.png",
+},{
+    url: "/sponsors/KleanKanteen.png",
+},{
+    url: "/sponsors/BlackVeatch.png",
+}]
+
+const hadalZone = [{
+    url: "/sponsors/UmichCSG.png",
+},{
+    url: "/sponsors/UmichCSE.png",
+},{
+    url: "/sponsors/Kvaser.png",
+},{
+    url: "/sponsors/RedBull.png",
+},{
+    url: "/sponsors/Celcius.png",
+},{
+    url: "/sponsors/BoeShield.png",
+},{
+    url: "/sponsors/Axiomatic.png",
+}]
+
+
 export default function Home() {
     return (
         <>
@@ -128,10 +166,10 @@ export default function Home() {
                         Thank you to our Sponsors!
                     </h1>
                     <div className={"flex flex-col lg:flex-row py-10"}>
-                        <div className={"lg:w-1/2 w-full px-10 pb-10 lg:pb-0"}>
+                        <div className={"lg:w-1/2 w-full pl-10 pr-2 pb-10 lg:pb-0"}>
                             <img src={"/images/SponsorThankYou.png"} alt={"something"} className={""}></img>
                         </div>
-                        <div className={"lg:w-1/2 w-full px-10"}>
+                        <div className={"lg:w-1/2 w-full pl-2 pr-10"}>
                             <p className={"text-normal lg:text-xl"}>
                                 The University of Michigan Electric Boat team was founded in 2020, yet we have already placed 2nd in the national PEP competition. Such a feat was only possible due to the hard work of our members as well as the generous contributions of current sponsors. We have only just begun our journey and are looking for corporate and private partners to help build our organization together.
                             </p>
@@ -171,22 +209,29 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="text-center p-10">
-                    <h1 className="lg:text-6xl text-4xl  font-bold"> Midnight Zone Sponsors </h1>
-                    <div>
-
+                    <h1 className="lg:text-6xl text-4xl pb-20 font-bold"> Midnight Zone Sponsors </h1>
+                    <div className={"grid md:grid-cols-3 gap-5 lg:px-20 md:px-10"}>
+                        {midnightZone.map((sponsor: { url: any}) => (
+                            <div key={0} className={"flex justify-center"}>
+                                <img src={sponsor.url} alt={"Sponsor"} className={"object-scale-down h-64"}></img>
+                            </div>
+                        ))}
                     </div>
                 </div>
 
-
                 <div className="text-center p-10">
-                    <h1 className="lg:text-6xl text-4xl  font-bold"> Hadal Zone Sponsors </h1>
-                    <div>
-
+                    <h1 className="lg:text-6xl text-4xl pb-20 font-bold"> Hadal Zone Sponsors </h1>
+                    <div className={"grid md:grid-cols-3 gap-5 lg:px-20 md:px-10"}>
+                        {hadalZone.map((sponsor: { url: any}) => (
+                            <div key={0} className={"flex justify-center"}>
+                                <img src={sponsor.url} alt={"Sponsor"} className={"object-scale-down h-64"}></img>
+                            </div>
+                        ))}
                     </div>
                 </div>
                 <div className="flex lg:flex-row flex-col">
                     <div className="lg:w-1/3 w-full p-2">
-                        <h1 className="lg:text-4xl text-2xl font-bold lg:text-right text-center">
+                        <h1 className="text-4xl font-bold lg:text-right text-center justify-center">
                             Become A Sponsor
                         </h1>
                     </div>
@@ -195,6 +240,13 @@ export default function Home() {
                             UM Electric Boat was founded with a commitment to testing alternative, cleaner forms of energy in the maritime industry. As such, we partner with organizations that believe in our mission and want to invest in new naval technologies.
                         </p>
                     </div>
+                </div>
+                <div className={"flex justify-center py-10"}>
+                    <Button gradientDuoTone={"purpleToPink"} outline>
+                        <p className={"md:text-2xl text-xl font-bold"}>
+                            How to Become a UMEB Sponsor
+                        </p>
+                    </Button>
                 </div>
             </div>
         </div>

@@ -14,8 +14,7 @@ interface SponsorCardProps {
 const SponsorCard: React.FC<SponsorCardProps> = ({ zone, name, learnMore, image, text, index }) => {
     const changeSides = index % 2 === 0;
 
-    const containerClass = changeSides ? 'flex lg:flex-row sm:flex-col relative relative shadow-lg bg-white p-4 transition-transform transform hover:scale-105 rounded-lg' : 'flex lg:flex-row sm:flex-col relative flex-row-reverse relative shadow-lg bg-white p-4 transition-transform transform hover:scale-105 rounded-lg';
-    const buttonClass = 'flex relative justify-end';
+    const containerClass = changeSides ? 'flex lg:flex-row flex-col relative relative shadow-lg bg-white p-4 transition-transform transform hover:scale-105 rounded-lg' : 'flex lg:flex-row flex-col relative flex-row-reverse relative shadow-lg bg-white p-4 transition-transform transform hover:scale-105 rounded-lg';
     var imageBackground;
     if(zone == "SUNLIGHT ZONE") {
         imageBackground = "/images/SunlightZoneBg.png"
@@ -27,19 +26,19 @@ const SponsorCard: React.FC<SponsorCardProps> = ({ zone, name, learnMore, image,
         <>
             <div className="lg:px-20 md:px-10 sm:px-5 py-5">
                 <div className={containerClass}>
-                    <div className="lg:w-1/6 hidden lg:block relative">
-                        <div className="absolute inset-0 flex justify-center items-center">
+                    <div className="lg:w-1/6 lg:block relative ">
+                        <div className="flex inset-0 justify-center ">
                             <img
                                 src={imageBackground} // Bottom Image
                                 alt="Bottom Image"
-                                className="rounded-lg  h-64"
+                                className="rounded-lg object-scale-down"
                             />
                         </div>
-                        <div className="absolute inset-0 flex justify-center items-center">
+                        <div className="absolute inset-0 flex justify-center">
                             <img
                                 src={image} // Top Image
                                 alt="image"
-                                className="rounded-lg object-scale-down h-64"
+                                className="rounded-lg object-scale-down"
                             />
                         </div>
                     </div>
@@ -53,9 +52,6 @@ const SponsorCard: React.FC<SponsorCardProps> = ({ zone, name, learnMore, image,
                             <p className="text-sm lg:text-2xl md:text-xl sm:text-base">
                                 {text}
                             </p>
-                        </div>
-                        <div className={buttonClass}>
-                            <Button gradientDuoTone={"purpleToPink"} outline> Learn More </Button>
                         </div>
                     </div>
                 </div>
