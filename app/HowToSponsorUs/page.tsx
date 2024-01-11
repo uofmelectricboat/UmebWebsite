@@ -69,12 +69,16 @@ export default function Home() {
             <div className="flex md:flex-row flex-col md:py-10 py-5 justify-center space-y-5">
                 <div className="md:w-1/2 w-full flex justify-center items-center">
                     <Button gradientDuoTone={"purpleToPink"} outline>
-                        Download our Sponsorship Packet
+                        <p className={"lg:text-2xl md:text-xl text-lg font-bold"}>
+                            Download our Sponsorship Packet
+                        </p>
                     </Button>
                 </div>
                 <div className="md:w-1/2 w-full flex justify-center items-center">
                     <Button gradientDuoTone={"purpleToPink"} outline>
-                        Contact Us!
+                        <p className={"lg:text-2xl md:text-xl text-lg font-bold"}>
+                            Contact Us!
+                        </p>
                     </Button>
                 </div>
             </div>
