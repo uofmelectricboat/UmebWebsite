@@ -42,7 +42,7 @@ const SponsorCard: React.FC<SponsorCardProps> = ({ zone, name, learnMore, image,
                             />
                         </div>
                     </div>
-                    <div className="lg:w-5/6 w-full text-left lg:px-20 md:px-10 sm:px-5 px-2">
+                    <div className="lg:w-5/6 w-full text-left px-5">
                         <div>
                             <h2 className="lg:text-4xl text-2xl font-bold">
                                 {name}
