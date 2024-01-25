@@ -38,7 +38,7 @@ export default function Home() {
         <>
             <TitlePhoto title={titleText} image={titlePhoto}/>
             <div className="bg-stone-100">
-                <Timeline boats={boats}></Timeline>
+                <Timeline></Timeline>
             </div>
         </>
     );
