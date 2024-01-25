@@ -39,7 +39,7 @@ export default function Home() {
                 </div>
             </div>
             <div className={"flex flex-col md:flex-row lg:px-40 md:px-20 px-10 justify-center md:justify-start md:space-x-5 md:space-y-0 space-y-5"}>
-                <Button gradientDuoTone={"purpleToPink"} outline>UMEB Interest Form</Button>
+                <Button gradientDuoTone={"purpleToPink"} outline href={"https://docs.google.com/forms/d/e/1FAIpQLSdlYc0uE3t4VL1oN0bOLTmU50hYsu0Wrx2NwrZoxQoO5XSXlA/viewform?usp=sf_link"}>UMEB Interest Form</Button>
                 <Button gradientDuoTone={"purpleToPink"} outline>Google Calendar</Button>
             </div>
             <div className={"py-20 lg:px-40 md:px-20 px-10 tracking-widest"}>

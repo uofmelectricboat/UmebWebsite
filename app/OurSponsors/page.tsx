@@ -73,11 +73,8 @@ export default function Home() {
                     <h1 className="lg:text-6xl text-4xl text-center font-bold">
                         Thank you to our Sponsors!
                     </h1>
-                    <div className={"flex flex-col lg:flex-row py-10"}>
-                        <div className={"lg:w-1/2 w-full pl-10 pr-2 pb-10 lg:pb-0"}>
-                            <img src={"/images/SponsorThankYou.png"} alt={"something"} className={""}></img>
-                        </div>
-                        <div className={"lg:w-1/2 w-full pl-2 pr-10"}>
+                    <div className={"flex justify-center py-10"}>
+                        <div className={"w-full md:w-1/2 text-center"}>
                             <p className={"text-normal lg:text-xl"}>
                                 The University of Michigan Electric Boat team was founded in 2020, yet we have already placed 2nd in the national PEP competition. Such a feat was only possible due to the hard work of our members as well as the generous contributions of current sponsors. We have only just begun our journey and are looking for corporate and private partners to help build our organization together.
                             </p>

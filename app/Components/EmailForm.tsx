@@ -62,7 +62,9 @@ const EmailForm: React.FC<EmailFormProps> = ({}) => {
                     </p>
                 </div>
                 <textarea rows={4} className="w-full border border-gray-300" required minLength={10} maxLength={500} id="message"/>
-                <button type="submit" className="px-4 py-2 bg-black text-white font-medium w-40 mt-4">Submit</button>
+                <div className={"flex justify-center"}>
+                    <button type="submit" className="px-4 py-2 bg-black text-white font-medium w-40 mt-4">Submit</button>
+                </div>
             </div>
         </form>
     );

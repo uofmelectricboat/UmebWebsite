@@ -27,15 +27,12 @@ export default function Home() {
     return (
     <>
         <TitlePhoto title={titleText} image={titlePhoto}/>
-        <div className="flex relative w-full">
-            <div className="w-1/2 lg:block hidden">
-                <img src="/images/HowToBecomeASponsorImg.png" alt="image" className="w-full"/>
-            </div>
-            <div className="lg:w-1/2 w-full px-10">
-                <h1 className="font-bold lg:text-4xl md:text-2xl text-xl lg:text-left text-center pt-10">
+        <div className="flex justify-center">
+            <div className="lg:w-1/2 w-full text-center">
+                <h1 className="font-bold lg:text-4xl md:text-2xl text-xl pt-10">
                     Welcome Prospective Sponsor!
                 </h1>
-                <div className="lg:text-2xl md:text-lg py-10 leading-loose tracking-widest space-y-8">
+                <div className="lg:text-2xl md:text-lg py-10 leading-loose space-y-8">
                     <p>
                         Over the course of our short history, our team has had dozens of corporate, public, and private sponsors. Our partnerships have ranged from Fortune 500 companies to small, Michigan-based corporations. We welcome any cash or in-kind donations.
                     </p>
