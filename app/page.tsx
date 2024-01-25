@@ -18,7 +18,12 @@ export default function Home() {
                     <h2 className="md:text-4xl text-2xl font-bold text-white"> Our Purpose </h2>
                 </div>
                 <div className="absolute inset-0 flex flex-col justify-center items-center lg:px-80 md:px-20 px-2">
-                    <p className="text-center md:text-2xl text-white"> Michigan Electric Boat is established for the purpose of advancing sustainable technology and promoting its capabilities by representing the University of Michigan in the Promoting Electric Propulsion for Small Craft competition. Our mission is to allow members to apply what they have learned in the classroom and improve themselves as students through hands-on projects in engineering, business, and operations. </p>
+                    <p className="text-center md:text-2xl text-white">
+                        Michigan Electric Boat was established for the purpose of advancing sustainable technology and promoting its capabilities. Our members come from all walks of life, but we all share one important purpose:
+                    </p>
+                    <p className="text-center md:text-2xl text-white pt-5">
+                        As the next generation of engineers, we challenge ourselves to implement sustainable technologies and revolutionize the boating experience.
+                    </p>
                 </div>
             </div>
             <div className="w-full h-full">

@@ -30,10 +30,10 @@ export default function Home() {
                             Promoting Electric Propulsion - April 2024
                         </h1>
                         <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight"}>
-                            UM Electric Boat has participated in the 'Promoting Electric Propulsion' competition since 2021, consistently competing against top engineering schools nationwide. In 2021, UMEB secured second place in a heat of 10+ teams, showcasing prowess in both manned and unmanned races. In June of 2023, UMEB and our fellow competitors were tasked with completing a 5-mile race over 5 laps in a short out-and-back circuit.
+                            UM Electric Boat has participated in the &apos;Promoting Electric Propulsion&apos; competition since 2021, consistently competing against top engineering schools nationwide. In 2021, UMEB secured second place in a heat of 10+ teams, showcasing prowess in both manned and unmanned races. In June of 2023, UMEB and our fellow competitors were tasked with completing a 5-mile race over 5 laps in a short out-and-back circuit.
                         </p>
                         <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight pt-5"}>
-                            The team aims to continue this tradition, aiming for even better results in 2024. The competition's flexible rules and talented competitors enable us to push boundaries and create innovative designs.
+                            The team aims to continue this tradition, aiming for even better results in 2024. The competition&apos;s flexible rules and talented competitors enable us to push boundaries and create innovative designs.
                         </p>
                         <div className={"py-2 flex md:justify-end justify-center"}>
                             <Button gradientDuoTone={"purpleToPink"} outline href={"https://www.navalengineers.org/Education/Promoting-Electric-Propulsion-PEP"}>Check Out PEP!</Button>
@@ -48,7 +48,7 @@ export default function Home() {
                             Lake of the Ozarks Shootout - August 2024
                         </h1>
                         <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight"}>
-                            The Lake of the Ozarks Shootout (LOTO) stands out as a thrilling annual spectacle for boat racing enthusiasts at the Lake of the Ozarks in Missouri, USA. Renowned as one of the largest unsanctioned boat races in the world, it's an event that showcases the sheer speed and power of high-performance boats. Racing boats regularly break speeds of over 200 mph, with the top speed recorded at 244 mph in 2014.
+                            The Lake of the Ozarks Shootout (LOTO) stands out as a thrilling annual spectacle for boat racing enthusiasts at the Lake of the Ozarks in Missouri, USA. Renowned as one of the largest unsanctioned boat races in the world, it&apos;s an event that showcases the sheer speed and power of high-performance boats. Racing boats regularly break speeds of over 200 mph, with the top speed recorded at 244 mph in 2014.
                         </p>
                         <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight pt-5"}>
                             UMEB will be attending LOTO this summer and racing as one of the few electric boats, with hopes of breaking records for the fastest electric boat to compete at LOTO.
