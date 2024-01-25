@@ -193,7 +193,7 @@ export default function Home() {
 
       </div>
       <div className={"hidden lg:block py-20 bg-stone-100"}>
-        <div className="gap-8 columns-3 mx-10">
+        <div className="gap-8 columns-4 mx-10">
           <div className={"flex justify-center py-5"}>
             <Image src={"/logos/BMO.png"} alt={"image"} width={300} height={300}></Image>
           </div>
