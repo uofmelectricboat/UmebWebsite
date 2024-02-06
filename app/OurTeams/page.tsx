@@ -11,13 +11,13 @@ const officers = [{
     title: "CAPTAIN",
     name: "Arend Vyn",
     bio: "Arend joined UMEB at first to better understand and learn about what goes into the engineering process. Being a part of the process to create a complex, powerful vehicle with peers and friends is why Electric Boat has been such a big part of his life thus far. Arend is looking forward to working with the team again to design and engineering the most powerful electric boat the world has seen, and have fun doing it.",
-    image: "/Members/Arend.JPG",
+    image: "/Teams/headshots/Arend_Captain.jpg",
     info: "Mechanical Engineering | 2025"
 }, {
     title: "CHIEF ENGINEER",
     name: "Caroline Kahwati",
     bio: "Caroline joined UMEB to get hands-on experience with an engineering challenge. She enjoys being a part of the process from the design stage to manufacturing the final product and learning from encountered roadblocks to improve future processes. Caroline recognizes the importance of sustainable technologies and enjoys the opportunity to work with electric powertrain systems. Outside of UMEB she enjoys running and watching Michigan sports.",
-    image: "/Members/Caroline.jpeg",
+    image: "/Teams/headshots/Kahwati_Caroline_Headshot.jpg",
     info: "NAME | 2025"
 }]
 
@@ -25,31 +25,31 @@ const teamleaders = [{
     title: "MECHANICAL DIRECTOR",
     name: "Evan Branson",
     team: "Meet the Mechanical Team",
-    image: "/Members/Evan.jpg",
+    image: "/Teams/headshots/Evan_Mechanical_Director.jpg",
     info: "Robotics Engineering | 2024"
 }, {
     title: "ELECTRICAL DIRECTOR",
     name: "Michael Sharashenidze",
     team: "Meet the Electrical Team",
-    image: "/Members/Michael.png",
+    image: "/Teams/headshots/Michael_Electrical_Director.jpg",
     info: "Electrical Engineering | 2024"
 }, {
     title: "OPERATIONS DIRECTOR",
     name: "Lyn Tran",
     team: "Meet the Operations Team",
-    image: "/Members/Prah.png",
+    image: "/Teams/headshots/Lyn_Operations_Director.jpg",
     info: "NAME | 2026"
 }, {
     title: "BUSINESS DIRECTOR",
-    name: "Prahlad Pant",
+    name: "Kaden",
     team: "Meet the Business Team",
-    image: "/Members/Prah.png",
+    image: "/Teams/headshots/Kaden_Business_CoDirector.jpg",
     info: "Business Administration | 2026"
 }, {
     title: "BUSINESS DIRECTOR",
-    name: "Prahlad Pant",
+    name: "Yaseen Pant",
     team: "Meet the Business Team",
-    image: "/Members/Prah.png",
+    image: "/Teams/headshots/Yaseen_Business_CoDirector.jpg",
     info: "Business Administration | 2026"
 }]
 
@@ -73,7 +73,7 @@ const consultants = [{
     info: "Associate Professor, Graduate Program Chair | Aerospace Engineering Department"
 }]
 
-const titlePhoto = "/images/OurTeams.png"
+const titlePhoto = "/Teams/Full_Team_pic.jpg"
 const titleText = "Our Teams"
 
 export default function Home() {
@@ -84,7 +84,7 @@ export default function Home() {
             <div className="w-full bg-stone-100">
                 <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
                     <div className={"w-1/4 relative order-last md:order-first"}>
-                        <Image src={"/images/OurRacesGraphic.png"} alt={"Image Not Found"} width={500} height={500} className={"object-scale-down"}></Image>
+                        <Image src={"/Teams/Mechanical_Team_Pic.png"} alt={"Image Not Found"} width={500} height={500} className={"object-scale-down"}></Image>
                     </div>
                     <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
                         <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
@@ -113,14 +113,14 @@ export default function Home() {
                         </div>
                     </div>
                     <div className={"w-1/4 relative flex md:justify-end justify-center"}>
-                        <Image src={"/images/OurRacesGraphic.png"} alt={"Image Not Found"} width={500} height={500} className={"object-scale-down"}></Image>
+                        <Image src={"/Teams/Electrical_Team_Pic.JPG"} alt={"Image Not Found"} width={500} height={500} className={"object-scale-down"}></Image>
                     </div>
                 </div>
             </div>
             <div className="w-full bg-stone-100">
                 <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
                     <div className={"w-1/4 relative order-last md:order-first"}>
-                        <Image src={"/images/OurRacesGraphic.png"} alt={"Image Not Found"} width={500} height={500} className={"object-scale-down"}></Image>
+                        <Image src={"/Teams/Operations_Team_Pic.jpg"} alt={"Image Not Found"} width={500} height={500} className={"object-scale-down"}></Image>
                     </div>
                     <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
                         <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
@@ -149,7 +149,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className={"w-1/4 relative flex md:justify-end justify-center"}>
-                        <Image src={"/images/OurRacesGraphic.png"} alt={"Image Not Found"} width={500} height={500} className={"object-scale-down"}></Image>
+                        <Image src={"/Teams/Business_Team_Pic.jpg"} alt={"Image Not Found"} width={500} height={500} className={"object-scale-down"}></Image>
                     </div>
                 </div>
             </div>
