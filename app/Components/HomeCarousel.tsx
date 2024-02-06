@@ -11,25 +11,25 @@ const carouselInfo = [
         title: "Collaboration",
         text:
             "No one member is capable of creating such an ambitious project on their own. UMEB members thrive in the pursuit of over 15 different majors across an array of different colleges and apply the knowledge they learn from said classes on our boat.",
-        image: "/images/collaboration.jpg",
+        image: "/Home/Collaboration.JPG",
     },
     {
         title: "Innovation",
         text:
             "No idea is a bad idea. UMEB is a safe place to take risks and fully unleash one's creativity. We offer a chance for members to apply their theoretical skills to an actual project. Of course, with a chance to add their own twist of creativity as well.",
-        image: "/images/innovation.jpg",
+        image: "/Home/Innovation.png",
     },
     {
         title: "Adaptability",
         text:
             "UMEB does not settle for less. As such, our designs are ambitious, and our timeline is tight. We often face many setbacks, but we remain undeterred. Adaptability is an integral part of who we are, and it allows us to strive for greatness. We were founded in the uncertain times that were the pandemic, but have grown to what we are today.",
-        image: "/images/adapt.JPG",
+        image: "/Home/adapt.JPG",
     },
     {
         title: "Sustainability",
         text:
             "Our vessel will be powered by electrical energy, proving its capabilities in marine applications. We aim to advance eco-friendly marine transportation solutions, contributing to a cleaner and more sustainable future for our waterways.",
-        image: "/images/sustain.JPG",
+        image: "/Home/Sustainability.JPG",
     },
 ];
 

@@ -5,14 +5,14 @@ import TitlePhoto from '@/app/Components/TitlePhoto';
 import Carousel from '@/app/Components/HomeCarousel';
 
 const titleText = "";
-const titlePhoto = "/images/Home.jpg?v=3";
+const titlePhoto = "/Home/HomePage.jpg";
 
 export default function Home() {
     return (
         <>
             <TitlePhoto title={titleText} image={titlePhoto} />
             <div className="relative w-full h-full">
-                <Image src="/images/purposeHome.jpg" alt="temp" fill={true} className={"object-cover"}/>
+                <Image src="/Home/OurPurpose.jpeg" alt="temp" fill={true} className={"object-cover"}/>
                 <div className="absolute inset-0 bg-black opacity-40"></div>
                 <div className="absolute top-8 left-10 py-3">
                     <h2 className="md:text-4xl text-2xl font-bold text-white"> Our Purpose </h2>
