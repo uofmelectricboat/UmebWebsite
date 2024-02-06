@@ -23,7 +23,7 @@ export default function Home() {
             <div className="w-full bg-stone-100">
                 <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
                     <div className={"w-1/4 relative order-last md:order-first"}>
-                        <img src={"/images/OurRacesGraphic.png"} alt={"Image Not Found"} className={"object-scale-down"}></img>
+                        <img src={"/Races/PEP.JPG"} alt={"Image Not Found"} className={"object-scale-down"}></img>
                     </div>
                     <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
                         <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
@@ -58,18 +58,36 @@ export default function Home() {
                         </div>
                     </div>
                     <div className={"w-1/4 relative flex md:justify-end justify-center"}>
-                        <img src={"/images/OurRacesGraphic.png"} alt={"Image Not Found"} className={"object-scale-down"}></img>
+                        <img src={"/Races/Ozark.jpg"} alt={"Image Not Found"} className={"object-scale-down"}></img>
                     </div>
                 </div>
             </div>
             <div className="w-full bg-stone-100">
                 <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
                     <div className={"w-1/4 relative order-last md:order-first"}>
-                        <img src={"/images/OurRacesGraphic.png"} alt={"Image Not Found"} className={"object-scale-down"}></img>
+                        <img src={"/Races/Wye.png"} alt={"Image Not Found"} className={"object-scale-down"}></img>
                     </div>
                     <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
                         <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
-                            Promoting Electric Propulsion - April 2024
+                            Wye Island Electric Boat Marathon
+                        </h1>
+                        <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight"}>
+                            To prepare ourselves for higher endurance races, UM Electric Boat will compete in the Wye Island Challenge. The challenge consists of a 24 mile course with 8 miles of open water in the Chesapeake Bay, and 16 miles of sheltered water around Wye Island itself.
+                        </p>
+                        <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight pt-5"}>
+                            The team’s goals for this challenge are to demonstrate TiDE’s range at speed, and preparing for longer competitions in the future.
+                        </p>
+                        <div className={"py-2 flex md:justify-end justify-center"}>
+                            <Button gradientDuoTone={"purpleToPink"} outline href={"https://www.electricboats.org/wye-island-challenge"}>Check Out Monaco!</Button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="w-full bg-white">
+                <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
+                    <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
+                        <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
+                            Monaco Energy Boat Challenge - July 2025
                         </h1>
                         <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight"}>
                             UM Electric Boat plans to attend the Monaco Energy Boat Challenge in the summer of 2025. The event gathers more than 50 teams from universities and companies worldwide. The competition seeks to further innovation in alternative propulsion fuel sources such as solar, hydrogen, wind, and more.
@@ -77,9 +95,12 @@ export default function Home() {
                         <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight pt-5"}>
                             UMEB plans on competing in the Sea Lab, which is a new competition specifically for novel prototypes and new designs. The team also plans on demonstrating our best speed at range in the E-Boat Rally, which is a 21 nautical mile trip between Port Hercules in Monaco and Cala del Forte in Ventimiglia in Italy.
                         </p>
-                        <div className={"py-2 flex md:justify-end justify-center"}>
+                        <div className={"py-2 flex md:justify-start justify-center"}>
                             <Button gradientDuoTone={"purpleToPink"} outline href={"https://energyboatchallenge.com/"}>Check Out Monaco!</Button>
                         </div>
+                    </div>
+                    <div className={"w-1/4 relative flex md:justify-end justify-center"}>
+                        <img src={"/Races/Monaco.jpg"} alt={"Image Not Found"} className={"object-scale-down"}></img>
                     </div>
                 </div>
             </div>
