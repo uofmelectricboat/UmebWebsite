@@ -4,54 +4,86 @@ import { Button } from "flowbite-react";
 import Image from "next/image";
 
 
-const sunlightSponsors = [{
+const Platinum = [{
     text: "The Michigan College of Engineering strives to anticipate the changes ahead and provide scientific and technological leadership - for the common good. Michigan Engineering is home to top-ranked departments that collaborate within the nation's number one public research institution - The University of Michigan.",
     name: "Skater",
     zone: "Platinum",
-    image: "/logos/UmichCOE.png",
+    image: "/Sponsors/Platinum/Skater.png",
     learnMore: "31 hp",
 },{
     text: "The Michigan NAME Department trains naval architects and marine engineers who lead, setting the global standard for design and research in every endeavor that touches water.",
     name: "Liberator Boats",
     zone: "Platinum",
-    image: "/logos/MichNavalSponsor.png",
+    image: "/Sponsors/Platinum/Liberator_Logo.png",
     learnMore: "31 hp",
 },{
     text: "EY provides consulting, assurance, tax and transaction services that help solve challenges and build a better working world for all. The insights and services EY provides helps to create long-term value for society and to build trust in the capital markets.",
     name: "EY",
     zone: "Platinum",
-    image: "/logos/cadence.png",
+    image: "/Sponsors/Platinum/EY.png",
     learnMore: "31 hp",
 }, {
     text: "Cadence is a pivotal leader in electronic systems design, building upon more than 30 years of computational software expertise. Cadence applies its underlying Intelligent System Design strategy to deliver software, hardware, and IP that turn design concepts into reality.",
     name: "Cadence",
     zone: "Platinum",
-    image: "/logos/cadence.png",
+    image: "/Sponsors/Platinum/Cadence.png",
     learnMore: "31 hp",
-}]
+},{
+    text: "The UM College of Engineering strives to provide scientific and technological leadership for the common good. Michigan Engineering is home to top-ranked departments that collaborate within the nation's number one public research institution - The University of Michigan.",
+    name: "University of Michigan College of Engineering",
+    zone: "Platinum",
+    image: "/Sponsors/Platinum/COE.png",
+    learnMore: "31 hp",
+},{
+    text: "The UM Naval Architecture and Marine Engineering (NAME) Department is a world leader in the education of engineers for the marine environment, and provides leadership and service to the state, national, and international marine community.",
+    name: "University of Michigan Department of Naval Architecture and Marine Engineering",
+    zone: "Platinum",
+    image: "/Sponsors/Platinum/NAME.png",
+    learnMore: "31 hp",
+},{
+    text: "McNaughton-McKay Electric Company is a wholesale electrical distributor serving markets in Michigan, Ohio, Georgia, North Carolina and South Carolina. MM offers a full line of products ranging from pipe and wire to complex automation control systems.",
+    name: "Mcnaughton Mckay",
+    zone: "Platinum",
+    image: "/Sponsors/Platinum/McNaughton.png",
+    learnMore: "31 hp",
+},]
 
-const twilightSponsors = [{
+const Gold = [{
     text: "Axial flux e-motors are the next step in electric propulsion solutions. Used in marine, aviation, automotive and racing industries across the globe. Beyond Motors have the best continuous power-to-weight ratio on the market, and work in the most robust applications.",
     name: "Beyond Motors",
     zone: "Gold",
-    image: "/logos/BristolHarborGroup.png",
+    image: "/Sponsors/Gold/Beyond.png",
     learnMore: "",
 }]
 
-const midnightZone = [{
-    url: "/sponsors/UmichMechE.png",
+const Silver = [{
+    url: "/Sponsors/Silver/ASNE.png",
 },{
-    url: "/sponsors/UmichECSG.png",
+    url: "/Sponsors/Silver/Ford.png",
 },{
-    url: "/sponsors/UmichCE.png",
+    url: "/Sponsors/Silver/GM.png",
+},{
+    url: "/Sponsors/Silver/CSE.png",
+},{
+    url: "/Sponsors/Silver/MaterialsSolutions.png",
+},{
+    url: "/Sponsors/Silver/18650Battery.png",
 }]
 
-const hadalZone = [{
-    url: "/sponsors/UmichCSG.png",
+const Bronze = [{
+    url: "/Sponsors/Bronze/Eecs.png",
 },{
-    url: "/sponsors/UmichCSE.png",
+    url: "/Sponsors/Bronze/MechE.png",
 },{
-    url: "/sponsors/Kvaser.png",
+    url: "/Sponsors/Bronze/BruceRosenblatt.png",
+},{
+    url: "/Sponsors/Bronze/NuclearEngineering.png",
+},{
+    url: "/Sponsors/Bronze/Evolve.png",
+},{
+    url: "/Sponsors/Bronze/Rincon.png",
+},{
+    url: "/Sponsors/Bronze/Sabelt.png",
 }]
 
 
@@ -59,7 +91,7 @@ export default function Home() {
     return (
         <>
             <div className="relative">
-                <img src="/images/OurSponsors.png" className="w-full h-screen object-cover" alt="Sponsors" />
+                <img src="/images/OurSponsors.JPG" className="w-full h-screen object-cover" alt="Sponsors" />
                 <div className="absolute inset-0 flex items-center justify-center bg-blue-800 opacity-30" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center space-y-2">
                     <h1 className="text-white lg:text-6xl text-4xl font-bold">Our Sponsors</h1>
@@ -84,7 +116,7 @@ export default function Home() {
                 <div className="text-center p-10">
                     <h1 className="lg:text-6xl text-4xl  font-bold"> Platinum Sponsors</h1>
                     <div>
-                        {sunlightSponsors.map((sponsor: { text: any; name: any; zone: any; image: any; learnMore: any; }, index: any) => (
+                        {Platinum.map((sponsor: { text: any; name: any; zone: any; image: any; learnMore: any; }, index: any) => (
                             <SponsorCard
                                 key={index}
                                 text={sponsor.text}
@@ -100,7 +132,7 @@ export default function Home() {
                 <div className="text-center p-10">
                     <h1 className="lg:text-6xl text-4xl  font-bold">Gold Sponsors</h1>
                     <div>
-                        {twilightSponsors.map((sponsor: { text: any; name: any; zone: any; image: any; learnMore: any; }, index: any) => (
+                        {Gold.map((sponsor: { text: any; name: any; zone: any; image: any; learnMore: any; }, index: any) => (
                             <SponsorCard
                                 key={index}
                                 text={sponsor.text}
@@ -116,7 +148,7 @@ export default function Home() {
                 <div className="text-center p-10">
                     <h1 className="lg:text-6xl text-4xl pb-20 font-bold"> Silver Sponsors </h1>
                     <div className={"grid md:grid-cols-3 gap-5 lg:px-20 md:px-10"}>
-                        {midnightZone.map((sponsor: { url: any}) => (
+                        {Silver.map((sponsor: { url: any}) => (
                             <div key={0} className={"flex justify-center"}>
                                 <img src={sponsor.url} alt={"Sponsor"} className={"object-scale-down h-64"}></img>
                             </div>
@@ -126,8 +158,8 @@ export default function Home() {
 
                 <div className="text-center p-10">
                     <h1 className="lg:text-6xl text-4xl pb-20 font-bold"> Bronze Sponsors </h1>
-                    <div className={"grid md:grid-cols-3 gap-5 lg:px-20 md:px-10"}>
-                        {hadalZone.map((sponsor: { url: any}) => (
+                    <div className={"grid md:grid-cols-4 gap-5 lg:px-20 md:px-10"}>
+                        {Bronze.map((sponsor: { url: any}) => (
                             <div key={0} className={"flex justify-center"}>
                                 <img src={sponsor.url} alt={"Sponsor"} className={"object-scale-down h-64"}></img>
                             </div>

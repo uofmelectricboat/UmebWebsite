@@ -4,7 +4,7 @@ import {Button} from "flowbite-react"
 import { Accordion } from 'flowbite-react';
 
 
-const titlePhoto = "/images/JoinUs.png"
+const titlePhoto = "/images/JoinUs.JPG"
 const titleText = "Join Us"
 export default function Home() {
     return (
