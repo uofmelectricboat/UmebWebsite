@@ -23,7 +23,7 @@ const LeaderShip: React.FC<LeadershipProps> = ({ title, name, bio, image, info }
                     <h3 className="font-bold text-xl pr-2">
                         {name}
                     </h3>
-                    <Image src="/icons/LinkedIn.png" width={30} height={20} alt="image"></Image>
+                    <Image src="/Icons/LinkedIn.png" width={30} height={20} alt="image"></Image>
                 </div>
                 <h4 className="italic text-lg">
                     {info}

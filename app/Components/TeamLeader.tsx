@@ -19,8 +19,8 @@ const TeamLeader: React.FC<LeadershipProps> = ({ title, name, team, image, info 
             <h2 className="font-bold text-xl">{title}</h2>
             <div className="flex justify-center">
                 <h3 className="font-bold text-lg pr-2">{name}</h3>
-                <Link href={"temp"}>
-                    <Image src="/icons/LinkedIn.png" alt="LinkedIn" width={30} height={20}></Image>
+                <Link href={""}>
+                    <Image src="/Icons/LinkedIn.png" alt="LinkedIn" width={30} height={20}></Image>
                 </Link>
             </div>
             <h4 className="italic"> {info} </h4>
