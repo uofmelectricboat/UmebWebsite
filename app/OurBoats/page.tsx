@@ -107,7 +107,7 @@ export default function Home() {
                             Despite the COVID lockdown and limited workspace, the team persevered and decided to build Proteus outdoors, braving harsh weather conditions, including snow, rain, and summer heat.
                         </p>
                         <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight pt-5"}>
-                            Proteus finished second at the 2021 Promoting Electric Propulsion completion. This was an impressive feat given that it was UMEB’s first time participating in any competition. Proteus will always hold a special place in the team's hearts as a testament to our hard work and dedication to our craft.
+                            Proteus finished second at the 2021 Promoting Electric Propulsion completion. This was an impressive feat given that it was UMEB’s first time participating in any competition. Proteus will always hold a special place in the team&apos;s hearts as a testament to our hard work and dedication to our craft.
                         </p>
                     </div>
                     <div className={"w-1/4 relative flex md:justify-end justify-center"}>
