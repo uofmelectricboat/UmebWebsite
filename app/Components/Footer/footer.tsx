@@ -14,7 +14,18 @@ const Footer: React.FC = () => {
                     </h1>
                 </div>
                 <div className={"lg:basis-1/3 flex justify-center lg:justify-end"}>
-                    <Image src={"/icons/mdLogo.png"} alt={"LOGO"} width={200} height={100}></Image>
+                    <Image src={"/icons/mdLogo.png"} alt={"LOGO"} width={300} height={200}></Image>
+                </div>
+            </div>
+            <div className={"flex-col lg:flex-row justify-center items-center lg:space-x-20 space-y-5  lg:space-y-0 w-full"}>
+                <div className={"flex justify-center"}>
+                    <Image src={"/Companies/Cadence.png"} alt={"cadence"} width={200} height={200} className={"object-scale-down"}></Image>
+                </div>
+                <div className={"flex justify-center"}>
+                    <Image src={"/Companies/Liberator_Logo.png"} alt={"liberator"} width={200} height={200} className={"object-scale-down"}></Image>
+                </div>
+                <div className={"flex justify-center"}>
+                    <Image src={"/Companies/EYHorizontal.png"} alt={"EY"} width={200} height={200} className={"object-scale-down"}></Image>
                 </div>
             </div>
             <div className={"flex justify-between items-center pt-5 px-5"}>
