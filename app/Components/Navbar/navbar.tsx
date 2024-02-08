@@ -23,7 +23,7 @@ const Navbar = () => {
     ];
     const Sponsors = [
         {
-            "name": "Current Sponsors",
+            "name": "Our Sponsors",
             "url": "OurSponsors"
         },
         {
@@ -59,7 +59,6 @@ const Navbar = () => {
                         <Link href={"/Media"} className="text-2xl font-bold relative animated-underline"> Media </Link>
                         <DropDown title={"Sponsors"} options={Sponsors}/>
                         <DropDown title={"Contact"} options={Contact}/>
-                        <Button outline gradientDuoTone={"purpleToPink"}>Donate</Button>
                     </div>
                 </div>
                 <div className={"md:hidden flex justify-center px-5 items-center"}>
@@ -85,7 +84,6 @@ const Navbar = () => {
                         <Link href={"/BecomeASponsor"} className="text-2xl font-bold relative animated-underline" onClick={toggleNavbar}> Become A Sponsor </Link>
                         <Link href={"/ContactUs"} className="text-2xl font-bold relative animated-underline" onClick={toggleNavbar}> Contact Us </Link>
                         <Link href={"/JoinUs"} className="text-2xl font-bold relative animated-underline" onClick={toggleNavbar}> Join Us </Link>
-                        <Button gradientDuoTone={"purpleToPink"}>Donate</Button>
                     </div>
                 </div>
             )}

@@ -77,7 +77,6 @@ const titlePhoto = "/Teams/Full_Team_pic.jpg"
 const titleText = "Our Teams"
 
 export default function Home() {
-    var images = ["/TitlePhotos/cadence.png", "/TitlePhotos/Ford.png", "/TitlePhotos/OurBoats.png"]
     return (
         <>
             <TitlePhoto title={titleText} image={titlePhoto}/>
@@ -101,7 +100,7 @@ export default function Home() {
             </div>
             <div className="w-full bg-white">
                 <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
-                    <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
+                    <div className={"w-full lg:w-1/2 pr-2 lg:pr-8 md:pr-6 sm:pr-4"}>
                         <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
                             Electrical
                         </h1>
@@ -137,7 +136,7 @@ export default function Home() {
             </div>
             <div className="w-full bg-white">
                 <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
-                    <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
+                    <div className={"w-full lg:w-1/2 pr-2 lg:pr-8 md:pr-6 sm:pr-4"}>
                         <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
                             Business
                         </h1>
@@ -153,8 +152,10 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <h1 className="font-bold lg:text-5xl md:text-2xl sm:text-xl py-5 flex items-center justify-center bg-stone-100"> Meet Our LeaderShip Team </h1>
-            <div className="p-10 bg-stone-100">
+            <h1 className="font-bold lg:text-5xl md:text-2xl sm:text-xl pt-10 flex items-center justify-center bg-stone-100">
+                Meet Our LeaderShip Team
+            </h1>
+            <div className="px-10 bg-stone-100">
                 {officers.map((leader: { title: any; name: any; bio: any; image: any; info: any; }, index: any) => (
                     <LeaderShip
                         key={index}
@@ -193,7 +194,9 @@ export default function Home() {
             </div>
             <h1 className="font-bold text-5xl pt-20 py-5 flex items-center justify-center bg-stone-100"> Our Alumni </h1>
             <div className="flex flex-col justify-center items-center bg-stone-100">
-                <p className="text-center max-w-prose text-2xl leading-relaxed tracking-wider">These are only some of the prestigious firms that UMEB alumni have gone on to work for after graduation. UMEB members have pursued career opportunities across a diverse array of industries including naval architecture, automotive, aerospace, investment banking, consulting, and many more. UMEB has an extensive network and mentorship opportunities for students across all majors and passions.</p>
+                <p className="text-center max-w-prose text-2xl leading-relaxed">
+                    These are only some of the prestigious firms that UMEB alumni have gone on to work for after graduation. UMEB members have pursued career opportunities across a diverse array of industries including naval architecture, automotive, aerospace, investment banking, consulting, and many more. UMEB has an extensive network and mentorship opportunities for students across all majors and passions.
+                </p>
 
             </div>
             <div className={"hidden lg:block py-20 bg-stone-100"}>

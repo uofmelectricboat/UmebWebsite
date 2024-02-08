@@ -15,7 +15,7 @@ const TeamLeader: React.FC<LeadershipProps> = ({ title, name, team, image, info 
         <div className="flex items-center justify-center">
             <Image src={image} alt={"Image"} width={300} height={300}></Image>
         </div>
-        <div className="text-center">
+        <div className="text-center pt-2">
             <h2 className="font-bold text-xl">{title}</h2>
             <div className="flex justify-center">
                 <h3 className="font-bold text-lg pr-2">{name}</h3>

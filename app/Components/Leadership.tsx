@@ -13,7 +13,7 @@ const LeaderShip: React.FC<LeadershipProps> = ({ title, name, bio, image, info }
     return (
         <div className="container md:flex items-center justify-center py-10">
             <div className="px-10 flex justify-center">
-                <Image src={image} alt={"Image"} width={300} height={300}></Image>
+                <Image src={image} alt={"Image"} width={300} height={300} className={"rounded"}></Image>
             </div>
             <div className="basis-1/2 md:text-left text-center">
                 <h2 className="font-bold text-4xl">

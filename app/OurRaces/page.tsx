@@ -43,7 +43,7 @@ export default function Home() {
             </div>
             <div className="w-full bg-white">
                 <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
-                    <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
+                    <div className={"w-full lg:w-1/2 pl-2 lg:pr-8 md:pr-6 sm:pr-4"}>
                         <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
                             Lake of the Ozarks Shootout - August 2024
                         </h1>
@@ -85,7 +85,7 @@ export default function Home() {
             </div>
             <div className="w-full bg-white">
                 <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
-                    <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
+                    <div className={"w-full lg:w-1/2 pr-2 lg:pr-8 md:pr-6 sm:pr-4"}>
                         <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
                             Monaco Energy Boat Challenge - July 2025
                         </h1>
