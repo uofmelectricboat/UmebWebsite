@@ -77,7 +77,7 @@ const titlePhoto = "/Teams/Full_Team_pic.jpg"
 const titleText = "Our Teams"
 
 export default function Home() {
-    var images = ["/images/cadence.png", "/images/Ford.png", "/images/OurBoats.png"]
+    var images = ["/TitlePhotos/cadence.png", "/TitlePhotos/Ford.png", "/TitlePhotos/OurBoats.png"]
     return (
         <>
             <TitlePhoto title={titleText} image={titlePhoto}/>
@@ -199,49 +199,49 @@ export default function Home() {
             <div className={"hidden lg:block py-20 bg-stone-100"}>
                 <div className="gap-8 columns-4 mx-10">
                     <div className={"flex justify-center py-5"}>
-                        <Image src={"/logos/BMO.png"} alt={"image"} width={300} height={300}></Image>
+                        <Image src={"/Companies/BMO.png"} alt={"image"} width={300} height={300}></Image>
                     </div>
                     <div className={"flex justify-center py-5"}>
-                        <Image src={"/logos/FordTeams.png"} alt={"image"} width={300} height={300}></Image>
+                        <Image src={"/Companies/Ford.png"} alt={"image"} width={300} height={300}></Image>
                     </div>
                     <div className={"flex justify-center py-5"}>
-                        <Image src={"/logos/AirProducts.png"} alt={"image"} width={300} height={300}></Image>
+                        <Image src={"/Companies/AirProducts.png"} alt={"image"} width={300} height={300}></Image>
                     </div>
                     <div className={"flex justify-center py-5"}>
-                        <Image src={"/logos/Chevron.png"} alt={"image"} width={300} height={300}></Image>
+                        <Image src={"/Companies/Chevron.png"} alt={"image"} width={300} height={300}></Image>
                     </div>
                     <div className={"flex justify-center py-5"}>
-                        <Image src={"/logos/Regent.png"} alt={"image"} width={300} height={300}></Image>
+                        <Image src={"/Companies/Regent.png"} alt={"image"} width={300} height={300}></Image>
                     </div>
                     <div className={"flex justify-center py-5"}>
-                        <Image src={"/logos/F1.png"} alt={"image"} width={300} height={300}></Image>
+                        <Image src={"/Companies/F1.png"} alt={"image"} width={300} height={300}></Image>
                     </div>
                     <div className={"flex justify-center py-5"}>
-                        <Image src={"/logos/Ingals.png"} alt={"image"} width={300} height={300}></Image>
+                        <Image src={"/Companies/Ingalls.png"} alt={"image"} width={300} height={300}></Image>
                     </div>
                     <div className={"flex justify-center py-5"}>
-                        <Image src={"/logos/SpaceX.png"} alt={"image"} width={300} height={300}></Image>
+                        <Image src={"/Companies/SpaceX.png"} alt={"image"} width={300} height={300}></Image>
                     </div>
                     <div className={"flex justify-center py-5"}>
-                        <Image src={"/logos/T&C.png"} alt={"image"} width={300} height={300}></Image>
+                        <Image src={"/Companies/T&Co.png"} alt={"image"} width={300} height={300}></Image>
                     </div>
                     <div className={"flex justify-center py-5"}>
-                        <Image src={"/logos/Arc.png"} alt={"image"} width={300} height={300}></Image>
+                        <Image src={"/Companies/Arc.png"} alt={"image"} width={300} height={300}></Image>
                     </div>
                     <div className={"flex justify-center py-5"}>
-                        <Image src={"/logos/Rivian.png"} alt={"image"} width={300} height={300}></Image>
+                        <Image src={"/Companies/Rivian.png"} alt={"image"} width={300} height={300}></Image>
                     </div>
                     <div className={"flex justify-center py-5"}>
-                        <Image src={"/logos/Hec.png"} alt={"image"} width={300} height={300}></Image>
+                        <Image src={"/Companies/HEC.png"} alt={"image"} width={300} height={300}></Image>
                     </div>
                     <div className={"flex justify-center py-5"}>
-                        <Image src={"/logos/GMTeams.png"} alt={"image"} width={300} height={300}></Image>
+                        <Image src={"/Companies/GM.png"} alt={"image"} width={300} height={300}></Image>
                     </div>
                     <div className={"flex justify-center py-5"}>
-                        <Image src={"/logos/Dolphins.png"} alt={"image"} width={300} height={300}></Image>
+                        <Image src={"/Companies/Dolphins.png"} alt={"image"} width={300} height={300}></Image>
                     </div>
                     <div className={"flex justify-center py-5"}>
-                        <Image src={"/logos/SafeWay.png"} alt={"image"} width={300} height={300}></Image>
+                        <Image src={"/Companies/BrandSafeway.png"} alt={"image"} width={300} height={300}></Image>
                     </div>
                 </div>
             </div>

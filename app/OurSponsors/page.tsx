@@ -91,23 +91,22 @@ export default function Home() {
     return (
         <>
             <div className="relative">
-                <img src="/images/OurSponsors.JPG" className="w-full h-screen object-cover" alt="Sponsors" />
+                <img src="/TitlePhotos/OurSponsors.JPG" className="w-full h-screen object-cover" alt="Sponsors" />
                 <div className="absolute inset-0 flex items-center justify-center bg-blue-800 opacity-30" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center space-y-2">
                     <h1 className="text-white lg:text-6xl text-4xl font-bold">Our Sponsors</h1>
-                    <Button gradientDuoTone={"purpleToPink"} outline>Sponsor Us</Button>
                 </div>
             </div>
-            <div className={"bg-[url('/images/OurSponsorsBG.png')] bg-repeat tracking-wide"}>
+            <div className={"bg-[url('/Sponsors/SponsorsBackgroundImage.png')] bg-repeat tracking-wide"}>
             <div>
-                {/*<Image src="/images/OurSponsorsBG.png" alt="bg" fill={true}/>*/}
+                {/*<Image src="/TitlePhotos/OurSponsorsBG.png" alt="bg" fill={true}/>*/}
                 <div className="flex flex-col py-5">
                     <h1 className="lg:text-6xl text-4xl text-center font-bold">
                         Thank you to our Sponsors!
                     </h1>
                     <div className={"flex justify-center py-10"}>
                         <div className={"w-full md:w-1/2 text-center"}>
-                            <p className={"text-normal lg:text-xl"}>
+                            <p className={"text-normal lg:text-xl px-10"}>
                                 The University of Michigan Electric Boat team was founded in 2020, yet we have already placed 2nd in the national PEP competition. Such a feat was only possible due to the hard work of our members as well as the generous contributions of current sponsors. We have only just begun our journey and are looking for corporate and private partners to help build our organization together.
                             </p>
                         </div>
@@ -150,7 +149,7 @@ export default function Home() {
                     <div className={"grid md:grid-cols-3 gap-5 lg:px-20 md:px-10"}>
                         {Silver.map((sponsor: { url: any}) => (
                             <div key={0} className={"flex justify-center"}>
-                                <img src={sponsor.url} alt={"Sponsor"} className={"object-scale-down h-64"}></img>
+                                <Image src={sponsor.url} alt={"Sponsor"} className={"object-scale-down"} width={300} height={300}></Image>
                             </div>
                         ))}
                     </div>
@@ -161,7 +160,7 @@ export default function Home() {
                     <div className={"grid md:grid-cols-4 gap-5 lg:px-20 md:px-10"}>
                         {Bronze.map((sponsor: { url: any}) => (
                             <div key={0} className={"flex justify-center"}>
-                                <img src={sponsor.url} alt={"Sponsor"} className={"object-scale-down h-64"}></img>
+                                <Image src={sponsor.url} alt={"Sponsor"} className={"object-scale-down"} width={300} height={300}></Image>
                             </div>
                         ))}
                     </div>
@@ -179,7 +178,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={"flex justify-center py-10"}>
-                    <Button gradientDuoTone={"purpleToPink"} outline>
+                    <Button gradientDuoTone={"purpleToPink"} outline href={"/BecomeASponsor"}>
                         <p className={"md:text-2xl text-xl font-bold"}>
                             How to Become a UMEB Sponsor
                         </p>

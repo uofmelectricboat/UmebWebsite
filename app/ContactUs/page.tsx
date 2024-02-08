@@ -1,7 +1,7 @@
 import TitlePhoto from "@/app/Components/TitlePhoto";
 import EmailForm from "@/app/Components/EmailForm";
 
-const titlePhoto = "/images/ContactUs.png"
+const titlePhoto = "/TitlePhotos/ContactUs.png"
 const titleText = "Contact Us"
 
 export default function Home() {

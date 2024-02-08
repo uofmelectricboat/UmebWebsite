@@ -27,8 +27,8 @@ const Navbar = () => {
             "url": "OurSponsors"
         },
         {
-            "name": "How to Sponsor Us",
-            "url": "HowToSponsorUs"
+            "name": "Become A Sponsor",
+            "url": "BecomeASponsor"
         }
     ];
 
@@ -82,7 +82,7 @@ const Navbar = () => {
                         <Link href={"/OurRaces"} className="text-2xl font-bold relative animated-underline" onClick={toggleNavbar}> Our Races </Link>
                         <Link href={"/Media"} className="text-2xl font-bold relative animated-underline" onClick={toggleNavbar}> Media </Link>
                         <Link href={"/OurSponsors"} className="text-2xl font-bold relative animated-underline" onClick={toggleNavbar}> Our Sponsors </Link>
-                        <Link href={"/HowToSponsorUs"} className="text-2xl font-bold relative animated-underline" onClick={toggleNavbar}> Become A Sponsor </Link>
+                        <Link href={"/BecomeASponsor"} className="text-2xl font-bold relative animated-underline" onClick={toggleNavbar}> Become A Sponsor </Link>
                         <Link href={"/ContactUs"} className="text-2xl font-bold relative animated-underline" onClick={toggleNavbar}> Contact Us </Link>
                         <Link href={"/JoinUs"} className="text-2xl font-bold relative animated-underline" onClick={toggleNavbar}> Join Us </Link>
                         <Button gradientDuoTone={"purpleToPink"}>Donate</Button>

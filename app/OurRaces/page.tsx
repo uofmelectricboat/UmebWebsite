@@ -7,7 +7,7 @@ import YouTube from "react-youtube";
 import {Button} from "flowbite-react";
 
 
-const titlePhoto = "/images/OurRaces.jpg?v=2"
+const titlePhoto = "/TitlePhotos/OurRaces.jpg?v=2"
 const titleText = "Our Races"
 export default function Home() {
     const opts = {
