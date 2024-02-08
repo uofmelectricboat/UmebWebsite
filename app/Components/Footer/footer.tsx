@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <footer className="bg-white w-full text-gray-800 text-center py-4 lg:px-20 sm:px-6">
             <div className={"flex lg:flex-row flex-col justify-between"}>
                 <div className={"lg:basis-1/3 items-center flex justify-center lg:justify-start"}>
-                    <h1 className={"text-2xl font-bold lg:p-5 p-2 text-left"}>
+                    <h1 className={"md:text-2xl text-xl font-bold lg:p-5 p-2 text-left"}>
                         Help turn our future Electric!
                     </h1>
                 </div>
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
                     <Image src={"/icons/mdLogo.png"} alt={"LOGO"} width={300} height={200}></Image>
                 </div>
             </div>
-            <div className={"flex-col lg:flex-row justify-center items-center lg:space-x-20 space-y-5  lg:space-y-0 w-full"}>
+            <div className={"flex flex-col lg:flex-row items-center justify-center lg:space-x-20 space-y-5 lg:space-y-0 w-full"}>
                 <div className={"flex justify-center"}>
                     <Image src={"/Companies/Cadence.png"} alt={"cadence"} width={200} height={200} className={"object-scale-down"}></Image>
                 </div>
