@@ -7,18 +7,14 @@ import Image from "next/image"
 const Footer: React.FC = () => {
     return (
         <footer className="bg-white w-full text-gray-800 text-center py-4 lg:px-20 sm:px-6">
-            <div className={"flex lg:flex-row flex-col"}>
+            <div className={"flex lg:flex-row flex-col justify-between"}>
                 <div className={"lg:basis-1/3 items-center flex justify-center lg:justify-start"}>
                     <h1 className={"text-2xl font-bold lg:p-5 p-2 text-left"}>
                         Help turn our future Electric!
                     </h1>
                 </div>
-                <div className={"lg:basis-1/3 flex justify-center space-x-2 items-center"}>
-                    <Button gradientDuoTone={"purpleToPink"} outline pill> Sponsor Us </Button>
-                    <Button gradientDuoTone={"purpleToPink"} outline pill> Join Us </Button>
-                </div>
                 <div className={"lg:basis-1/3 flex justify-center lg:justify-end"}>
-                    <Image src={"/icons/smLogo.png"} alt={"LOGO"} width={100} height={100}></Image>
+                    <Image src={"/icons/mdLogo.png"} alt={"LOGO"} width={200} height={100}></Image>
                 </div>
             </div>
             <div className={"flex justify-between items-center pt-5 px-5"}>

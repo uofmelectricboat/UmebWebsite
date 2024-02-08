@@ -57,19 +57,19 @@ const consultants = [{
     title: "WEB DESIGN & DEVELOPMENT",
     name: "Alec Palo",
     team: "",
-    image: "/Members/Arend.JPG",
+    image: "/Teams/headshots/Krzystof.jpg",
     info: "Computer Science & Business | 2024"
 }, {
     title: "WEB DEVELOPMENT",
     name: "Grace Dwyer",
     team: "",
-    image: "/Members/Caroline.jpeg",
+    image: "/Teams/headshots/Krzystof.jpg",
     info: "SoI - Information Analytics | 2023"
 }, {
     title: "HEAD FACULTY ADVISOR",
     name: "Krzysztof Fidkowski",
     team: "",
-    image: "/Members/Caroline.jpeg",
+    image: "/Teams/headshots/Krzystof.jpg",
     info: "Associate Professor, Graduate Program Chair | Aerospace Engineering Department"
 }]
 
