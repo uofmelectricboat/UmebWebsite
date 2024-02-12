@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
                     </h1>
                 </div>
                 <div className={"lg:basis-1/3 flex justify-center lg:justify-end"}>
-                    <Image src={"/icons/mdLogo.png"} alt={"LOGO"} width={300} height={200}></Image>
+                    <Image src={"/Icons/mdLogo.png"} alt={"LOGO"} width={300} height={200}></Image>
                 </div>
             </div>
             <div className={"flex flex-col lg:flex-row items-center justify-center lg:space-x-20 space-y-5 lg:space-y-0 w-full"}>
