@@ -105,7 +105,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="w-full flex justify-center bg-blue-950 py-10">
-                <YouTube videoId="kEx7j_lCZ-k" opts={opts} ></YouTube>
+                {/*<YouTube videoId="kEx7j_lCZ-k" opts={opts} ></YouTube>*/}
             </div>
         </>
     )
