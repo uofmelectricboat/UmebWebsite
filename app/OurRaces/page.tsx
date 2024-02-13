@@ -54,7 +54,7 @@ export default function Home() {
                             UMEB will be attending LOTO this summer and racing as one of the few electric boats, with hopes of breaking records for the fastest electric boat to compete at LOTO.
                         </p>
                         <div className={"py-2 flex md:justify-start justify-center"}>
-                            <Button gradientDuoTone={"purpleToPink"} outline href={"https://www.navalengineers.org/Education/Promoting-Electric-Propulsion-PEP"}>Check Out PEP!</Button>
+                            <Button gradientDuoTone={"purpleToPink"} outline href={"https://www.navalengineers.org/Education/Promoting-Electric-Propulsion-PEP"}>Check Out LOTO!</Button>
                         </div>
                     </div>
                     <div className={"w-1/4 relative flex md:justify-end justify-center"}>

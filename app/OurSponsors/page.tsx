@@ -75,8 +75,6 @@ const Bronze = [{
 },{
     url: "/Companies/MechE.png",
 },{
-    url: "/Companies/BruceRosenblatt.png",
-},{
     url: "/Companies/NuclearEngineering.png",
 },{
     url: "/Companies/Evolve.png",
@@ -157,7 +155,7 @@ export default function Home() {
 
                 <div className="text-center p-10">
                     <h1 className="lg:text-6xl text-4xl pb-20 font-bold"> Bronze Sponsors </h1>
-                    <div className={"grid md:grid-cols-4 gap-5 lg:px-20 md:px-10"}>
+                    <div className={"grid md:grid-cols-3 gap-5 lg:px-20 md:px-10"}>
                         {Bronze.map((sponsor: { url: any}) => (
                             <div key={0} className={"flex justify-center"}>
                                 <Image src={sponsor.url} alt={"Sponsor"} className={"object-scale-down"} width={300} height={300}></Image>

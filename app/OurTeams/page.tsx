@@ -38,16 +38,16 @@ const teamleaders = [{
     name: "Lyn Tran",
     team: "Meet the Operations Team",
     image: "/Teams/headshots/Lyn_Operations_Director.jpg",
-    info: "NAME | 2026"
+    info: "N.A.M.E. | 2026"
 }, {
     title: "BUSINESS DIRECTOR",
-    name: "Kaden",
+    name: "Kaden Murphy",
     team: "Meet the Business Team",
     image: "/Teams/headshots/Kaden_Business_CoDirector.jpg",
     info: "Business Administration | 2026"
 }, {
     title: "BUSINESS DIRECTOR",
-    name: "Yaseen Pant",
+    name: "Yaseen Metwally",
     team: "Meet the Business Team",
     image: "/Teams/headshots/Yaseen_Business_CoDirector.jpg",
     info: "Business Administration | 2026"
@@ -90,7 +90,7 @@ export default function Home() {
                             Mechanical
                         </h1>
                         <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight"}>
-                            The UMEB Mechanical Team is responsible for the component-level design, manufacturing, testing, and validation of all structural, drivetrain, and safety systems on the boat. Additionally, the mechanical team works closely with electrical team leadership to make system-level decisions on the design of the boat and assures all systems on the boat operate cohesively. On top of working on and designing the boat, the mechanical team will focus extensively on the growth of the overall team`&lsquo;`s CAD and manufacturing capabilities.
+                            The UMEB Mechanical Team is responsible for the component-level design, manufacturing, testing, and validation of all structural, drivetrain, mechatronics, and safety systems on the boat. Additionally, the Mechanical Team works closely with the Electrical Team to make system-level decisions on the design of the boat and assures all systems on the boat operate cohesively.
                         </p>
                         <div className={"py-2 flex md:justify-end justify-center"}>
                             <Button gradientDuoTone={"purpleToPink"} outline className={""}>Join the Mechanical Team!</Button>
@@ -105,7 +105,7 @@ export default function Home() {
                             Electrical
                         </h1>
                         <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight"}>
-                            The UMEB Mechanical Team is responsible for the component-level design, manufacturing, testing, and validation of all structural, drivetrain, and safety systems on the boat. Additionally, the mechanical team works closely with electrical team leadership to make system-level decisions on the design of the boat and assures all systems on the boat operate cohesively. On top of working on and designing the boat, the mechanical team will focus extensively on the growth of the overall team`&lsquo;`s CAD and manufacturing capabilities.
+                            The UMEB Electrical Team is responsible for the design, integration, testing, and validation of all powertrain, controls, and software systems on the boat. Like the Mechanical team, the Electrical Team works closely with the Mechanical Team to ensure the overall success and safety of the boat, driver, and surroundings.
                         </p>
                         <div className={"py-2"}>
                             <Button gradientDuoTone={"purpleToPink"} outline >Join the Electrical Team!</Button>
@@ -126,7 +126,7 @@ export default function Home() {
                             Operations
                         </h1>
                         <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight"}>
-                            The Operations Subteam is responsible for managing the logistical demands of the Michigan Electric Boat Team, including the maintenance of the Wilson Center workspace(s), organization and design reviews, and communication with competition(s) and competition sponsors. Additionally, the subteam handles the standard operating procedures and safety procedures with the Manufacturing Coordinator to promote a productive and efficient working environment. Lastly, the Operations Subteam manages the general recruitment, logistics, and communications within the team.
+                            The UMEB Operations Team is responsible for managing the logistical demands of the Michigan Electric Boat Team, including the maintenance of the Wilson Center workspace, team organization, and event logistics. Additionally, the Operations Team handles the standard operating procedures and safety procedures to promote an efficient working environment.
                         </p>
                         <div className={"py-2 flex md:justify-end justify-center"}>
                             <Button gradientDuoTone={"purpleToPink"} outline>Join the Operations Team!</Button>
@@ -141,7 +141,7 @@ export default function Home() {
                             Business
                         </h1>
                         <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight"}>
-                            UMEB’s business team is responsible for supporting our engineers in all other tasks ranging from sponsor relations to marketing the team on various platforms. We strive to prevent our engineers from lacking any resources that would limit their innovation. Each year, we raise tens of thousands of dollars in order to build the fastest boat possible.
+                            The UMEB Business Team is responsible for supporting our engineers in all tasks ranging from sponsor relations to marketing. We strive to aid our engineers from lacking any resources that would limit their innovation. Each year, we raise tens of thousands of dollars in order to build the fastest boat possible.
                         </p>
                         <div className={"py-2"}>
                             <Button gradientDuoTone={"purpleToPink"} outline >Join the Electrical Team!</Button>
