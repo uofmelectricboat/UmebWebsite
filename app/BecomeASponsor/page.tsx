@@ -23,6 +23,16 @@ const SponsorPackageImg = "/Sponsors/SponsorPackage.png"
 const titlePhoto = "/TitlePhotos/BecomeASponsor.jpg"
 const titleText = "Become a Sponsor"
 
+const onButtonClick = () => {
+    const pdfUrl = "/Sponsors/SponsorPacket2024.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "/Sponsors/SponsorPacket2024.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
+
 export default function Home() {
     return (
     <>
@@ -65,7 +75,7 @@ export default function Home() {
             <Image src={SponsorPackageImg} alt="image" className="md:p-10" height={800} width={2000}></Image>
             <div className="flex md:flex-row flex-col md:py-10 py-5 justify-center space-y-5">
                 <div className="md:w-1/2 w-full flex justify-center items-center">
-                    <Button gradientDuoTone={"purpleToPink"} outline>
+                    <Button gradientDuoTone={"purpleToPink"} onClick={onButtonClick} outline>
                         <p className={"lg:text-2xl md:text-xl text-lg font-bold"}>
                             Download our Sponsorship Packet
                         </p>
