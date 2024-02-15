@@ -59,19 +59,19 @@ const TeamLeadersTwo = [{
 const consultants = [{
     title: "WEB DESIGN & DEVELOPMENT",
     name: "Alec Palo",
-    LinkedIn: "",
-    image: "/Teams/headshots/Krzystof.jpg",
+    LinkedIn: "https://www.linkedin.com/in/apalo/",
+    image: "/Teams/headshots/Alec.jpg",
     info: "Computer Science & Business | 2024"
 }, {
-    title: "WEB DEVELOPMENT",
-    name: "Grace Dwyer",
-    LinkedIn: "",
-    image: "/Teams/headshots/Krzystof.jpg",
-    info: "SoI - Information Analytics | 2023"
+    title: "FACULTY ADVISOR",
+    name: "Dave Signer",
+    LinkedIn: "https://name.engin.umich.edu/people/singer-david-j/",
+    image: "/Teams/headshots/Dave.jpg",
+    info: "Associate Professor | N.A.M.E"
 }, {
     title: "HEAD FACULTY ADVISOR",
     name: "Krzysztof Fidkowski",
-    LinkedIn: "",
+    LinkedIn: "https://aero.engin.umich.edu/people/fidkowski-krzysztof/",
     image: "/Teams/headshots/Krzystof.jpg",
     info: "Associate Professor, Graduate Program Chair | Aerospace Engineering Department"
 }]
