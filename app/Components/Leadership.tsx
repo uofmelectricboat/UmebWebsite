@@ -6,10 +6,11 @@ interface LeadershipProps {
     bio: string;
     image: string;
     info: string;
+    LinkedIn: string;
 }
 
 
-const LeaderShip: React.FC<LeadershipProps> = ({ title, name, bio, image, info }) => {
+const LeaderShip: React.FC<LeadershipProps> = ({ title, name, bio, image, info, LinkedIn }) => {
     return (
         <div className="container md:flex items-center justify-center py-10">
             <div className="px-10 flex justify-center">
@@ -23,7 +24,9 @@ const LeaderShip: React.FC<LeadershipProps> = ({ title, name, bio, image, info }
                     <h3 className="font-bold text-xl pr-2">
                         {name}
                     </h3>
-                    <Image src="/Icons/LinkedIn.png" width={30} height={20} alt="image"></Image>
+                    <a href={LinkedIn}>
+                        <Image src="/Icons/LinkedIn.png" width={30} height={20} alt="image"></Image>
+                    </a>
                 </div>
                 <h4 className="italic text-lg">
                     {info}

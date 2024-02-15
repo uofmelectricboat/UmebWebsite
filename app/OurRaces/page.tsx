@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import TitlePhoto from "@/app/Components/TitlePhoto";
 import React from "react";
-import YouTube from "react-youtube";
+import Youtube from 'react-youtube';
 import {Button} from "flowbite-react";
+import Image from 'next/image';
 
 
 const titlePhoto = "/TitlePhotos/OurRaces.jpg?v=2"
@@ -13,19 +13,16 @@ export default function Home() {
     const opts = {
         height: "600",
         width: "1000",
-        playerVars: {
-            autoplay: 0,
-        },
     };
     return (
         <>
             <TitlePhoto title={titleText} image={titlePhoto}/>
             <div className="w-full bg-stone-100">
-                <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
-                    <div className={"w-1/4 relative order-last md:order-first"}>
-                        <img src={"/Races/PEP.JPG"} alt={"Image Not Found"} className={"object-scale-down"}></img>
+                <div className={"w-full flex flex-col lg:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
+                    <div className={"lg:w-1/4 w-full flex justify-center p-5 lg:p-0 relative order-last lg:order-first"}>
+                        <Image src={"/Races/PEP.JPG"} alt={"Image Not Found"} width={500} height={500} className={"object-scale-down"}></Image>
                     </div>
-                    <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
+                    <div className={"w-full lg:w-1/2 px-5 lg:px-0 lg:pl-8"}>
                         <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
                             Promoting Electric Propulsion - April 2024
                         </h1>
@@ -42,8 +39,8 @@ export default function Home() {
                 </div>
             </div>
             <div className="w-full bg-white">
-                <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
-                    <div className={"w-full lg:w-1/2 pl-2 lg:pr-8 md:pr-6 sm:pr-4"}>
+                <div className={"w-full flex flex-col lg:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
+                    <div className={"w-full lg:w-1/2 px-5 lg:px-0 lg:pr-8"}>
                         <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
                             Lake of the Ozarks Shootout - August 2024
                         </h1>
@@ -57,17 +54,17 @@ export default function Home() {
                             <Button gradientDuoTone={"purpleToPink"} outline href={"https://www.navalengineers.org/Education/Promoting-Electric-Propulsion-PEP"}>Check Out LOTO!</Button>
                         </div>
                     </div>
-                    <div className={"w-1/4 relative flex md:justify-end justify-center"}>
-                        <img src={"/Races/Ozark.jpg"} alt={"Image Not Found"} className={"object-scale-down"}></img>
+                    <div className={"lg:w-1/4 w-full p-5 lg:p-0 relative flex lg:justify-end justify-center"}>
+                        <Image src={"/Races/Ozark.jpg"} alt={"Image Not Found"} width={500} height={500} className={"object-scale-down"}></Image>
                     </div>
                 </div>
             </div>
             <div className="w-full bg-stone-100">
-                <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
-                    <div className={"w-1/4 relative order-last md:order-first"}>
-                        <img src={"/Races/Wye.png"} alt={"Image Not Found"} className={"object-scale-down"}></img>
+                <div className={"w-full flex flex-col lg:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
+                    <div className={"lg:w-1/4 w-full flex justify-center p-5 lg:p-0 relative order-last lg:order-first"}>
+                        <Image src={"/Races/Wye.png"} alt={"Image Not Found"} width={500} height={500} className={"object-scale-down"}></Image>
                     </div>
-                    <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
+                    <div className={"w-full lg:w-1/2 px-5 lg:px-0 lg:pl-8"}>
                         <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
                             Wye Island Electric Boat Marathon
                         </h1>
@@ -84,8 +81,8 @@ export default function Home() {
                 </div>
             </div>
             <div className="w-full bg-white">
-                <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
-                    <div className={"w-full lg:w-1/2 pr-2 lg:pr-8 md:pr-6 sm:pr-4"}>
+                <div className={"w-full flex flex-col lg:flex-row justify-center items-center lg:py-6 py-2"}>
+                    <div className={"w-full lg:w-1/2 pr-2 lg:pr-8 px-5 lg:px-0"}>
                         <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
                             Monaco Energy Boat Challenge - July 2025
                         </h1>
@@ -99,13 +96,13 @@ export default function Home() {
                             <Button gradientDuoTone={"purpleToPink"} outline href={"https://energyboatchallenge.com/"}>Check Out Monaco!</Button>
                         </div>
                     </div>
-                    <div className={"w-1/4 relative flex md:justify-end justify-center"}>
-                        <img src={"/Races/Monaco.jpg"} alt={"Image Not Found"} className={"object-scale-down"}></img>
+                    <div className={"lg:w-1/4 w-full p-5 lg:p-0 relative flex lg:justify-end justify-center"}>
+                        <Image src={"/Races/Monaco.jpg"} alt={"Image Not Found"} width={500} height={500} className={"object-scale-down"}></Image>
                     </div>
                 </div>
             </div>
             <div className="w-full flex justify-center bg-blue-950 py-10">
-                {/*<YouTube videoId="kEx7j_lCZ-k" opts={opts} ></YouTube>*/}
+                <Youtube videoId="kEx7j_lCZ-k" opts={opts} ></Youtube>
             </div>
         </>
     )

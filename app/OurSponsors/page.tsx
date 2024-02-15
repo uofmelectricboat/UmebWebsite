@@ -8,7 +8,7 @@ const Platinum = [{
     text: "The Michigan College of Engineering strives to anticipate the changes ahead and provide scientific and technological leadership - for the common good. Michigan Engineering is home to top-ranked departments that collaborate within the nation's number one public research institution - The University of Michigan.",
     name: "Skater",
     zone: "Platinum",
-    image: "/Companies/Skater.png",
+    image: "/Companies/Skater.jpg",
     learnMore: "31 hp",
 },{
     text: "The Michigan NAME Department trains naval architects and marine engineers who lead, setting the global standard for design and research in every endeavor that touches water.",
@@ -97,21 +97,8 @@ export default function Home() {
             </div>
             <div className={"bg-[url('/Sponsors/SponsorsBackgroundImage.png')] bg-repeat tracking-wide"}>
             <div>
-                {/*<Image src="/TitlePhotos/OurSponsorsBG.png" alt="bg" fill={true}/>*/}
-                <div className="flex flex-col py-5">
-                    <h1 className="lg:text-6xl text-4xl text-center font-bold">
-                        Thank you to our Sponsors!
-                    </h1>
-                    <div className={"flex justify-center py-10"}>
-                        <div className={"w-full md:w-1/2 text-center"}>
-                            <p className={"text-normal lg:text-xl px-10"}>
-                                The University of Michigan Electric Boat team was founded in 2020, yet we have already placed 2nd in the national PEP competition. Such a feat was only possible due to the hard work of our members as well as the generous contributions of current sponsors. We have only just begun our journey and are looking for corporate and private partners to help build our organization together.
-                            </p>
-                        </div>
-                    </div>
-                </div>
                 <div className="text-center p-10">
-                    <h1 className="lg:text-6xl text-4xl  font-bold"> Platinum Sponsors</h1>
+                    <h1 className="lg:text-6xl text-4xl font-bold"> Platinum Sponsors</h1>
                     <div>
                         {Platinum.map((sponsor: { text: any; name: any; zone: any; image: any; learnMore: any; }, index: any) => (
                             <SponsorCard
@@ -163,24 +150,26 @@ export default function Home() {
                         ))}
                     </div>
                 </div>
-                <div className="flex lg:flex-row flex-col">
-                    <div className="lg:w-1/3 w-full p-2">
-                        <h1 className="text-4xl font-bold lg:text-right text-center justify-center">
-                            Become A Sponsor
-                        </h1>
+                <div className={"pt-10"}>
+                    <div className="flex lg:flex-row flex-col">
+                        <div className="lg:w-1/3 w-full p-2">
+                            <h1 className="text-4xl font-bold lg:text-right text-center justify-center">
+                                Become A Sponsor
+                            </h1>
+                        </div>
+                        <div className="lg:w-2/3 w-full lg:px-40 py-2 px-5">
+                            <p className="lg:text-xl lg:text-left text-center">
+                                UM Electric Boat was founded with a commitment to testing alternative, cleaner forms of energy in the maritime industry. As such, we partner with organizations that believe in our mission and want to invest in new naval technologies.
+                            </p>
+                        </div>
                     </div>
-                    <div className="lg:w-2/3 w-full lg:px-40 py-2 px-5">
-                        <p className="lg:text-xl lg:text-left text-center">
-                            UM Electric Boat was founded with a commitment to testing alternative, cleaner forms of energy in the maritime industry. As such, we partner with organizations that believe in our mission and want to invest in new naval technologies.
-                        </p>
+                    <div className={"flex justify-center py-10"}>
+                        <Button gradientDuoTone={"purpleToPink"} outline href={"/BecomeASponsor"}>
+                            <p className={"md:text-2xl text-xl font-bold"}>
+                                How to Become a UMEB Sponsor
+                            </p>
+                        </Button>
                     </div>
-                </div>
-                <div className={"flex justify-center py-10"}>
-                    <Button gradientDuoTone={"purpleToPink"} outline href={"/BecomeASponsor"}>
-                        <p className={"md:text-2xl text-xl font-bold"}>
-                            How to Become a UMEB Sponsor
-                        </p>
-                    </Button>
                 </div>
             </div>
         </div>

@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
             </div>
             <div className={"flex flex-col lg:flex-row items-center justify-center lg:space-x-20 space-y-5 lg:space-y-0 w-full"}>
                 <div className={"flex justify-center"}>
-                    <Image src={"/Companies/Cadence.png"} alt={"cadence"} width={200} height={200} className={"object-scale-down"}></Image>
+                    <Image src={"/Companies/Skater.jpg"} alt={"cadence"} width={200} height={200} className={"object-scale-down"}></Image>
                 </div>
                 <div className={"flex justify-center"}>
                     <Image src={"/Companies/Liberator_Logo.png"} alt={"liberator"} width={200} height={200} className={"object-scale-down"}></Image>
