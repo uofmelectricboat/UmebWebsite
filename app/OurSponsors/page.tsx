@@ -1,17 +1,17 @@
 "use client";
-import SponsorCard from "@/app/Components/SponsorCard";
+import SponsorCard from "@/app/_components/SponsorCard";
 import { Button } from "flowbite-react";
 import Image from "next/image";
 
 
 const Platinum = [{
-    text: "The Michigan College of Engineering strives to anticipate the changes ahead and provide scientific and technological leadership - for the common good. Michigan Engineering is home to top-ranked departments that collaborate within the nation's number one public research institution - The University of Michigan.",
+    text: "Skater does not build 'off-the-line' boats and is the leader in marine racing. Skater has led the industry for 40 years with the highest quality handcrafted racing boats. From the interior to the paint to the power package and everything in between, every catamaran is fully custom.",
     name: "Skater",
     zone: "Platinum",
     image: "/Companies/Skater.jpg",
     learnMore: "31 hp",
 },{
-    text: "The Michigan NAME Department trains naval architects and marine engineers who lead, setting the global standard for design and research in every endeavor that touches water.",
+    text: "Liberator Boats is a performance boat manufacturer based in Crowley, Texas. Liberator is a small yet experienced team specializing in deep tunnel hulls. Their fiberglass hulls built for speed with a strong but lightweight layup.",
     name: "Liberator Boats",
     zone: "Platinum",
     image: "/Companies/Liberator_Logo.png",

@@ -1,6 +1,6 @@
 "use client";
 
-import TitlePhoto from "@/app/Components/TitlePhoto";
+import TitlePhoto from "@/app/_components/TitlePhoto";
 import React from "react";
 import Youtube from 'react-youtube';
 import {Button} from "flowbite-react";

@@ -1,8 +1,8 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
-import TitlePhoto from '@/app/Components/TitlePhoto';
-import Carousel from '@/app/Components/HomeCarousel';
+import TitlePhoto from '@/app/_components/TitlePhoto';
+import Carousel from '@/app/_components/HomeCarousel';
 
 const titleText = "";
 const titlePhoto = "/Home/HomePage.jpg";

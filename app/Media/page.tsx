@@ -1,6 +1,6 @@
 "use client";
 
-import TitlePhoto from "@/app/Components/TitlePhoto";
+import TitlePhoto from "@/app/_components/TitlePhoto";
 import { LinkedInEmbed } from 'react-social-media-embed';
 import { InstagramEmbed } from 'react-social-media-embed';
 import { YouTubeEmbed } from 'react-social-media-embed';
@@ -42,22 +42,24 @@ export default function Home() {
                             <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
                                 Cadence Collaboration | YouTube
                             </h1>
-                            <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight"}>
+                            <p className={"text-lg lg:text-xl text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight"}>
                                 Cadence Design Systems has been one of UMEB’s largest sponsors for 2 years. In this video, we discuss how we have utilized Cadence CFD tools to improve our boat’s energy efficiency and propel our team forward.
                             </p>
                         </div>
                     </div>
                     <div className={"w-full flex flex-col lg:flex-row justify-center items-center lg:py-6 py-2 px-5 "}>
                         <div className={"w-full lg:w-1/2 pl-2 lg:pr-8 md:pr-6 sm:pr-4"}>
-                            <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
+                            <h1 className={"text-xl lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
                                 A Match Made on North: Rossholes & Nerds | Op-Ed
                             </h1>
-                            <p className={"text-xs lg:text-lg text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight"}>
+                            <p className={"text-lg lg:text-xl text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight"}>
                                 Former Business Director and co-founder, Mitchell Davidson, shines a spotlight on an often-overlooked opportunity for U-M students to learn more about the intersection of science, technology, and business: engineering project teams.
                             </p>
                         </div>
                         <div className={"md:w-1/4 w-full p-5 md:p-0 relative flex md:justify-end justify-center"}>
-                            <img src={"/Races/Ozark.jpg"} alt={"Image Not Found"} className={"object-scale-down"}></img>
+                            <a href={"https://www.michigandaily.com/opinion/wilson-center-a-match-made-on-north-rossholes-and-nerds/"}>
+                                <img src={"/Media/Oped.png"} alt={"Image Not Found"} className={"object-scale-down"}></img>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-import Button from "../Components/buttons"
+import Button from "@/app/_components/buttons"
 import React from "react";
 import Image from "next/image"
 

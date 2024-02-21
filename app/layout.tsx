@@ -1,9 +1,8 @@
 import './globals.css'
-import { Nunito } from 'next/font/google'
-import Navbar from './Components/Navbar/navbar'
-import Header from './Components/Header'
-import Footer from './Components/Footer/footer'
+import Header from '@/app/_components/Header'
+import Footer from '@/app/_components/Footer/footer'
 import { Montserrat } from 'next/font/google';
+import {Providers} from "./providers";
 
 const montserrat = Montserrat({
   weight: '400',

@@ -1,5 +1,5 @@
-import Logo from "@/app/Components/Navbar/logo";
-import Navbar from "@/app/Components/Navbar/navbar";
+import Logo from "@/app/_components/Navbar/logo";
+import Navbar from "@/app/_components/Navbar/navbar";
 
 const Header = () => {
     return (

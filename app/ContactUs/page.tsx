@@ -1,5 +1,5 @@
-import TitlePhoto from "@/app/Components/TitlePhoto";
-import EmailForm from "@/app/Components/EmailForm";
+import TitlePhoto from "@/app/_components/TitlePhoto";
+import EmailForm from "@/app/_components/EmailForm";
 
 const titlePhoto = "/TitlePhotos/ContactUs.png"
 const titleText = "Contact Us"

@@ -1,5 +1,5 @@
 "use client";
-import TitlePhoto from "@/app/Components/TitlePhoto";
+import TitlePhoto from "@/app/_components/TitlePhoto";
 import {Button} from "flowbite-react"
 import { Accordion } from 'flowbite-react';
 

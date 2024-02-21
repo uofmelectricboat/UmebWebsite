@@ -1,8 +1,8 @@
 "use client";
 
-import LeaderShip from "../Components/Leadership";
-import TeamLeader from "../Components/TeamLeader";
-import TitlePhoto from "@/app/Components/TitlePhoto";
+import LeaderShip from "@/app/_components/Leadership";
+import TeamLeader from "@/app/_components/TeamLeader";
+import TitlePhoto from "@/app/_components/TitlePhoto";
 import Image from "next/image"
 
 
