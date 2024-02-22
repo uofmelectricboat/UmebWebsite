@@ -17,7 +17,7 @@ const LeaderShip: React.FC<LeadershipProps> = ({ title, name, bio, image, info, 
                 <Image src={image} alt={"Image"} width={300} height={300} className={"rounded"}></Image>
             </div>
             <div className="basis-1/2 md:text-left text-center">
-                <h2 className="font-bold text-4xl">
+                <h2 className="font-bold text-2xl lg:text-4xl">
                     {title}
                 </h2>
                 <div className="flex justify-center md:justify-start">
