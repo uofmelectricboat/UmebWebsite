@@ -39,7 +39,7 @@ export default function Home() {
                             <YouTubeEmbed url="https://www.youtube.com/watch?si=1oxM1LIQmodKoc94&v=BnXNEKXm_Z8&feature=youtu.be" width={325} height={220} />
                         </div>
                         <div className={"w-full lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4"}>
-                            <h1 className={"text-base lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
+                            <h1 className={"text-2xl lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
                                 Cadence Collaboration | YouTube
                             </h1>
                             <p className={"text-lg lg:text-xl text-blue-950 md:text-base sm:text-xs tracking-tight leading-tight"}>
