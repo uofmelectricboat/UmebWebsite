@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
                         Help turn our future Electric!
                     </h1>
                 </div>
-                <div className={"lg:basis-1/3 flex justify-center lg:justify-end"}>
+                <div className={"lg:basis-1/3 flex justify-center lg:justify-end md:block hidden"}>
                     <Image src={"/Icons/mdLogo.png"} alt={"LOGO"} width={300} height={200}></Image>
                 </div>
             </div>
@@ -28,13 +28,13 @@ const Footer: React.FC = () => {
                     <Image src={"/Companies/EYHorizontal.png"} alt={"EY"} width={200} height={200} className={"object-scale-down"}></Image>
                 </div>
             </div>
-            <div className={"flex justify-between items-center pt-5 px-5"}>
+            <div className={"flex md:justify-between justify-center items-center pt-10 px-5"}>
                 <div className={"lg:space-x-2 space-x-1 flex flex-wrap"}>
                     <SocialIcon network={"linkedin"} url={""}></SocialIcon>
                     <SocialIcon network={"youtube"} url={""}></SocialIcon>
                     <SocialIcon network={"instagram"} url={""}></SocialIcon>
                 </div>
-                <div>
+                <div className={"md:block hidden"}>
                     <h1 className={"text-blue-900 md:text-xl text-normal"}>
                         Made by Alec Palo
                     </h1>
