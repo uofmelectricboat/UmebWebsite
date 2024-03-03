@@ -88,18 +88,18 @@ const Navbar = () => {
                                 <span className={underlineStyle}></span>
                             </li>
                         </div>
-                        <div className={"group transition duration-500"}>
-                            <li className={linkStyle}>
-                                <Dropdown title={"Sponsors"} options={Sponsors}></Dropdown>
-                                <span className={underlineStyle}></span>
-                            </li>
-                        </div>
                         <Link href={"/Media"} className={"group transition duration-500"}>
                             <li className={linkStyle}>
                                 Media
                                 <span className={underlineStyle}></span>
                             </li>
                         </Link>
+                        <div className={"group transition duration-500"}>
+                            <li className={linkStyle}>
+                                <Dropdown title={"Sponsors"} options={Sponsors}></Dropdown>
+                                <span className={underlineStyle}></span>
+                            </li>
+                        </div>
                         <div className={"group transition duration-500"}>
                             <li className={linkStyle}>
                                 <Dropdown title={"Contact"} options={Contact}/>
