@@ -1,5 +1,5 @@
 "use client";
-import SponsorCard from "@/app/_components/SponsorCard";
+import SponsorCard from "@/app/_components/Sponsors/SponsorCard";
 import { Button } from "flowbite-react";
 import Image from "next/image";
 
@@ -7,53 +7,45 @@ import Image from "next/image";
 const Platinum = [{
     text: "Skater does not build 'off-the-line' boats and is the leader in marine racing. Skater has led the industry for 40 years with the highest quality handcrafted racing boats. From the interior to the paint to the power package and everything in between, every catamaran is fully custom.",
     name: "Skater",
-    zone: "Platinum",
+    link: "Platinum",
     image: "/Companies/Skater.jpg",
-    learnMore: "31 hp",
 },{
     text: "Liberator Boats is a performance boat manufacturer based in Crowley, Texas. Liberator is a small yet experienced team specializing in deep tunnel hulls. Their fiberglass hulls built for speed with a strong but lightweight layup.",
     name: "Liberator Boats",
-    zone: "Platinum",
+    link: "Platinum",
     image: "/Companies/Liberator_Logo.png",
-    learnMore: "31 hp",
 },{
     text: "EY provides consulting, assurance, tax and transaction services that help solve challenges and build a better working world for all. The insights and services EY provides helps to create long-term value for society and to build trust in the capital markets.",
     name: "EY",
-    zone: "Platinum",
+    link: "Platinum",
     image: "/Companies/EY.png",
-    learnMore: "31 hp",
 }, {
     text: "Cadence is a pivotal leader in electronic systems design, building upon more than 30 years of computational software expertise. Cadence applies its underlying Intelligent System Design strategy to deliver software, hardware, and IP that turn design concepts into reality.",
     name: "Cadence",
-    zone: "Platinum",
+    link: "Platinum",
     image: "/Companies/Cadence.png",
-    learnMore: "31 hp",
 },{
     text: "The UM College of Engineering strives to provide scientific and technological leadership for the common good. Michigan Engineering is home to top-ranked departments that collaborate within the nation's number one public research institution - The University of Michigan.",
     name: "University of Michigan College of Engineering",
-    zone: "Platinum",
+    link: "Platinum",
     image: "/Companies/COE.png",
-    learnMore: "31 hp",
 },{
     text: "The UM Naval Architecture and Marine Engineering (NAME) Department is a world leader in the education of engineers for the marine environment, and provides leadership and service to the state, national, and international marine community.",
-    name: "University of Michigan Department of Naval Architecture and Marine Engineering",
-    zone: "Platinum",
+    name: "University of Michigan N.A.M.E.",
+    link: "Platinum",
     image: "/Companies/NAME.png",
-    learnMore: "31 hp",
 },{
     text: "McNaughton-McKay Electric Company is a wholesale electrical distributor serving markets in Michigan, Ohio, Georgia, North Carolina and South Carolina. MM offers a full line of products ranging from pipe and wire to complex automation control systems.",
     name: "Mcnaughton Mckay",
-    zone: "Platinum",
+    link: "Platinum",
     image: "/Companies/McNaughton.png",
-    learnMore: "31 hp",
 },]
 
 const Gold = [{
     text: "Axial flux e-motors are the next step in electric propulsion solutions. Used in marine, aviation, automotive and racing industries across the globe. Beyond Motors have the best continuous power-to-weight ratio on the market, and work in the most robust applications.",
     name: "Beyond Motors",
-    zone: "Gold",
+    link: "Gold",
     image: "/Companies/Beyond.png",
-    learnMore: "",
 }]
 
 const Silver = [{
@@ -95,45 +87,43 @@ export default function Home() {
                     <h1 className="text-white lg:text-6xl text-4xl font-bold">Our Sponsors</h1>
                 </div>
             </div>
-            <div className={"bg-[url('/Sponsors/SponsorsBackgroundImage.png')] bg-repeat tracking-wide"}>
+            <div className={"bg-stone-200 bg-repeat tracking-wide"}>
             <div>
                 <div className="text-center p-10">
-                    <h1 className="lg:text-6xl text-4xl font-bold"> Platinum Sponsors</h1>
+                    <h1 className="lg:text-4xl text-2xl font-bold"> Platinum Sponsors </h1>
                     <div>
-                        {Platinum.map((sponsor: { text: any; name: any; zone: any; image: any; learnMore: any; }, index: any) => (
+                        {Platinum.map((sponsor: { text: any; name: any; link: any; image: any; }, index: any) => (
                             <SponsorCard
                                 key={index}
                                 text={sponsor.text}
                                 name={sponsor.name}
-                                learnMore={sponsor.learnMore}
                                 image={sponsor.image}
-                                zone={sponsor.zone}
+                                link={sponsor.link}
                                 index={index}
                             />
                         ))}
                     </div>
                 </div>
                 <div className="text-center p-10">
-                    <h1 className="lg:text-6xl text-4xl  font-bold">Gold Sponsors</h1>
+                    <h1 className="text-4xl font-bold">Gold Sponsors</h1>
                     <div>
-                        {Gold.map((sponsor: { text: any; name: any; zone: any; image: any; learnMore: any; }, index: any) => (
+                        {Gold.map((sponsor: { text: any; name: any; link: any; image: any; }, index: any) => (
                             <SponsorCard
                                 key={index}
                                 text={sponsor.text}
                                 name={sponsor.name}
-                                learnMore={sponsor.learnMore}
                                 image={sponsor.image}
-                                zone={sponsor.zone}
+                                link={sponsor.link}
                                 index={index}
                             />
                         ))}
                     </div>
                 </div>
                 <div className="text-center p-10">
-                    <h1 className="lg:text-6xl text-4xl pb-20 font-bold"> Silver Sponsors </h1>
+                    <h1 className="lg:text-4xl text-4xl pb-20 font-bold"> Silver Sponsors </h1>
                     <div className={"grid md:grid-cols-3 gap-5 lg:px-20 md:px-10"}>
                         {Silver.map((sponsor: { url: any}) => (
-                            <div key={0} className={"flex justify-center"}>
+                            <div key={0} className={"flex justify-center hover:scale-110 transition duration-500"}>
                                 <Image src={sponsor.url} alt={"Sponsor"} className={"object-scale-down"} width={300} height={300}></Image>
                             </div>
                         ))}
@@ -141,10 +131,10 @@ export default function Home() {
                 </div>
 
                 <div className="text-center p-10">
-                    <h1 className="lg:text-6xl text-4xl pb-20 font-bold"> Bronze Sponsors </h1>
+                    <h1 className="text-4xl pb-20 font-bold text-blue-900"> Bronze Sponsors </h1>
                     <div className={"grid md:grid-cols-3 gap-5 lg:px-20 md:px-10"}>
                         {Bronze.map((sponsor: { url: any}) => (
-                            <div key={0} className={"flex justify-center"}>
+                            <div key={0} className={"flex justify-center hover:scale-110 transition duration-500"}>
                                 <Image src={sponsor.url} alt={"Sponsor"} className={"object-scale-down"} width={300} height={300}></Image>
                             </div>
                         ))}

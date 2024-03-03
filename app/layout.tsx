@@ -1,8 +1,7 @@
 import './globals.css'
-import Header from '@/app/_components/Header'
+import Navbar from '@/app/_components/Navbar/navbar'
 import Footer from '@/app/_components/Footer/footer'
 import { Montserrat } from 'next/font/google';
-import {Providers} from "./providers";
 
 const montserrat = Montserrat({
   weight: '400',
@@ -23,10 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={montserrat.className}>
       <body>
-        <Header></Header>
+        <Navbar></Navbar>
         {children}
         <Footer></Footer>
-        </body>
+      </body>
     </html>
   )
 }
