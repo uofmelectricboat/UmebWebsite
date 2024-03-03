@@ -3,7 +3,7 @@
 import TitlePhoto from "@/app/_components/TitlePhoto";
 import React from "react";
 import Youtube from 'react-youtube';
-import {Button} from "flowbite-react";
+import Button from "../_components/Button";
 import Image from 'next/image';
 
 
@@ -29,7 +29,7 @@ export default function Home() {
                             The team aims to continue this tradition, aiming for even better results in 2024. The competition&apos;s flexible rules and talented competitors enable us to push boundaries and create innovative designs.
                         </p>
                         <div className={"py-2 flex md:justify-end justify-center"}>
-                            <Button gradientDuoTone={"purpleToPink"} outline href={"https://www.navalengineers.org/Education/Promoting-Electric-Propulsion-PEP"}>Check Out PEP!</Button>
+                            <Button width={64} text={"Check Out PEP!"} href={"https://www.navalengineers.org/Education/Promoting-Electric-Propulsion-PEP"}></Button>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ export default function Home() {
                             UMEB will be attending LOTO this summer and racing as one of the few electric boats, with hopes of breaking records for the fastest electric boat to compete at LOTO.
                         </p>
                         <div className={"py-2 flex md:justify-start justify-center"}>
-                            <Button gradientDuoTone={"purpleToPink"} outline href={"https://www.navalengineers.org/Education/Promoting-Electric-Propulsion-PEP"}>Check Out LOTO!</Button>
+                            <Button text={"Check Out LOTO!"} width={64} href={"https://www.navalengineers.org/Education/Promoting-Electric-Propulsion-PEP"}></Button>
                         </div>
                     </div>
                     <div className={"lg:w-1/4 w-full p-5 lg:p-0 relative flex lg:justify-end justify-center"}>
@@ -71,7 +71,7 @@ export default function Home() {
                             The team’s goals for this challenge are to demonstrate TiDE’s range at speed, and preparing for longer competitions in the future.
                         </p>
                         <div className={"py-2 flex md:justify-end justify-center"}>
-                            <Button gradientDuoTone={"purpleToPink"} outline href={"https://www.electricboats.org/wye-island-challenge"}>Check Out Monaco!</Button>
+                            <Button width={64} text={"Check Out Monaco!"} href={"https://www.electricboats.org/wye-island-challenge"}></Button>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@ export default function Home() {
                             UMEB plans on competing in the Sea Lab, which is a new competition specifically for novel prototypes and new designs. The team also plans on demonstrating our best speed at range in the E-Boat Rally, which is a 21 nautical mile trip between Port Hercules in Monaco and Cala del Forte in Ventimiglia in Italy.
                         </p>
                         <div className={"py-2 flex md:justify-start justify-center"}>
-                            <Button gradientDuoTone={"purpleToPink"} outline href={"https://energyboatchallenge.com/"}>Check Out Monaco!</Button>
+                            <Button width={64} text={"Check Out Monaco!"} href={"https://energyboatchallenge.com/"}></Button>
                         </div>
                     </div>
                     <div className={"lg:w-1/4 w-full p-5 lg:p-0 relative flex lg:justify-end justify-center"}>

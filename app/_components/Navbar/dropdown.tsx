@@ -17,11 +17,11 @@ const DropDown: React.FC<DropDownProps> = ({ title, options }) => {
                         <p> {title} </p>
                     </div>
                 </div>
-                <div className="invisible absolute bg-white w-36 mt-2 boarder py-2 ease-out duration-100 group-hover:visible" >
+                <div className="invisible absolute bg-white rounded-sm w-36 mt-2 boarder py-2 ease-out duration-100 group-hover:visible" >
                     <ul>
                     {options.map(option => (
                         <li
-                            className="hover:bg-blue-500 text-black hover:text-white px-2 py-1 cursor-pointer text-base"
+                            className="hover:bg-blue-900 text-blue-900 rounded-sm hover:text-white px-2 py-1 cursor-pointer text-sm font-bold"
                             key={option["url"]}
                         >
                             <Link href={option["url"]}>

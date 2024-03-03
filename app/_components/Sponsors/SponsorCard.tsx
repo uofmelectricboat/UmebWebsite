@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Button } from "flowbite-react";
+import Button from "../Button";
 import Image from "next/image";
 
 interface SponsorCardProps {
@@ -42,7 +42,7 @@ const SponsorCard: React.FC<SponsorCardProps> = ({ link, name, image, text, inde
                             </p>
                         </div>
                         <div className={"flex justify-end"}>
-                            <Button gradientDuoTone={"purpleToPink"} outline href={link}>Learn More</Button>
+                            <Button text={"Learn More"} width={40} href={link}></Button>
                         </div>
                     </div>
                 </div>

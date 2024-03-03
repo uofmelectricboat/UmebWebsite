@@ -1,6 +1,6 @@
 "use client";
 import SponsorCard from "@/app/_components/Sponsors/SponsorCard";
-import { Button } from "flowbite-react";
+import Button from "../_components/Button";
 import Image from "next/image";
 
 
@@ -154,11 +154,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className={"flex justify-center py-10"}>
-                        <Button gradientDuoTone={"purpleToPink"} outline href={"/BecomeASponsor"}>
-                            <p className={"md:text-2xl text-xl font-bold"}>
-                                How to Become a UMEB Sponsor
-                            </p>
-                        </Button>
+                        <Button width={96} text={"How to Become a UMEB Sponsor"} href={"/BecomeASponsor"}></Button>
                     </div>
                 </div>
             </div>

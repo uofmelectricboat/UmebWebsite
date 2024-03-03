@@ -2,7 +2,8 @@
 import Image from "next/image";
 import TitlePhoto from "@/app/_components/TitlePhoto";
 import EmailForm from "@/app/_components/EmailForm";
-import {Button} from "flowbite-react"
+import Button from "../_components/Button";
+import React from "react";
 
 
 const HowToSponsor = [{
@@ -75,18 +76,18 @@ export default function Home() {
             <Image src={SponsorPackageImg} alt="image" className="md:p-10" height={800} width={2000}></Image>
             <div className="flex md:flex-row flex-col md:py-10 py-5 justify-center space-y-5">
                 <div className="md:w-1/2 w-full flex justify-center items-center">
-                    <Button gradientDuoTone={"purpleToPink"} onClick={onButtonClick} outline>
-                        <p className={"lg:text-2xl md:text-xl text-lg font-bold"}>
-                            Download our Sponsorship Packet
-                        </p>
-                    </Button>
+                    <a onClick={onButtonClick} className={"cursor-pointer hover:text-white text-blue-900"}>
+                        <div className={"h-12 w-96 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 p-1 hover:scale-105 duration-300"}>
+                            <div className="flex h-full w-full items-center rounded-lg justify-center bg-white hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-600 hover:to-pink-500">
+                                <h1 className="text-xl">
+                                    Download Our Sponsorship Packet
+                                </h1>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <div className="md:w-1/2 w-full flex justify-center items-center">
-                    <Button gradientDuoTone={"purpleToPink"} href={"/ContactUs"} outline>
-                        <p className={"lg:text-2xl md:text-xl text-lg font-bold"}>
-                            Contact Us!
-                        </p>
-                    </Button>
+                    <Button width={64} text={"Contact Us!"} href={"/ContactUs"}></Button>
                 </div>
             </div>
         </div>
@@ -98,7 +99,6 @@ export default function Home() {
                 <EmailForm/>
             </div>
         </div>
-    {/* something */}
     </>
     )
 }
