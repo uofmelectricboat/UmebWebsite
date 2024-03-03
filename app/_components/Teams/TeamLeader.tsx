@@ -11,7 +11,7 @@ interface LeadershipProps {
 
 
 const TeamLeader: React.FC<LeadershipProps> = ({ title, name, LinkedIn, image, info }) => {return (
-    <div className="container items-center justify-center py-10">
+    <div className="items-center justify-center py-10">
         <div className="flex items-center justify-center">
             <Image src={image} alt={"Image"} width={300} height={300}></Image>
         </div>

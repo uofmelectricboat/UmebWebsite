@@ -84,66 +84,66 @@ export default function Home() {
         <>
             <TitlePhoto title={titleText} image={titlePhoto}/>
             <div className="w-full bg-stone-100">
-                <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
-                    <div className={"md:w-1/4 w-full p-5 md:p-0 flex justify-center relative order-last md:order-first"}>
+                <div className={"w-full flex flex-col lg:flex-row justify-center items-center md:py-6 py-2"}>
+                    <div className={"lg:w-1/4 w-full p-5 lg:p-0 flex justify-center relative order-last lg:order-first"}>
                         <Image src={"/Teams/Mechanical_Team_Pic.png"} alt={"Image Not Found"} width={500} height={500}></Image>
                     </div>
-                    <div className={"w-full lg:w-1/2 lg:pl-8 md:pl-6 px-5 sm:px-0 tracking-tight leading-relaxed"}>
-                        <h1 className={"text-2xl lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
+                    <div className={"w-full lg:w-1/2 lg:pl-8 px-5 sm:px-10 md:px-20 lg:px-0 tracking-tight leading-relaxed"}>
+                        <h1 className={"text-2xl lg:text-4xl text-blue-900 font-bold pb-2"}>
                             Mechanical
                         </h1>
-                        <p className={"text-lg lg:text-xl text-blue-950 md:text-base sm:text-xs"}>
+                        <p className={"text-xl text-blue-950"}>
                             The UMEB Mechanical Team is responsible for the component-level design, manufacturing, testing, and validation of all structural, drivetrain, mechatronics, and safety systems on the boat. Additionally, the Mechanical Team works closely with the Electrical Team to make system-level decisions on the design of the boat and assures all systems on the boat operate cohesively.
                         </p>
                     </div>
                 </div>
             </div>
             <div className="w-full bg-white">
-                <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
-                    <div className={"w-full lg:w-1/2 lg:pr-8 md:pr-6 px-5 sm:px-0 tracking-tight leading-relaxed"}>
-                        <h1 className={"text-2xl lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
+                <div className={"w-full flex flex-col lg:flex-row justify-center items-center lg:py-6 py-2"}>
+                    <div className={"w-full lg:w-1/2 lg:pr-8 px-5 sm:px-10 md:px-20 lg:px-0 tracking-tight leading-relaxed"}>
+                        <h1 className={"text-2xl lg:text-4xl text-blue-900 font-bold pb-2"}>
                             Electrical
                         </h1>
-                        <p className={"text-lg lg:text-xl text-blue-950 md:text-base sm:text-xs"}>
+                        <p className={"text-xl text-blue-950"}>
                             The UMEB Electrical Team is responsible for the design, integration, testing, and validation of all powertrain, controls, and software systems on the boat. Like the Mechanical team, the Electrical Team works closely with the Mechanical Team to ensure the overall success and safety of the boat, driver, and surroundings.
                         </p>
                     </div>
-                    <div className={"md:w-1/4 w-full p-5 md:p-0 relative flex md:justify-end justify-center"}>
+                    <div className={"lg:w-1/4 w-full p-5 lg:p-0 relative flex lg:justify-end justify-center"}>
                         <Image src={"/Teams/Electrical_Team_Pic.JPG"} alt={"Image Not Found"} width={500} height={500}></Image>
                     </div>
                 </div>
             </div>
             <div className="w-full bg-stone-100">
-                <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
-                    <div className={"md:w-1/4 w-full p-5 md:p-0 flex justify-center relative order-last md:order-first"}>
+                <div className={"w-full flex flex-col lg:flex-row justify-center items-center lg:py-6 py-2"}>
+                    <div className={"lg:w-1/4 w-full p-5 lg:p-0 flex justify-center relative order-last lg:order-first"}>
                         <Image src={"/Teams/Operations_Team_Pic.jpg"} alt={"Image Not Found"} width={500} height={500}></Image>
                     </div>
-                    <div className={"w-full lg:w-1/2 px-5 sm:px-0 lg:pl-8 md:pl-6 sm:pl-4 tracking-tight leading-relaxed"}>
-                        <h1 className={"text-2xl lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
+                    <div className={"w-full lg:w-1/2 px-5 sm:px-10 md:px-20 lg:px-0 lg:pl-8 tracking-tight leading-relaxed"}>
+                        <h1 className={"text-2xl lg:text-4xl text-blue-900 font-bold pb-2"}>
                             Operations
                         </h1>
-                        <p className={"text-lg lg:text-xl text-blue-950 md:text-base sm:text-xs"}>
+                        <p className={"text-xl text-blue-950"}>
                             The UMEB Operations Team is responsible for managing the logistical demands of the Michigan Electric Boat Team, including the maintenance of the Wilson Center workspace, team organization, and event logistics. Additionally, the Operations Team handles the standard operating procedures and safety procedures to promote an efficient working environment.
                         </p>
                     </div>
                 </div>
             </div>
             <div className="w-full bg-white">
-                <div className={"w-full flex flex-col md:flex-row justify-center items-center lg:py-6 py-2 md:py-4 "}>
-                    <div className={"w-full lg:w-1/2 px-5 sm:px-0 lg:pr-8 md:pr-6 sm:pr-4 tracking-tight leading-relaxed"}>
-                        <h1 className={"text-2xl lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
+                <div className={"w-full flex flex-col lg:flex-row justify-center items-center lg:py-6 py-2"}>
+                    <div className={"w-full lg:w-1/2 px-5 sm:px-10 md:px-20 lg:px-0 lg:pr-8 lg:pr-6 tracking-tight leading-relaxed"}>
+                        <h1 className={"text-2xl lg:text-4xl text-blue-900 font-bold pb-2"}>
                             Business
                         </h1>
-                        <p className={"text-lg lg:text-xl text-blue-950 md:text-base sm:text-xs"}>
+                        <p className={"text-lg text-blue-950"}>
                             The UMEB Business Team is responsible for supporting our engineers in all tasks ranging from sponsor relations to marketing. We strive to aid our engineers from lacking any resources that would limit their innovation. Each year, we raise tens of thousands of dollars in order to build the fastest boat possible.
                         </p>
                     </div>
-                    <div className={"md:w-1/4 w-full p-5 md:p-0 relative flex md:justify-end justify-center"}>
+                    <div className={"lg:w-1/4 w-full p-5 lg:p-0 relative flex lg:justify-end justify-center"}>
                         <Image src={"/Teams/Business_Team_Pic.jpg"} alt={"Image Not Found"} width={500} height={500}></Image>
                     </div>
                 </div>
             </div>
-            <h1 className="font-bold lg:text-5xl md:text-2xl sm:text-xl pt-10 flex items-center justify-center bg-stone-100">
+            <h1 className="font-bold lg:text-4xl text-2xl pt-10 flex items-center justify-center bg-stone-100">
                 Meet Our LeaderShip Team
             </h1>
             <div className="px-10 bg-stone-100">
@@ -160,7 +160,7 @@ export default function Home() {
                 ))}
             </div>
             <div className="bg-stone-100">
-                <div className="w-full grid-cols-1 md:grid-cols-3 grid gap-5">
+                <div className="w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid gap-5">
                     {teamleaders.map((leader: any, index: any) => (
                         <TeamLeader
                             key={index}
@@ -185,7 +185,9 @@ export default function Home() {
                     ))}
                 </div>
             </div>
-            <h1 className="font-bold lg:text-4xl text-3xl py-5 flex items-center justify-center pt-10 bg-stone-100"> Meet Our Consultants </h1>
+            <h1 className="font-bold lg:text-4xl text-2xl py-5 flex items-center justify-center pt-10 bg-stone-100">
+                Meet Our Consultants
+            </h1>
             <div className="lg:columns-3 columns-1 gap-5 bg-stone-100 text-blue-950">
                 {consultants.map((leader: any, index: any) => (
                     <TeamLeader

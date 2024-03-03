@@ -8,29 +8,6 @@ body,
   height: 100%;
 }
 
-.animated-underline {
-  position: relative;
-  text-decoration: none;
-}
-
-.animated-underline::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background-color: #FFFF; /* Set your desired underline color */
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.3s ease-out;
-}
-
-.animated-underline:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
 .multicolored-border {
   position: relative;
   overflow: hidden;

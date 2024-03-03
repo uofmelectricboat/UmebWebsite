@@ -12,7 +12,7 @@ interface LeadershipProps {
 
 const LeaderShip: React.FC<LeadershipProps> = ({ title, name, bio, image, info, LinkedIn }) => {
     return (
-        <div className="container md:flex items-center justify-center py-10">
+        <div className="md:flex w-auto items-center justify-center py-10">
             <div className="px-10 flex justify-center">
                 <Image src={image} alt={"Image"} width={300} height={300} className={"rounded"}></Image>
             </div>
