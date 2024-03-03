@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
                         Help turn our future Electric!
                     </h1>
                 </div>
-                <div className={"lg:basis-1/3 flex justify-center lg:justify-end md:block hidden"}>
+                <div className={"lg:basis-1/3 flex justify-center lg:justify-end lg:block hidden"}>
                     <Image src={"/Icons/mdLogo.png"} alt={"LOGO"} width={300} height={200}></Image>
                 </div>
             </div>
