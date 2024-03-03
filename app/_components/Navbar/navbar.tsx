@@ -94,6 +94,12 @@ const Navbar = () => {
                                 <span className={underlineStyle}></span>
                             </li>
                         </div>
+                        <Link href={"/Media"} className={"group transition duration-500"}>
+                            <li className={linkStyle}>
+                                Media
+                                <span className={underlineStyle}></span>
+                            </li>
+                        </Link>
                         <div className={"group transition duration-500"}>
                             <li className={linkStyle}>
                                 <Dropdown title={"Contact"} options={Contact}/>
@@ -135,6 +141,11 @@ const Navbar = () => {
                         <Link href={"/OurRaces"} onClick={handleNav}>
                             <li className={linkStyle}>
                                 Our Races
+                            </li>
+                        </Link>
+                        <Link href={"/Media"} onClick={handleNav}>
+                            <li className={linkStyle}>
+                                Media
                             </li>
                         </Link>
                         <Link href={"/OurSponsors"} onClick={handleNav}>
