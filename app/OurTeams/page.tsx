@@ -10,14 +10,14 @@ const officers = [{
     title: "CAPTAIN",
     name: "Arend Vyn",
     bio: "Arend joined UMEB at first to better understand and learn about what goes into the engineering process. Being a part of the process to create a complex, powerful vehicle with peers and friends is why Electric Boat has been such a big part of his life thus far. Arend is looking forward to working with the team again to design and engineering the most powerful electric boat the world has seen, and have fun doing it.",
-    image: "/Teams/headshots/Arend_Captain.jpg",
+    image: "/Teams/headshots/Arend_Captain.png",
     info: "Mechanical Engineering | 2025",
     LinkedIn: "https://www.linkedin.com/in/arend-vyn/",
 }, {
     title: "CHIEF ENGINEER",
     name: "Caroline Kahwati",
     bio: "Caroline joined UMEB to get hands-on experience with an engineering challenge. She enjoys being a part of the process from the design stage to manufacturing the final product and learning from encountered roadblocks to improve future processes. Caroline recognizes the importance of sustainable technologies and enjoys the opportunity to work with electric powertrain systems. Outside of UMEB she enjoys running and watching Michigan sports.",
-    image: "/Teams/headshots/Kahwati_Caroline_Headshot.jpg",
+    image: "/Teams/headshots/Kahwati.png",
     info: "NAME | 2025",
     LinkedIn: "https://www.linkedin.com/in/ckahwati/",
 }]
@@ -26,19 +26,19 @@ const teamleaders = [{
     title: "MECHANICAL DIRECTOR",
     name: "Evan Branson",
     LinkedIn: "https://www.linkedin.com/in/evan-branson-5240651b0/",
-    image: "/Teams/headshots/Evan_Mechanical_Director.jpg",
+    image: "/Teams/headshots/Evan.png",
     info: "Robotics Engineering | 2024"
 }, {
     title: "ELECTRICAL DIRECTOR",
     name: "Michael Sharashenidze",
     LinkedIn: "https://www.linkedin.com/in/lyn-n-tran/",
-    image: "/Teams/headshots/Michael_Electrical_Director.jpg",
+    image: "/Teams/headshots/Michael.png",
     info: "Electrical Engineering | 2024"
 }, {
     title: "OPERATIONS DIRECTOR",
     name: "Lyn Tran",
     LinkedIn: "https://www.linkedin.com/in/michael-sharashenidze-71b53318a/",
-    image: "/Teams/headshots/Lyn_Operations_Director.jpg",
+    image: "/Teams/headshots/Lyn.png",
     info: "N.A.M.E. | 2026"
 }]
 
@@ -46,13 +46,13 @@ const TeamLeadersTwo = [{
     title: "BUSINESS DIRECTOR",
     name: "Kaden Murphy",
     LinkedIn: "https://www.linkedin.com/in/yaseen-metwally-745067216/",
-    image: "/Teams/headshots/Kaden_Business_CoDirector.jpg",
+    image: "/Teams/headshots/Kaden.png",
     info: "Business Administration | 2026"
 }, {
     title: "BUSINESS DIRECTOR",
     name: "Yaseen Metwally",
     LinkedIn: "https://www.linkedin.com/in/kaden-murphy/",
-    image: "/Teams/headshots/Yaseen_Business_CoDirector.jpg",
+    image: "/Teams/headshots/Yaseen.png",
     info: "Business Administration | 2026"
 }]
 
@@ -60,7 +60,7 @@ const consultants = [{
     title: "WEB DESIGN & DEVELOPMENT",
     name: "Alec Palo",
     LinkedIn: "https://www.linkedin.com/in/apalo/",
-    image: "/Teams/headshots/Alec.jpg",
+    image: "/Teams/headshots/Alec.png",
     info: "Computer Science & Business | 2024"
 }, {
     title: "FACULTY ADVISOR",

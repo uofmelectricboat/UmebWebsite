@@ -4,6 +4,7 @@ import TitlePhoto from "@/app/_components/TitlePhoto";
 import { LinkedInEmbed } from 'react-social-media-embed';
 import { InstagramEmbed } from 'react-social-media-embed';
 import { YouTubeEmbed } from 'react-social-media-embed';
+import Image from "next/image";
 
 import React from "react";
 import {Button} from "flowbite-react";
@@ -29,7 +30,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={"flex lg:justify-start justify-center"}>
-                    <img src={"/Media/QR.png"} alt={"something"} className={"object-scale-down h-64"}></img>
+                    <Image src={"/Media/QR.png"} alt={"something"} width={250} height={250} className={"object-scale-down"}></Image>
                 </div>
             </div>
             <div className={"w-full bg-stone-200"}>
@@ -58,7 +59,7 @@ export default function Home() {
                         </div>
                         <div className={"md:w-1/4 w-full p-5 md:p-0 relative flex md:justify-end justify-center"}>
                             <a href={"https://www.michigandaily.com/opinion/wilson-center-a-match-made-on-north-rossholes-and-nerds/"}>
-                                <img src={"/Media/Oped.png"} alt={"Image Not Found"} className={"object-scale-down"}></img>
+                                <Image src={"/Media/Oped.png"} alt={"Image Not Found"} width={400} height={300} className={"object-scale-down"}></Image>
                             </a>
                         </div>
                     </div>

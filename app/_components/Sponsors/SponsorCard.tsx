@@ -12,13 +12,10 @@ interface SponsorCardProps {
 }
 
 const SponsorCard: React.FC<SponsorCardProps> = ({ link, name, image, text, index }) => {
-    const changeSides = index % 2 === 0;
-
-    const containerClass ='flex lg:flex-row flex-col relative flex-row-reverse relative hover:shadow-xl shadow-sm bg-white p-4 transition-transform transform duration-500 ease-in-out hover:scale-105 rounded-lg';
     return (
         <>
             <div className="lg:px-20 md:px-10 sm:px-5 py-5">
-                <div className={containerClass}>
+                <div className={'flex lg:flex-row  flex-row-reverse relative hover:shadow-xl p-4 shadow-sm bg-white transition-transform transform duration-500 ease-in-out hover:scale-105 rounded-lg'}>
                     <div className="w-full lg:w-1/3 md:relative">
                         <div className="lg:absolute inset-0 flex justify-center">
                             <Image

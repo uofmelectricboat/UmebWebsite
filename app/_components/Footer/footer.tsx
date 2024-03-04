@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     return (
         <footer className="bg-white w-full text-gray-800 text-center py-4 lg:px-20 sm:px-6">
             <div className={"flex justify-center"}>
-                <h1 className={"md:text-2xl text-xl font-bold lg:p-5 p-2 text-left"}>
+                <h1 className={"md:text-4xl text-2xl font-bold lg:p-5 p-2 text-left"}>
                     Help turn our future Electric!
                 </h1>
             </div>

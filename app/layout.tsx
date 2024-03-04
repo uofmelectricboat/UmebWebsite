@@ -1,13 +1,13 @@
 import './globals.css'
-import Navbar from '@/app/_components/Navbar/navbar'
-import Footer from '@/app/_components/Footer/footer'
 import { Montserrat } from 'next/font/google';
+import Navbar from '@/app/_components/Navbar/navbar';
+import Footer from '@/app/_components/Footer/footer';
 
-const montserrat = Montserrat({
-  weight: '400',
-  display: 'swap',
-  subsets: ['latin'],
-})
+// const montserrat = Montserrat({
+//   weight: '400',
+//   display: 'swap',
+//   subsets: ['latin'],
+// })
 
 export const metadata = {
   title: 'UMEB',
@@ -20,11 +20,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={montserrat.className + " text-blue-900 "}>
+    <html lang="en" className={ " text-blue-900"}>
       <body>
-        <Navbar></Navbar>
+      <Navbar/>
         {children}
-        <Footer></Footer>
+      <Footer/>
       </body>
     </html>
   )

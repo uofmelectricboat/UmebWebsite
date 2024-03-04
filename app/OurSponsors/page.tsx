@@ -2,6 +2,7 @@
 import SponsorCard from "@/app/_components/Sponsors/SponsorCard";
 import Button from "../_components/Button";
 import Image from "next/image";
+import TitlePhoto from "@/app/_components/TitlePhoto";
 
 
 const Platinum = [{
@@ -76,17 +77,13 @@ const Bronze = [{
     url: "/Companies/Sabelt.png",
 }]
 
+const titlePhoto = "/TitlePhotos/OurSponsors.JPG";
+
 
 export default function Home() {
     return (
         <>
-            <div className="relative">
-                <img src="/TitlePhotos/OurSponsors.JPG" className="w-full h-screen object-cover" alt="Sponsors" />
-                <div className="absolute inset-0 flex items-center justify-center bg-blue-800 opacity-30" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center space-y-2">
-                    <h1 className="text-white lg:text-6xl text-4xl font-bold">Our Sponsors</h1>
-                </div>
-            </div>
+            <TitlePhoto title={"Our Sponsors"} image={titlePhoto}/>
             <div className={"bg-stone-200 bg-repeat tracking-wide"}>
             <div>
                 <div className="text-center p-10">
@@ -124,7 +121,7 @@ export default function Home() {
                     <div className={"grid md:grid-cols-3 gap-5 lg:px-20 md:px-10"}>
                         {Silver.map((sponsor: { url: any}) => (
                             <div key={0} className={"flex justify-center hover:scale-110 transition duration-500"}>
-                                <Image src={sponsor.url} alt={"Sponsor"} className={"object-scale-down"} width={300} height={300}></Image>
+                                <Image src={sponsor.url} alt={"Sponsor"} className={"object-scale-down"} width={200} height={200}></Image>
                             </div>
                         ))}
                     </div>
@@ -135,7 +132,7 @@ export default function Home() {
                     <div className={"grid md:grid-cols-3 gap-5 lg:px-20 md:px-10"}>
                         {Bronze.map((sponsor: { url: any}) => (
                             <div key={0} className={"flex justify-center hover:scale-110 transition duration-500"}>
-                                <Image src={sponsor.url} alt={"Sponsor"} className={"object-scale-down"} width={300} height={300}></Image>
+                                <Image src={sponsor.url} alt={"Sponsor"} className={"object-scale-down"} width={200} height={200}></Image>
                             </div>
                         ))}
                     </div>
