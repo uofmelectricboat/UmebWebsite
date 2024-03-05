@@ -166,7 +166,7 @@ export default function Home() {
                         </FadeInSection>
                         <FadeInSection>
                             <div className={"flex justify-center hover:scale-110 transition duration-500"}>
-                                <Image src={"/Companies/18650Battery.png"} alt={"Sponsor"}
+                                <Image src={"/Companies/8650Battery.png"} alt={"Sponsor"}
                                        className={"object-scale-down"}
                                        width={600}
                                        height={300}></Image>
