@@ -24,7 +24,7 @@ export default function FadeInSection(props: Props) {
 
     return (
         <div
-            className={`f ${isVisible ? 'is-visible' : ''}`}
+            className={`transition-opacity ease-in duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
             ref={domRef}
         >
             {props.children}

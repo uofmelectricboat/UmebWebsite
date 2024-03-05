@@ -3,8 +3,7 @@ import SponsorCard from "@/app/_components/Sponsors/SponsorCard";
 import Button from "../_components/Button";
 import Image from "next/image";
 import TitlePhoto from "@/app/_components/TitlePhoto";
-import { useEffect, useState } from "react";
-
+import FadeInSection from "@/app/_components/FadeIn";
 
 const Platinum = [{
     text: "Skater does not build 'off-the-line' boats and is the leader in marine racing. Skater has led the industry for 40 years with the highest quality handcrafted racing boats. From the interior to the paint to the power package and everything in between, every catamaran is fully custom.",
@@ -88,95 +87,132 @@ export default function Home() {
             <div className={"bg-stone-200 bg-repeat tracking-wide"}>
             <div>
                 <div className="text-center p-10">
-                    <h1 className="lg:text-4xl text-2xl font-bold"> Platinum Sponsors </h1>
+                    <FadeInSection>
+                        <h1 className="lg:text-4xl text-2xl font-bold"> Platinum Sponsors </h1>
+                    </FadeInSection>
                     <div>
                         {Platinum.map((sponsor: { text: any; name: any; link: any; image: any; }, index: any) => (
-                            <SponsorCard
-                                key={index}
-                                text={sponsor.text}
-                                name={sponsor.name}
-                                image={sponsor.image}
-                                link={sponsor.link}
-                                index={index}
-                            />
+                            <FadeInSection key={index}>
+                                <SponsorCard
+                                    key={index}
+                                    text={sponsor.text}
+                                    name={sponsor.name}
+                                    image={sponsor.image}
+                                    link={sponsor.link}
+                                    index={index}
+                                />
+                            </FadeInSection>
                         ))}
                     </div>
                 </div>
                 <div className="text-center p-10">
-                    <h1 className="text-4xl font-bold">Gold Sponsors</h1>
+                    <FadeInSection>
+                        <h1 className="text-4xl font-bold">Gold Sponsors</h1>
+                    </FadeInSection>
                     <div>
-                        {Gold.map((sponsor: { text: any; name: any; link: any; image: any; }, index: any) => (
-                            <SponsorCard
-                                key={index}
-                                text={sponsor.text}
-                                name={sponsor.name}
-                                image={sponsor.image}
-                                link={sponsor.link}
-                                index={index}
-                            />
+                    {Gold.map((sponsor: { text: any; name: any; link: any; image: any; }, index: any) => (
+                            <FadeInSection key={index}>
+                                <SponsorCard
+                                    key={index}
+                                    text={sponsor.text}
+                                    name={sponsor.name}
+                                    image={sponsor.image}
+                                    link={sponsor.link}
+                                    index={index}
+                                />
+                            </FadeInSection>
                         ))}
                     </div>
                 </div>
                 <div className="text-center p-10">
-                    <h1 className="lg:text-4xl text-4xl pb-20 font-bold"> Silver Sponsors </h1>
+                    <FadeInSection>
+                        <h1 className="lg:text-4xl text-4xl pb-20 font-bold"> Silver Sponsors </h1>
+                    </FadeInSection>
                     <div className={"grid md:grid-cols-3 gap-5 lg:px-20 md:px-10"}>
-                        <div className={"flex justify-center hover:scale-110 transition duration-500"}>
-                            <Image src={"/Companies/ASNE.png"} alt={"Sponsor"} className={"object-scale-down"} width={200}
-                                   height={200}></Image>
-                        </div>
-                        <div className={"flex justify-center hover:scale-110 transition duration-500"}>
-                            <Image src={"/Companies/Ford.png"} alt={"Sponsor"} className={"object-scale-down"} width={300}
-                                   height={300}></Image>
-                        </div>
-                        <div className={"flex justify-center hover:scale-110 transition duration-500"}>
-                            <Image src={"/Companies/GM.png"} alt={"Sponsor"} className={"object-scale-down"} width={300}
-                                   height={200}></Image>
-                        </div>
-                        <div className={"flex justify-center hover:scale-110 transition duration-500"}>
-                            <Image src={"/Companies/CSE.png"} alt={"Sponsor"} className={"object-scale-down"} width={300}
-                                   height={300}></Image>
-                        </div>
-                        <div className={"flex justify-center hover:scale-110 transition duration-500"}>
-                            <Image src={"/Companies/MaterialsSolutions.png"} alt={"Sponsor"} className={"object-scale-down"} width={500}
-                                   height={300}></Image>
-                        </div>
-                        <div className={"flex justify-center hover:scale-110 transition duration-500"}>
-                            <Image src={"/Companies/18650Battery.png"} alt={"Sponsor"} className={"object-scale-down"} width={600}
-                                   height={300}></Image>
-                        </div>
-
+                        <FadeInSection>
+                            <div className={"flex justify-center hover:scale-110 transition duration-500"}>
+                                <Image src={"/Companies/ASNE.png"} alt={"Sponsor"} className={"object-scale-down"}
+                                       width={200}
+                                       height={200}></Image>
+                            </div>
+                        </FadeInSection>
+                        <FadeInSection>
+                            <div className={"flex justify-center hover:scale-110 transition duration-500"}>
+                                <Image src={"/Companies/Ford.png"} alt={"Sponsor"} className={"object-scale-down"}
+                                       width={300}
+                                       height={300}></Image>
+                            </div>
+                        </FadeInSection>
+                        <FadeInSection>
+                            <div className={"flex justify-center hover:scale-110 transition duration-500"}>
+                                <Image src={"/Companies/GM.png"} alt={"Sponsor"} className={"object-scale-down"}
+                                       width={300}
+                                       height={200}></Image>
+                            </div>
+                        </FadeInSection>
+                        <FadeInSection>
+                            <div className={"flex justify-center hover:scale-110 transition duration-500"}>
+                                <Image src={"/Companies/CSE.png"} alt={"Sponsor"} className={"object-scale-down"}
+                                       width={300}
+                                       height={300}></Image>
+                            </div>
+                        </FadeInSection>
+                        <FadeInSection>
+                            <div className={"flex justify-center hover:scale-110 transition duration-500"}>
+                                <Image src={"/Companies/MaterialsSolutions.png"} alt={"Sponsor"}
+                                       className={"object-scale-down"} width={500}
+                                       height={300}></Image>
+                            </div>
+                        </FadeInSection>
+                        <FadeInSection>
+                            <div className={"flex justify-center hover:scale-110 transition duration-500"}>
+                                <Image src={"/Companies/18650Battery.png"} alt={"Sponsor"}
+                                       className={"object-scale-down"}
+                                       width={600}
+                                       height={300}></Image>
+                            </div>
+                        </FadeInSection>
                     </div>
                 </div>
 
                 <div className="text-center p-10">
-                    <h1 className="text-4xl pb-20 font-bold text-blue-900"> Bronze Sponsors </h1>
+                    <FadeInSection>
+                        <h1 className="text-4xl pb-20 font-bold text-blue-900"> Bronze Sponsors </h1>
+                    </FadeInSection>
                     <div className={"grid md:grid-cols-3 gap-5 lg:px-20 md:px-10"}>
                         {Bronze.map((sponsor: { url: any}) => (
-                            <div key={0} className={"flex justify-center hover:scale-110 transition duration-500"}>
-                                <Image src={sponsor.url} alt={"Sponsor"} className={"object-scale-down"} width={300} height={300}></Image>
-                            </div>
+                            <FadeInSection key={0}>
+                                <div key={0} className={"flex justify-center hover:scale-110 transition duration-500"}>
+                                    <Image src={sponsor.url} alt={"Sponsor"} className={"object-scale-down"} width={300}
+                                           height={300}></Image>
+                                </div>
+                            </FadeInSection>
                         ))}
                     </div>
                 </div>
-                <div className={"pt-10"}>
-                    <div className="flex lg:flex-row flex-col">
-                        <div className="lg:w-1/3 w-full p-2">
-                            <h1 className="text-4xl font-bold lg:text-right text-center justify-center">
-                                Become A Sponsor
-                            </h1>
+                <FadeInSection>
+                    <div className={"pt-10"}>
+                        <div className="flex lg:flex-row flex-col">
+                            <div className="lg:w-1/3 w-full p-2">
+                                <h1 className="text-4xl font-bold lg:text-right text-center justify-center">
+                                    Become A Sponsor
+                                </h1>
+                            </div>
+                            <div className="lg:w-2/3 w-full lg:px-40 py-2 px-5">
+                                <p className="lg:text-xl lg:text-left text-center">
+                                    UM Electric Boat was founded with a commitment to testing alternative, cleaner forms
+                                    of energy in the maritime industry. As such, we partner with organizations that
+                                    believe in our mission and want to invest in new naval technologies.
+                                </p>
+                            </div>
                         </div>
-                        <div className="lg:w-2/3 w-full lg:px-40 py-2 px-5">
-                            <p className="lg:text-xl lg:text-left text-center">
-                                UM Electric Boat was founded with a commitment to testing alternative, cleaner forms of energy in the maritime industry. As such, we partner with organizations that believe in our mission and want to invest in new naval technologies.
-                            </p>
+                        <div className={"flex justify-center py-10"}>
+                            <Button width={96} text={"How to Become a UMEB Sponsor"} href={"/BecomeASponsor"}></Button>
                         </div>
                     </div>
-                    <div className={"flex justify-center py-10"}>
-                        <Button width={96} text={"How to Become a UMEB Sponsor"} href={"/BecomeASponsor"}></Button>
-                    </div>
-                </div>
+                </FadeInSection>
             </div>
-        </div>
+            </div>
         </>
     );
 }
