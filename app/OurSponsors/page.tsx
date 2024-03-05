@@ -3,6 +3,7 @@ import SponsorCard from "@/app/_components/Sponsors/SponsorCard";
 import Button from "../_components/Button";
 import Image from "next/image";
 import TitlePhoto from "@/app/_components/TitlePhoto";
+import { useEffect, useState } from "react";
 
 
 const Platinum = [{
@@ -119,11 +120,31 @@ export default function Home() {
                 <div className="text-center p-10">
                     <h1 className="lg:text-4xl text-4xl pb-20 font-bold"> Silver Sponsors </h1>
                     <div className={"grid md:grid-cols-3 gap-5 lg:px-20 md:px-10"}>
-                        {Silver.map((sponsor: { url: any}) => (
-                            <div key={0} className={"flex justify-center hover:scale-110 transition duration-500"}>
-                                <Image src={sponsor.url} alt={"Sponsor"} className={"object-scale-down"} width={200} height={200}></Image>
-                            </div>
-                        ))}
+                        <div className={"flex justify-center hover:scale-110 transition duration-500"}>
+                            <Image src={"/Companies/ASNE.png"} alt={"Sponsor"} className={"object-scale-down"} width={200}
+                                   height={200}></Image>
+                        </div>
+                        <div className={"flex justify-center hover:scale-110 transition duration-500"}>
+                            <Image src={"/Companies/Ford.png"} alt={"Sponsor"} className={"object-scale-down"} width={300}
+                                   height={300}></Image>
+                        </div>
+                        <div className={"flex justify-center hover:scale-110 transition duration-500"}>
+                            <Image src={"/Companies/GM.png"} alt={"Sponsor"} className={"object-scale-down"} width={300}
+                                   height={200}></Image>
+                        </div>
+                        <div className={"flex justify-center hover:scale-110 transition duration-500"}>
+                            <Image src={"/Companies/CSE.png"} alt={"Sponsor"} className={"object-scale-down"} width={300}
+                                   height={300}></Image>
+                        </div>
+                        <div className={"flex justify-center hover:scale-110 transition duration-500"}>
+                            <Image src={"/Companies/MaterialsSolutions.png"} alt={"Sponsor"} className={"object-scale-down"} width={500}
+                                   height={300}></Image>
+                        </div>
+                        <div className={"flex justify-center hover:scale-110 transition duration-500"}>
+                            <Image src={"/Companies/18650Battery.png"} alt={"Sponsor"} className={"object-scale-down"} width={600}
+                                   height={300}></Image>
+                        </div>
+
                     </div>
                 </div>
 
@@ -132,7 +153,7 @@ export default function Home() {
                     <div className={"grid md:grid-cols-3 gap-5 lg:px-20 md:px-10"}>
                         {Bronze.map((sponsor: { url: any}) => (
                             <div key={0} className={"flex justify-center hover:scale-110 transition duration-500"}>
-                                <Image src={sponsor.url} alt={"Sponsor"} className={"object-scale-down"} width={200} height={200}></Image>
+                                <Image src={sponsor.url} alt={"Sponsor"} className={"object-scale-down"} width={300} height={300}></Image>
                             </div>
                         ))}
                     </div>
