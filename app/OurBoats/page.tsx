@@ -13,7 +13,7 @@ export default function Home() {
             <div className="w-full bg-white">
                 <div className={"w-full flex flex-col lg:flex-row justify-center items-center lg:py-6 py-2 px-3"}>
                     <div className={"lg:w-1/4 w-full flex justify-center relative order-last lg:order-first"}>
-                        <Image src={"/Boats/TiDE.png"} alt={"Image Not Found"} width={500} height={500} className={"object-scale-down"}></Image>
+                        <Image src={"/Boats/TiDe.png"} alt={"Image Not Found"} width={500} height={500} className={"object-scale-down"}></Image>
                     </div>
                     <div className={"w-full md-py-0 pb-2 lg:w-1/2 pl-2 lg:pl-8 md:pl-6 sm:pl-4 leading-relaxed"}>
                         <h1 className={"text-2xl lg:text-4xl text-blue-900 md:text-2xl sm:text-xl font-extrabold pb-2"}>
