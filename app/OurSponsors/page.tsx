@@ -84,7 +84,7 @@ export default function Home() {
     return (
         <>
             <TitlePhoto title={"Our Sponsors"} image={titlePhoto}/>
-            <div className={"bg-stone-200 bg-repeat tracking-wide"}>
+            <div className={"bg-stone-200 tracking-wide"}>
             <div>
                 <div className="text-center p-10">
                     <FadeInSection>

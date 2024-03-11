@@ -6,11 +6,8 @@ import { InstagramEmbed } from 'react-social-media-embed';
 import { YouTubeEmbed } from 'react-social-media-embed';
 import Image from "next/image";
 
-import React from "react";
-import {Button} from "flowbite-react";
-
-const titlePhoto = "/TitlePhotos/Media.png?v=2"
-const titleText = "Our Media"
+const titlePhoto = "/TitlePhotos/Media.png?v=2";
+const titleText = "Our Media";
 export default function Home() {
     return (
         <>
@@ -83,14 +80,14 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={"flex md:flex-row flex-col justify-center space-x-0 md:space-x-10 pb-10"}>
-                    <div className={"flex justify-center"}>
-                        <InstagramEmbed url="https://www.instagram.com/p/C22laZsgqGQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" width={328} />
+                    <div className={"flex justify-center border-2 border-red-500 h-full"}>
+                        <InstagramEmbed url="https://www.instagram.com/p/C22laZsgqGQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" width={328} height={550} />
                     </div>
                     <div className={"flex justify-center"}>
-                        <InstagramEmbed url="https://www.instagram.com/p/Cy8ugl5AliB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" width={328} />
+                        <InstagramEmbed url="https://www.instagram.com/p/Cy8ugl5AliB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" width={328} height={600} />
                     </div>
                     <div className={"flex justify-center"}>
-                        <InstagramEmbed url="https://www.instagram.com/p/Ct2DGMBA2kL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" width={328} />
+                        <InstagramEmbed url="https://www.instagram.com/p/Ct2DGMBA2kL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" width={328} height={600}/>
                     </div>
                 </div>
             </div>
