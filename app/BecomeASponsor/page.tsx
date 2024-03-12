@@ -86,7 +86,6 @@ export default function Home() {
                         allow="autoplay; clipboard-read; clipboard-write"></iframe>
             </div>
             <div className="relative w-full">
-                <Image src={SponsorPackageImg} alt="image" className="md:p-10" height={800} width={2000}></Image>
                 <div className="flex md:flex-row flex-col md:py-10 py-5 justify-center space-y-5">
                     <div className="md:w-1/2 w-full flex justify-center items-center">
                         <a onClick={onButtonClick} className={"cursor-pointer hover:text-white text-blue-900"}>

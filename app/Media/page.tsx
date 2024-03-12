@@ -80,7 +80,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={"flex md:flex-row flex-col justify-center space-x-0 md:space-x-10 pb-10"}>
-                    <div className={"flex justify-center border-2 border-red-500 h-full"}>
+                    <div className={"flex justify-center h-full"}>
                         <InstagramEmbed url="https://www.instagram.com/p/C22laZsgqGQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" width={328} height={550} />
                     </div>
                     <div className={"flex justify-center"}>
