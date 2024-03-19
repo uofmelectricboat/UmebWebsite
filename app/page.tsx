@@ -7,6 +7,7 @@ import Carousel from '@/app/_components/Home/HomeCarousel';
 const titleText = "";
 const titlePhoto = "/Home/HomePage.jpg";
 
+
 export default function Home() {
     return (
         <>

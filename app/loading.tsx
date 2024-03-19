@@ -1,8 +1,6 @@
-import Image from "next/image";
-
 export default function Loading() {
     return (
-        <main className={"w-full min-h-screen items-center bg-blue-950 opacity-80"}>
-        </main>
+      <main className={"w-full min-h-screen items-center bg-blue-950 opacity-80"}>
+      </main>
     );
 }
