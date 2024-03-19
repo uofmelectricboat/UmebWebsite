@@ -7,10 +7,10 @@ const Slider = () => {
     const [activeImage, setActiveImage] = useState(0);
 
     const images = [
-        "/Teams/Mechanical_Team_pic.png",
-        "/Teams/Electrical_Team_pic.JPG",
-        "/Teams/Operations_Team_pic.jpg",
-        "/Teams/Business_Team_pic.jpg",
+        "/Teams/Mechanical_Team_Pic.png",
+        "/Teams/Electrical_Team_Pic.JPG",
+        "/Teams/Operations_Team_Pic.jpg",
+        "/Teams/Business_Team_Pic.jpg",
     ]
     const clickNext = () => {
         activeImage === 3 ? setActiveImage(0) : setActiveImage(activeImage + 1)
