@@ -5,4 +5,8 @@ const nextConfig = {
     // reactStrictMode: true,
 };
 
-module.exports = nextConfig
+module.exports = {
+    output: 'export',
+    trailingSlash: true,
+    basePath: '/UmebWebsite',
+};
